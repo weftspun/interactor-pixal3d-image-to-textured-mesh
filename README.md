@@ -81,8 +81,16 @@ the verification signal.
 
 ## Status
 
-**Scaffolded from upstream's own app.py flow, not yet executed against the real weights.** The
-port is faithful (pack/unpack_state, `pipeline.run(..., return_latent=True)`, `decode_latent`,
-`to_glb`, `render_multiview`) but the import paths (`trellis2.modules.sparse.SparseTensor`,
-`o_voxel`) and the in-process `load()` were not run on a GPU in this pass — confirm against a
-real deployment before trusting the worker stage. STUB mode fully exercises both routes' contracts.
+**Contract stage verified; worker stage faithful-but-unproven.** v0.3.0 vendors upstream
+app.py's own init/generate/extract into `worker_entry.py` (image-cond models, MoGe camera
+estimation, preprocessing — all the parts a shallow port would miss), and the Dockerfile builds
+the py3.10 + prebuilt-wheels env upstream's `requirements-hfdemo.txt` pins (no source compiles).
+Not yet executed on a GPU — one real `/predict`→`/extract` round trip is the remaining gate
+before the worker stage can be trusted.
+
+Known upstream-recipe caveat for `synth_views.py`: on the 24GB tier it quantizes with bnb 4-bit,
+and this session's runs produced camera-correct but noise-corrupted images across every
+software combination tried (diffusers 0.35/0.36, model 2508/2511, cfg/Lightning) — the one
+constant was bnb 4-bit on torch 2.4.1 (bnb even warns of a misaligned inner dimension, 3420 %
+64 != 0). Treat 4-bit Qwen-Image on that stack as suspect; retest on torch>=2.6 or with 8-bit
+before relying on it.

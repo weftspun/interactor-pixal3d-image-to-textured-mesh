@@ -1,7 +1,6 @@
 {
-  "image": "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z8BQDwAEhQGAhKmMIQAAAABJRU5ErkJggg==",
+  "image": "aW1hZ2VzdHVi",
   "seed": 42,
-  "fov": -1.0,
-  "resolution": -1,
-  "low_vram": true
+  "nviews": 4,
+  "view_resolution": 512
 }

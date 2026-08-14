@@ -83,8 +83,19 @@ def main():
     from diffusers import QwenImageEditPlusPipeline
 
     t0 = time.time()
+    # bnb 4-bit on the big components: the Space's recipe runs bf16 on
+    # 80GB cards; on the RTX 4090 tier (RFD 0027) the transformer alone
+    # overflows 24GB, so quantization is our one documented divergence.
+    from diffusers.quantizers import PipelineQuantizationConfig
+
     pipe = QwenImageEditPlusPipeline.from_pretrained(
-        "Qwen/Qwen-Image-Edit-2511", torch_dtype=torch.bfloat16
+        "Qwen/Qwen-Image-Edit-2511",
+        quantization_config=PipelineQuantizationConfig(
+            quant_backend="bitsandbytes_4bit",
+            quant_kwargs={"load_in_4bit": True, "bnb_4bit_compute_dtype": torch.bfloat16},
+            components_to_quantize=["transformer", "text_encoder"],
+        ),
+        torch_dtype=torch.bfloat16,
     )
     pipe.load_lora_weights(
         "lightx2v/Qwen-Image-Edit-2511-Lightning",

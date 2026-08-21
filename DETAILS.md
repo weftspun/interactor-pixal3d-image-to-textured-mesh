@@ -34,16 +34,16 @@ missing and the server answered 422.
 Seven checkpoints, 24.045 GB on disk. Every file is fp16 or bf16, and
 both hold one parameter in 2 bytes, thus the count is 12.02 B.
 
-| Checkpoint                            |     Size | Stage            |
-| -------------------------------------- | -------: | ---------------- |
-| slat_flow_img2shape_dit_1_3B_1024     | 5.547 GB | shape 1024       |
-| slat_flow_img2shape_dit_1_3B_512      | 5.547 GB | shape 512        |
-| slat_flow_imgshape2tex_dit_1_3B_1024  | 5.547 GB | texture 1024     |
-| ss_flow_img_dit_1_3B_64               | 5.360 GB | sparse structure |
-| shape_dec_next_dc_f16c32              | 0.948 GB | shape decode     |
-| tex_dec_next_dc_f16c32                | 0.948 GB | texture decode   |
-| ss_dec_conv3d_16l8                    | 0.148 GB | structure decode |
-| **total**                             | **24.045 GB** |             |
+| Checkpoint                           |          Size | Stage            |
+| ------------------------------------ | ------------: | ---------------- |
+| slat_flow_img2shape_dit_1_3B_1024    |      5.547 GB | shape 1024       |
+| slat_flow_img2shape_dit_1_3B_512     |      5.547 GB | shape 512        |
+| slat_flow_imgshape2tex_dit_1_3B_1024 |      5.547 GB | texture 1024     |
+| ss_flow_img_dit_1_3B_64              |      5.360 GB | sparse structure |
+| shape_dec_next_dc_f16c32             |      0.948 GB | shape decode     |
+| tex_dec_next_dc_f16c32               |      0.948 GB | texture decode   |
+| ss_dec_conv3d_16l8                   |      0.148 GB | structure decode |
+| **total**                            | **24.045 GB** |                  |
 
 The file names say `1_3B`, and each DiT file is 5.5 GB. At 2 bytes per
 parameter that is 2.77 B, and not 1.3 B. The measured size is the

@@ -51,11 +51,11 @@ Extends the verbatim RFD 0040 port above. Three pieces:
 
 `/predict` no longer decodes a GLB. It returns:
 
-| Field | What |
-|---|---|
-| `state` | The packed latent (`shape_slat` + `tex_slat` + coords + res as base64 npz) — the inter-stage contract. A latent-space consumer (e.g. a VoxHammer edit; Pixal3D `main` is built on the TRELLIS.2 backbone, the same slat family VoxHammer inverts) takes this directly, no decode/re-encode round trip. |
-| `views` | `nviews` preview renders (base64 PNG) from upstream's **nvdiffrast-backed** renderer — the same differentiable path a later adaptation pass backpropagates through. |
-| `cameras` | Per-view extrinsics/intrinsics (callers need the cameras for any downstream fitting). |
+| Field     | What                                                                                                                                                                                                                                                                                                   |
+| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `state`   | The packed latent (`shape_slat` + `tex_slat` + coords + res as base64 npz) — the inter-stage contract. A latent-space consumer (e.g. a VoxHammer edit; Pixal3D `main` is built on the TRELLIS.2 backbone, the same slat family VoxHammer inverts) takes this directly, no decode/re-encode round trip. |
+| `views`   | `nviews` preview renders (base64 PNG) from upstream's **nvdiffrast-backed** renderer — the same differentiable path a later adaptation pass backpropagates through.                                                                                                                                    |
+| `cameras` | Per-view extrinsics/intrinsics (callers need the cameras for any downstream fitting).                                                                                                                                                                                                                  |
 
 `/extract` takes `state` (+ `decimation_target`, `texture_size`) and performs the one decode:
 `decode_latent` → `to_glb` → GLB + USD layer. Ported verbatim from upstream `app.py`'s

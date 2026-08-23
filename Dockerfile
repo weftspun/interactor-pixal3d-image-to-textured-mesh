@@ -43,6 +43,9 @@ COPY server.py worker_entry.py synth_views.py /app/
 #
 # `requirements-hfdemo.txt` installs natten kernels built for H-series cards, because that is
 # what the Space runs. On an sm_86 or sm_89 rental it imports fine and then fails inside a
+# diffusion step with `no kernel image is available for execution`. Read off the wheel with
+# `cuobjdump --list-elf`: 182 cubins, all sm_90a, and `--list-ptx` is empty, so there is no
+# JIT fallback either -- see desktop/README.md for the commands.
 # diffusion step with `no kernel image is available for execution`. vast.ai rents whatever is
 # free, so this is the common case rather than the edge one.
 #

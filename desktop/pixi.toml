@@ -1,0 +1,148 @@
+# STATUS: THIS MANIFEST HAS NEVER BEEN EXECUTED, AND IT IS INCOMPLETE.
+#
+# It solves -- `pixi.lock` beside it is that solve -- and no environment was ever created from
+# it, so nothing below is measured except the three constraints that carry their own evidence:
+# the triton signature mismatch, the safetensors bound, and MoGe's index conflict. Those came
+# from runs in the Docker path and are the reason this file is kept.
+#
+# WHAT IS MISSING: `natten` and `nvdiffrec_render`. This manifest was drafted believing natten
+# unused; the smoke test then launched `na2d` and disproved that. Adding them here could not be
+# locked on the desk that wrote this -- the pypi solve builds metadata for the git and source
+# dependencies, which needs a linux-64 machine, and this one is win-64:
+#
+#   build dispatch initialization failed: The workspace does not support 'win-64'
+#
+# So the manifest and the lock are a matched pair that are together wrong about the
+# environment, rather than a manifest that is right and a lock that lags. Completing it needs a
+# linux-64 desk, and the completion is not a formality: the Space's wheels for both packages
+# are cp310 and this environment is 3.11, so both would be source builds.
+
+# The Pixal3D stack as a declared environment, rather than a Docker image patched forwards.
+#
+# WHY NOT THE IMAGE. RFD 1028's container starts from Ubuntu 22.04 with pip 22.0.2, python
+# 3.10 and a torch pin nobody upstream asked for, and every fix so far has been dragging that
+# base forward one failure at a time: install python headers, install Eigen, install cmake,
+# upgrade pip because the old one silently installs modern projects as `UNKNOWN-0.0.0` and
+# each install uninstalls the last. Sixteen gaps, all of them the same shape -- an old
+# environment meeting current packages.
+#
+# A lockfile chooses the versions once, together, and never has to walk any of them
+# backwards. That is the difference: the image resolves conflicts by downgrading whatever
+# complains, and a solver resolves them by not creating them.
+#
+# TORCH 2.6.0, AND THE CONSTRAINT IS MEASURED. FlexGEMM declares `triton>=3.2.0`; torch 2.5.1
+# ships triton 3.1.0, whose `Autotuner.__init__` takes 13 positional arguments where FlexGEMM
+# passes 14. TRELLIS.2's setup.sh installs 2.6.0 and its README says so. Pixal3D pins no torch
+# at all, so 2.6.0 is the lowest version that satisfies the thing that actually breaks.
+#
+# UTILS3D IS PIXAL3D'S PIN, not TRELLIS.2's git ref. Where two upstreams disagree, the one
+# whose code runs here decides.
+
+[project]
+name = "pixal3d-stack"
+version = "0.1.0"
+description = "Pixal3D image-to-3D, environment declared rather than discovered"
+channels = ["conda-forge"]
+platforms = ["linux-64"]
+
+[dependencies]
+python = "3.11.*"
+# The toolchain the four CUDA extensions compile with, pinned to the CUDA the torch wheels
+# were built against. Getting this from the channel rather than from the base image is the
+# point: nothing here depends on what the host happens to have installed.
+cuda-nvcc = "12.4.*"
+cuda-toolkit = "12.4.*"
+ninja = "*"
+cmake = "*"
+eigen = "*"
+# `o-voxel` includes <Eigen/Dense>, which is why eigen is a first-class dependency here rather
+# than an apt package somebody remembers to add.
+
+[pypi-options]
+# The torch index is NOT declared globally. It also hosts `tqdm`, `pillow` and others, and uv
+# resolves a package from the first index that has it -- so a global extra index silently
+# shadows PyPI and the lock fails on `tqdm==4.67.1 not found`. The index is attached to the
+# two packages that need it instead, which is also the honest statement: only torch and
+# torchvision come from NVIDIA's wheels.
+# These four build against torch's headers, so their build backend needs torch already
+# importable. Build isolation would hide it and they would fail at setup time.
+no-build-isolation = ["cumesh", "flex-gemm", "o-voxel", "nvdiffrast"]
+
+[pypi-dependencies]
+# No version. FlexGEMM declares `triton>=3.2.0`, torch declares its own triton exactly, and
+# the solver puts those together without being told which torch that implies. Pinning 2.6.0
+# here would be repeating a derivation the solver already does, and repeating it is how it
+# goes stale -- RFD 1028's `torch==2.5.1` is what that looks like a year later.
+#
+# The lockfile is where the version lives. That is the whole trade: an unpinned manifest with
+# a lock is reproducible AND upgradable, where a pinned manifest with no lock is neither.
+torch = { version = "*", index = "https://download.pytorch.org/whl/cu124" }
+torchvision = { version = "*", index = "https://download.pytorch.org/whl/cu124" }
+
+cumesh = { git = "https://github.com/JeffreyXiang/CuMesh.git" }
+flex-gemm = { git = "https://github.com/JeffreyXiang/FlexGEMM.git" }
+o-voxel = { git = "https://github.com/microsoft/TRELLIS.2.git", subdirectory = "o-voxel" }
+nvdiffrast = { git = "https://github.com/NVlabs/nvdiffrast.git", rev = "v0.4.0" }
+utils3d = { url = "https://github.com/LDYang694/Storages/releases/download/20260430/utils3d-0.0.2-py3-none-any.whl" }
+
+# A LOWER BOUND, MEASURED, WHICH IS NOT THE SAME AS AN INVENTED PIN.
+#
+# Nothing in this manifest asked for safetensors, and the solve still produced 0.4.5 -- the
+# torch index hosts it too, and uv takes a package from the first index that has it, so
+# scoping that index to torch and torchvision does not stop it supplying everything else it
+# happens to carry. It is the `tqdm` shadowing problem again, arriving quietly instead of as
+# an error.
+#
+# 0.4.5 cannot open `ss_flow_img_dit_1_3B_64_bf16.safetensors`: `InvalidHeaderDeserialization`
+# on a file whose sha256 matches what Hugging Face publishes. 0.8.0 opens it and reads 701
+# tensors. So this bound is a run, not a preference, and it says the minimum rather than
+# freezing a version the way RFD 1028's `==0.4.5` did.
+safetensors = ">=0.5"
+
+# Pixal3D's own requirements, from its requirements.txt at cdbb2bb. Note what is NOT here:
+# that file pins no torch, no safetensors, no huggingface_hub and no usd-core. Every one of
+# those pins in RFD 1028's Dockerfile was invented by our packaging, and two of them broke it
+# -- torch 2.5.1 brings a triton FlexGEMM cannot use, and safetensors 0.4.5 cannot open the
+# 1.3B checkpoint at all. Unpinned here means "whatever the solver picks", which is newer.
+#
+# MOGE IS DELIBERATELY ABSENT, and that makes `--fov` mandatory in this environment.
+#
+# It is upstream's first requirement and it estimates the camera from the image. We never need
+# that: every image here is rendered by us, so the camera is a number we already hold rather
+# than one to infer. `inference.py` imports it lazily, inside `load_moge_model`, which is only
+# called when `--fov` is not passed -- so leaving it out costs nothing on this path and fails
+# loudly on any other.
+#
+# It also cannot be included as-is. MoGe's own pyproject declares a `pytorch-cu130` uv index,
+# and pixi refuses the solve outright:
+#
+#   Requirements contain conflicting indexes for package `torch`:
+#     - https://download.pytorch.org/whl/cu124
+#     - https://download.pytorch.org/whl/cu130
+#
+# Adding it back means choosing one CUDA line for both, not just adding a dependency.
+pillow = "==12.0.0"
+imageio = "==2.37.2"
+imageio-ffmpeg = "==0.6.0"
+tqdm = "==4.67.1"
+easydict = "==1.13"
+opencv-python-headless = "==4.12.0.88"
+trimesh = "==4.10.1"
+transformers = "==4.57.3"
+zstandard = "==0.25.0"
+kornia = "==0.8.2"
+timm = "==1.0.22"
+diffusers = "==0.37.1"
+accelerate = "==1.13.0"
+plyfile = "==1.1.3"
+
+# BiRefNet's remote modeling file imports einops, and `trust_remote_code=True` means that
+# import is invisible to every dependency list until transformers checks it at load.
+einops = "*"
+# huggingface_hub is NOT listed. `transformers==4.57.3` already requires
+# `huggingface-hub>=0.34.0,<1.0`, so stating it here would be copying somebody else's
+# constraint into a place it can drift from. RFD 1028 pinned 0.26.2 against that requirement
+# and pip answered `ResolutionImpossible`, which is why that image never built at all.
+
+[tasks]
+smoke = "python smoke.py"

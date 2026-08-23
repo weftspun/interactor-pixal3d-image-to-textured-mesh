@@ -88,6 +88,19 @@ the py3.10 + prebuilt-wheels env upstream's `requirements-hfdemo.txt` pins (no s
 Not yet executed on a GPU — one real `/predict`→`/extract` round trip is the remaining gate
 before the worker stage can be trusted.
 
+**Corrected: "no source compiles" holds on the Space and nowhere else.** `requirements-hfdemo.txt`
+pins a natten wheel whose kernels are sm_90, and this desk's 3090 is sm_86 — it installs,
+imports, carries its `.so`, and then fails inside a diffusion step with `no kernel image is
+available for execution`. natten has to be built for the target architecture, a thirty-minute
+compile, and it is the only one of the six wheels that does. vast.ai rents whatever is free, so
+the worker image inherits this. `desktop/` records the measurement, and `desktop/smoke.py` is
+the check that answers it by launching a kernel rather than importing a module.
+
+The cascade itself has now run on this desk and produced meshes, through upstream's
+`inference.py` in the image `desktop/Dockerfile` describes. That is not the same as the worker
+stage: no `/predict`→`/extract` round trip has been served, so the sentence above still stands
+for `server.py`.
+
 Known upstream-recipe caveat for `synth_views.py`: on the 24GB tier it quantizes with bnb 4-bit,
 and this session's runs produced camera-correct but noise-corrupted images across every
 software combination tried (diffusers 0.35/0.36, model 2508/2511, cfg/Lightning) — the one

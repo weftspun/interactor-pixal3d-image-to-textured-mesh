@@ -1,0 +1,4606 @@
+version: 7
+platforms:
+- name: linux-64
+  virtual-packages:
+  - __unix=0=0
+  - __linux=4.18
+  - __glibc=2.28
+  - __archspec=0=x86_64
+environments:
+  default:
+    channels:
+    - url: https://conda.anaconda.org/conda-forge/
+    indexes:
+    - https://pypi.org/simple
+    packages:
+      linux-64:
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/_openmp_mutex-4.5-20_gnu.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/alsa-lib-1.2.16.1-hb03c661_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/binutils-2.46.1-default_h4852527_102.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/binutils_impl_linux-64-2.46.1-default_hfdba357_102.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/binutils_linux-64-2.46.1-default_h4852527_102.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/bzip2-1.0.8-hda65f42_10.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/c-ares-1.34.8-hebe6cf0_2.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/c-compiler-1.7.0-hd590300_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/cccl-2.3.2-h6103f9b_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/cmake-4.2.3-hc85cc9f_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/cuda-cccl-12.4.127-ha770c72_2.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/cuda-command-line-tools-12.4.1-ha770c72_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/cuda-crt-tools-12.4.131-ha770c72_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/cuda-cudart-12.4.127-he02047a_2.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/cuda-cudart-dev-12.4.127-he02047a_2.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/cuda-cudart-static-12.4.127-he02047a_2.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/cuda-cuobjdump-12.4.127-he02047a_2.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/cuda-cupti-12.4.127-he02047a_2.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/cuda-cupti-dev-12.4.127-he02047a_2.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/cuda-cuxxfilt-12.4.127-he02047a_2.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/cuda-driver-dev-12.4.127-he02047a_2.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/cuda-gdb-12.4.127-hda18ab6_2.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/cuda-libraries-12.4.1-ha770c72_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/cuda-libraries-dev-12.4.1-ha770c72_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/cuda-nsight-12.4.127-ha770c72_2.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/cuda-nvcc-12.4.131-hcdd1206_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/cuda-nvcc-impl-12.4.131-hd3aeb46_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/cuda-nvcc-tools-12.4.131-hd3aeb46_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/cuda-nvcc_linux-64-12.4.131-h8a487aa_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/cuda-nvdisasm-12.4.127-he02047a_2.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/cuda-nvml-dev-12.4.127-he02047a_2.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/cuda-nvprof-12.4.127-he02047a_2.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/cuda-nvprune-12.4.127-he02047a_2.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/cuda-nvrtc-12.4.127-he02047a_2.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/cuda-nvrtc-dev-12.4.127-he02047a_2.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/cuda-nvtx-12.4.127-he02047a_2.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/cuda-nvvm-impl-12.4.131-h59595ed_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/cuda-nvvm-tools-12.4.131-h59595ed_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/cuda-nvvp-12.4.127-he02047a_2.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/cuda-opencl-12.4.127-he02047a_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/cuda-opencl-dev-12.4.127-he02047a_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/cuda-profiler-api-12.4.127-ha770c72_2.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/cuda-sanitizer-api-12.4.127-he02047a_2.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/cuda-tools-12.4.1-ha770c72_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/cuda-visual-tools-12.4.1-ha770c72_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/cxx-compiler-1.7.0-h00ab1b0_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/dbus-1.16.2-h24cb091_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/eigen-5.0.1-hc65338a_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/fontconfig-2.18.3-h4db4eae_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/freetype-2.14.3-ha770c72_2.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/gcc-12.4.0-h236703b_2.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/gcc_impl_linux-64-12.4.0-h26ba24d_2.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/gcc_linux-64-12.4.0-h6b7512a_10.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/gds-tools-1.9.1.3-he02047a_2.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/gmp-6.3.0-hfd2156b_3.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/gxx-12.4.0-h236703b_2.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/gxx_impl_linux-64-12.4.0-h3ff227c_2.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/gxx_linux-64-12.4.0-h8489865_10.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/icu-75.1-he02047a_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/keyutils-1.6.3-h7cc23a3_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/krb5-1.21.3-h659f571_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/ld_impl_linux-64-2.46.1-default_hbd61a6d_102.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/libcublas-12.4.5.8-he02047a_2.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/libcublas-dev-12.4.5.8-he02047a_2.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/libcufft-11.2.1.3-he02047a_2.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/libcufft-dev-11.2.1.3-he02047a_2.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/libcufile-1.9.1.3-he02047a_2.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/libcufile-dev-1.9.1.3-he02047a_2.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/libcurand-10.3.5.147-he02047a_2.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/libcurand-dev-10.3.5.147-he02047a_2.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/libcurl-8.18.0-h4e3cde8_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/libcusolver-11.6.1.9-he02047a_2.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/libcusolver-dev-11.6.1.9-he02047a_2.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/libcusparse-12.3.1.170-he02047a_2.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/libcusparse-dev-12.3.1.170-he02047a_2.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/libedit-3.1.20250104-pl5321h373387f_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/libev-4.33-h280c20c_3.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/libexpat-2.8.1-hecca717_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/libffi-3.7.0-h3435931_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/libfreetype-2.14.3-ha770c72_2.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/libfreetype6-2.14.3-h5e6c136_2.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/libgcc-16.1.0-ha9f2e26_3.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/libgcc-ng-16.1.0-h69a702a_3.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/libglib-2.88.3-h45c3219_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/libgomp-16.1.0-he0feb66_3.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/libiconv-1.18-h0cb94f2_3.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/liblzma-5.8.3-hb03c661_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/libnghttp2-1.68.1-h74cf4be_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/libnpp-12.2.5.30-he02047a_2.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/libnpp-dev-12.2.5.30-he02047a_2.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/libnsl-2.0.1-hb9d3cd8_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/libnvfatbin-12.4.127-he02047a_2.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/libnvfatbin-dev-12.4.127-he02047a_2.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/libnvjitlink-12.4.127-he02047a_2.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/libnvjitlink-dev-12.4.127-he02047a_2.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/libnvjpeg-12.3.1.117-he02047a_2.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/libnvjpeg-dev-12.3.1.117-ha770c72_2.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/libpng-1.6.58-h922cc85_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/libsanitizer-12.4.0-ha732cd4_2.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/libsqlite-3.53.4-h0737f62_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/libssh2-1.11.1-h6154650_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/libstdcxx-16.1.0-h934c35e_3.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/libstdcxx-ng-16.1.0-hdf11a46_3.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/libuuid-2.42.2-h5347b49_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/libuv-1.52.1-h280c20c_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/libxcb-1.15-h0b41bf4_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/libxcrypt-4.4.38-h280c20c_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/libxkbcommon-1.7.0-h662e7e4_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/libxkbfile-1.1.0-h166bdaf_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/libxml2-2.13.9-h04c0eec_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/libzlib-1.3.2-h25fd6f3_3.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/ncurses-6.6-hdb14827_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/ninja-1.13.2-h171cf75_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/nsight-compute-2024.1.1.4-h54680a5_3.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/nspr-4.40-h29cc59b_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/nss-3.118-h445c969_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/ocl-icd-2.3.4-hb03c661_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/opencl-headers-2025.06.13-hecca717_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/openssl-3.6.3-h35e630c_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/pcre2-10.47-h8b3dc9c_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/pthread-stubs-0.4-hb03c661_1003.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/python-3.11.16-h8ab3286_0_cpython.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/readline-8.3-hd6e31c0_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/rhash-1.4.6-hb03c661_2.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/tk-8.6.13-noxft_hd72426e_102.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/wayland-1.26.0-h1964d1d_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/xcb-util-0.4.0-hd590300_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/xcb-util-cursor-0.1.4-hd590300_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/xcb-util-image-0.4.0-h8ee46fc_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/xcb-util-keysyms-0.4.0-h8ee46fc_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/xcb-util-renderutil-0.3.9-hd590300_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/xcb-util-wm-0.4.1-h8ee46fc_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/xkeyboard-config-2.42-h4ab18f5_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/xorg-compositeproto-0.4.2-hb9d3cd8_1002.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/xorg-damageproto-1.2.1-hb9d3cd8_1003.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/xorg-fixesproto-5.0-hb9d3cd8_1003.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/xorg-inputproto-2.3.2-hb9d3cd8_1003.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/xorg-kbproto-1.0.7-hb9d3cd8_1003.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/xorg-libice-1.1.2-h280c20c_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/xorg-libsm-1.2.6-h0d788c3_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/xorg-libx11-1.8.9-h8ee46fc_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/xorg-libxau-1.0.12-hb03c661_2.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/xorg-libxcomposite-0.4.6-h0b41bf4_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/xorg-libxdamage-1.1.5-h7f98852_1.tar.bz2
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/xorg-libxdmcp-1.1.5-hb03c661_2.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/xorg-libxext-1.3.4-h0b41bf4_2.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/xorg-libxfixes-5.0.3-h7f98852_1004.tar.bz2
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/xorg-libxi-1.7.10-h4bc722e_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/xorg-libxrandr-1.5.2-h7f98852_1.tar.bz2
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/xorg-libxrender-0.9.11-hd590300_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/xorg-libxtst-1.2.5-h4bc722e_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/xorg-randrproto-1.5.0-hb9d3cd8_1002.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/xorg-recordproto-1.14.2-hb9d3cd8_1003.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/xorg-renderproto-0.11.1-hb9d3cd8_1003.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/xorg-util-macros-1.20.2-hb03c661_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/xorg-xextproto-7.3.0-hb9d3cd8_1004.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/xorg-xproto-7.0.31-hb9d3cd8_1008.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/zstd-1.5.7-hb78ec9c_7.conda
+      - conda: https://conda.anaconda.org/conda-forge/noarch/ca-certificates-2026.7.22-hbd8a1cb_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/noarch/cuda-cccl_linux-64-12.4.127-ha770c72_2.conda
+      - conda: https://conda.anaconda.org/conda-forge/noarch/cuda-compiler-12.4.1-hbad6d8a_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/noarch/cuda-crt-dev_linux-64-12.4.131-ha770c72_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/noarch/cuda-cudart-dev_linux-64-12.4.127-h85509e4_2.conda
+      - conda: https://conda.anaconda.org/conda-forge/noarch/cuda-cudart-static_linux-64-12.4.127-h85509e4_2.conda
+      - conda: https://conda.anaconda.org/conda-forge/noarch/cuda-cudart_linux-64-12.4.127-h85509e4_2.conda
+      - conda: https://conda.anaconda.org/conda-forge/noarch/cuda-driver-dev_linux-64-12.4.127-h85509e4_2.conda
+      - conda: https://conda.anaconda.org/conda-forge/noarch/cuda-nvcc-dev_linux-64-12.4.131-ha770c72_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/noarch/cuda-nvvm-dev_linux-64-12.4.131-ha770c72_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/noarch/cuda-toolkit-12.4.1-ha804496_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/noarch/cuda-version-12.4-h3060b56_3.conda
+      - conda: https://conda.anaconda.org/conda-forge/noarch/font-ttf-dejavu-sans-mono-2.37-hab24e00_0.tar.bz2
+      - conda: https://conda.anaconda.org/conda-forge/noarch/font-ttf-inconsolata-3.000-h77eed37_0.tar.bz2
+      - conda: https://conda.anaconda.org/conda-forge/noarch/font-ttf-source-code-pro-2.038-h77eed37_0.tar.bz2
+      - conda: https://conda.anaconda.org/conda-forge/noarch/font-ttf-ubuntu-0.83-h77eed37_3.conda
+      - conda: https://conda.anaconda.org/conda-forge/noarch/fonts-conda-ecosystem-1-0.tar.bz2
+      - conda: https://conda.anaconda.org/conda-forge/noarch/fonts-conda-forge-1-hc364b38_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/noarch/kernel-headers_linux-64-4.18.0-he073ed8_9.conda
+      - conda: https://conda.anaconda.org/conda-forge/noarch/libgcc-devel_linux-64-12.4.0-h1762d19_102.conda
+      - conda: https://conda.anaconda.org/conda-forge/noarch/libstdcxx-devel_linux-64-12.4.0-h1762d19_102.conda
+      - conda: https://conda.anaconda.org/conda-forge/noarch/sysroot_linux-64-2.28-h4ee821c_9.conda
+      - conda: https://conda.anaconda.org/conda-forge/noarch/tzdata-2026c-h151e31d_0.conda
+      - pypi: direct+https://github.com/LDYang694/Storages/releases/download/20260430/utils3d-0.0.2-py3-none-any.whl
+      - pypi: git+https://github.com/JeffreyXiang/CuMesh.git#12289e1062f0603f2f0d0771b02e1395d247f26f
+      - pypi: git+https://github.com/JeffreyXiang/FlexGEMM.git#6dd94a859c26ee8246888502eada3dd8ad85532e
+      - pypi: git+https://github.com/NVlabs/nvdiffrast.git?rev=v0.4.0#253ac4fcea7de5f396371124af597e6cc957bfae
+      - pypi: git+https://github.com/microsoft/TRELLIS.2.git?subdirectory=o-voxel#75fbf0183001ed9876c8dbb35de6b68552ee08bd
+      - pypi: https://download-r2.pytorch.org/whl/cu124/torch-2.6.0%2Bcu124-cp311-cp311-linux_x86_64.whl
+      - pypi: https://download-r2.pytorch.org/whl/cu124/torchvision-0.21.0%2Bcu124-cp311-cp311-linux_x86_64.whl
+      - pypi: https://files.pythonhosted.org/packages/04/4b/29cac41a4d98d144bf5f6d33995617b185d14b22401f75ca86f384e87ff1/h11-0.16.0-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/05/ec/fa6963f1198172c2b75c9ab6ecefb3045991f92f75f5eb41b6621b198123/easydict-1.13-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/09/7d/af933f0f6e0767995b4e2d705a0665e454d1c19402aa7e895de3951ebb04/scipy-1.17.1-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl
+      - pypi: https://files.pythonhosted.org/packages/0b/a7/71ac2cff56fec219ed242bb11b8efb69fcc4bec75db06fb7bfe35de520e6/certifi-2026.7.22-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/0c/da/18bbc67c2e54714540c011b13d6c96fd014dfb7d1588a04c0fabf3bdc228/kornia_rs-0.1.14-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+      - pypi: https://files.pythonhosted.org/packages/0d/35/731ac04aa0a097fc1c97f0994c375bdb230c6c96619db794208fe664e9ce/charset_normalizer-3.5.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl
+      - pypi: https://files.pythonhosted.org/packages/22/22/1755bb4c7db15bb1ed63b4eb7a7fc133bf42a3f9cc806c0d5941e107ba90/plyfile-1.1.3-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/27/94/3266821f65b92b3138631e9c8e7fe1fb513804ac934485a8d05776e1dd43/nvidia_cufft_cu12-11.2.1.3-py3-none-manylinux2014_x86_64.whl
+      - pypi: https://files.pythonhosted.org/packages/28/50/f203ff3a3ddfe19308efc83c5a3a29ed02bf786732ec35e68bf9162f3365/safetensors-0.8.0-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+      - pypi: https://files.pythonhosted.org/packages/2a/39/e50c7c3a983047577ee07d2a9e53faf5a69493943ec3f6a384bdc792deb2/httpx-0.28.1-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/2c/14/91ae57cd4db3f9ef7aa99f4019cfa8d54cb4caa7e00975df6467e9725a9f/nvidia_cuda_nvrtc_cu12-12.4.127-py3-none-manylinux2014_x86_64.whl
+      - pypi: https://files.pythonhosted.org/packages/2e/76/932be4b50ef6ccedf9d3c6639b056a967a86258c6d9200643f01269211ca/tokenizers-0.22.2-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+      - pypi: https://files.pythonhosted.org/packages/30/ac/0273f6fcb5f42e314c6d8cd99effae6a5354604d461b8d392b5ec9530a54/markupsafe-3.0.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl
+      - pypi: https://files.pythonhosted.org/packages/38/3d/2d244233ac4f76e38533cfcb2991c9eb4c7bf688ae0a036d30725b8faafe/importlib_metadata-9.0.0-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/3a/13/547360d81e6d88d58492968ffda9f9542854f11310ee556fef14260cc886/zipp-4.1.0-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/3a/e1/5b9089a4b2a4790dfdea8b3a006052cfecff58139d5a4e34cb1a51df8d6f/nvidia_cusolver_cu12-11.6.1.9-py3-none-manylinux2014_x86_64.whl
+      - pypi: https://files.pythonhosted.org/packages/41/1e/db9470f2d030b4995083044cd8738cdd1bf773106819f6d8ba12597d5352/pillow-12.0.0-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl
+      - pypi: https://files.pythonhosted.org/packages/43/e3/7d92a15f894aa0c9c4b49b8ee9ac9850d6e63b03c9c32c0367a13ae62209/mpmath-1.3.0-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/43/fb/646c2773cb097b914afe1f06c95e65deb8a544d770389bf29c76a8f3a8fd/glcontext-3.0.0-cp311-cp311-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+      - pypi: https://files.pythonhosted.org/packages/45/6c/e7098d8b846ccdbf431d8c081b61e496526a27a28094ed09e0dce21b3f54/regex-2026.7.19-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl
+      - pypi: https://files.pythonhosted.org/packages/49/d3/b8441a820a491ddfc024b0b0cf0393375b75ea13866d9c66727e54c2fc80/typing_extensions-4.16.0-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/57/b0/0e52c878c53f245edd3a11020f20979b3f490f245af532c7cae3027754b5/idna-3.19-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/62/a1/3d680cbfd5f4b8f15abc1d571870c5fc3e594bb582bc3b64ea099db13e56/jinja2-3.1.6-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/63/34/ba1c580383c9eada3711951fef0795c80b829a078d72188184bcab9dd527/packaging-26.3-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/67/42/f4f60238e8194a3106d06a058d494b18e006c10bb2b915655bd9f6ea4cb1/nvidia_cuda_cupti_cu12-12.4.127-py3-none-manylinux2014_x86_64.whl
+      - pypi: https://files.pythonhosted.org/packages/67/4e/a28359bf1c1ecf11eba22123168c138698f7cb576ac678f5a2e16cd5da08/hf_xet-1.6.0-cp38-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl
+      - pypi: https://files.pythonhosted.org/packages/6a/6b/2f416568b3c4c91c96e5a365d164f8a4a4a88030aa8ab4644181fdadce97/transformers-4.57.3-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/71/60/917329f640924b18ff085ab889a11c763e0b573da888e8404ff486657602/pyyaml-6.0.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl
+      - pypi: https://files.pythonhosted.org/packages/78/a8/bcbb63b53a4b1234feeafb65544ee55495e1bb37ec31b999b963cbccfd1d/nvidia_cusparselt_cu12-0.6.2-py3-none-manylinux2014_x86_64.whl
+      - pypi: https://files.pythonhosted.org/packages/79/d4/e9bd12b7b4cbd23b4dfb47e744ee1fa54d6d9c3c9bc406ec86c1be8c8307/kornia-0.8.2-py2.py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/7e/46/02ac5e262d4af18054b3e922b2baedbb2a03289ee792162de60a865defc5/accelerate-1.13.0-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/7e/f5/f66802a942d491edb555dd61e3a9961140fd64c90bce1eafd741609d334d/httpcore-1.0.9-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/7f/3e/5db95bcf282c52709639744ca2a8b149baccf648e39c8cc87553df9eae0c/urllib3-2.7.0-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/87/20/199b8713428322a2f22b722c62b8cc278cc53dffa9705d744484b5035ee9/nvidia_nvtx_cu12-12.4.127-py3-none-manylinux2014_x86_64.whl
+      - pypi: https://files.pythonhosted.org/packages/89/53/e19c21e0c4eb1275c3e2c97b081103b6dfb3938172264d283a519bf728b9/opencv_python_headless-4.12.0.88-cp37-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl
+      - pypi: https://files.pythonhosted.org/packages/8a/6d/44ad094874c6f1b9c654f8ed939590bdc408349f137f9b98a3a23ccec411/nvidia_curand_cu12-10.3.5.147-py3-none-manylinux2014_x86_64.whl
+      - pypi: https://files.pythonhosted.org/packages/9c/dd/51c38785ce5e1c287b5ad17ba550edaaaffce0deb0da4857019c6700fbaf/diffusers-0.37.1-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/9e/c9/b2622292ea83fbb4ec318f5b9ab867d0a28ab43c5717bb85b0a5f6b3b0a4/networkx-3.6.1-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/9f/fd/713452cd72343f682b1c7b9321e23829f00b842ceaedcda96e742ea0b0b3/nvidia_cudnn_cu12-9.1.0.70-py3-none-manylinux2014_x86_64.whl
+      - pypi: https://files.pythonhosted.org/packages/a0/2d/43c8522a2038e9d0e7dbdf3a61195ecc31ca576fb1527a528c877e87d973/imageio_ffmpeg-0.6.0-py3-none-manylinux2014_x86_64.whl
+      - pypi: https://files.pythonhosted.org/packages/a0/f4/c67b0b3f1b9245e8d266f0f112c500d50e5b4e83cb6f3b71b6528104182a/requests-2.34.2-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/a7/2e/757d2280d4fefe7d33af7615124e7e298ae7b8e3bc4446cdb8e88b0f9bab/triton-3.2.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+      - pypi: https://files.pythonhosted.org/packages/a7/8e/50f46a9c0ce8d2861a394c1347caae037ea0431d2f67d7feb151cbc4649a/filelock-3.32.3-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/a8/af/48ac8483240de756d2438c380746e7130d1c6f75802ef22f3c6d49982787/huggingface_hub-0.36.2-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/ae/71/1c91302526c45ab494c23f61c7a84aa568b8c1f9d196efa5993957faf906/nvidia_cublas_cu12-12.4.5.8-py3-none-manylinux2014_x86_64.whl
+      - pypi: https://files.pythonhosted.org/packages/b2/fe/81695a1aa331a842b582453b605175f419fe8540355886031328089d840a/sympy-1.13.1-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/b3/dd/2238b898e51bd6d389b7389ffb20d7f4c10066d80351187ec8e303a5a475/numpy-2.2.6-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+      - pypi: https://files.pythonhosted.org/packages/b5/70/5d8df3b09e25bce090399cf48e452d25c935ab72dad19406c77f4e828045/psutil-7.2.2-cp36-abi3-manylinux2010_x86_64.manylinux_2_12_x86_64.manylinux_2_28_x86_64.whl
+      - pypi: https://files.pythonhosted.org/packages/bb/1f/e9cfd801a3f9190bf3e759c422bbfd2247db9d7f3d54a56ecde70137791a/zstandard-0.25.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl
+      - pypi: https://files.pythonhosted.org/packages/c2/bb/ab371acacd2497bddb5f02b209e3bfae452b2be59d0cf8fa728a3b87de1f/moderngl-5.12.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+      - pypi: https://files.pythonhosted.org/packages/d0/30/dc54f88dd4a2b5dc8a0279bdd7270e735851848b762aeb1c1184ed1f6b14/tqdm-4.67.1-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/d5/0c/f08f0d16b4f97ec2ea6d542b9a70472a344384382fa3543a12ec417cc063/trimesh-4.10.1-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/d6/14/fc04d491527b774ec7479897f5861959209de1480e4c4cd32ed098ff8bea/timm-1.0.22-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/da/35/f2287558c17e29fafc8ef3daf819bb9834061cfa43bff8014f7df7f63bdc/anyio-4.14.2-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/db/f7/97a9ea26ed4bbbfc2d470994b8b4f338ef663be97b8f677519ac195e113d/nvidia_cusparse_cu12-12.3.1.170-py3-none-manylinux2014_x86_64.whl
+      - pypi: https://files.pythonhosted.org/packages/df/99/12cd266d6233f47d00daf3a72739872bdc10267d0383508b0b9c84a18bb6/nvidia_nccl_cu12-2.21.5-py3-none-manylinux2014_x86_64.whl
+      - pypi: https://files.pythonhosted.org/packages/ea/27/1795d86fe88ef397885f2e580ac37628ed058a92ed2c39dc8eac3adf0619/nvidia_cuda_runtime_cu12-12.4.127-py3-none-manylinux2014_x86_64.whl
+      - pypi: https://files.pythonhosted.org/packages/fb/fe/301e0936b79bcab4cacc7548bf2853fc28dced0a578bab1f7ef53c9aa75b/imageio-2.37.2-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/fd/3c/6a2bf344106328fd04963664a60b9bb6496fc25df8e962fcdc1367285fb9/fsspec-2026.7.0-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/ff/ff/847841bacfbefc97a00036e0fce5a0f086b640756dc38caea5e1bb002655/nvidia_nvjitlink_cu12-12.4.127-py3-none-manylinux2014_x86_64.whl
+packages:
+- conda: https://conda.anaconda.org/conda-forge/linux-64/_openmp_mutex-4.5-20_gnu.conda
+  build_number: 20
+  sha256: 1dd3fffd892081df9726d7eb7e0dea6198962ba775bd88842135a4ddb4deb3c9
+  md5: a9f577daf3de00bca7c3c76c0ecbd1de
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - libgomp >=7.5.0
+  constrains:
+  - openmp_impl <0.0a0
+  license: BSD-3-Clause
+  license_family: BSD
+  purls: []
+  run_exports:
+    strong:
+    - _openmp_mutex >=4.5
+  size: 28948
+  timestamp: 1770939786096
+- conda: https://conda.anaconda.org/conda-forge/linux-64/alsa-lib-1.2.16.1-hb03c661_0.conda
+  sha256: cf93ca0f1f107e95a35969a4622684e08fcb8cf37f8cf4a1e9e424828386c921
+  md5: 8904e09bda369377b3dd07e2ac828c5d
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - libgcc >=14
+  license: LGPL-2.1-or-later
+  license_family: LGPL
+  purls: []
+  run_exports:
+    weak:
+    - alsa-lib >=1.2.16.1,<1.3.0a0
+  size: 592377
+  timestamp: 1781521980743
+- conda: https://conda.anaconda.org/conda-forge/linux-64/binutils-2.46.1-default_h4852527_102.conda
+  sha256: 659c367ef49df7741749a2ad240b007d7df51b4f210505a78543deafb001e44c
+  md5: e8452fe381cac5fff20563a07722dfa5
+  depends:
+  - binutils_impl_linux-64 >=2.46.1,<2.46.2.0a0
+  license: GPL-3.0-only
+  license_family: GPL
+  purls: []
+  run_exports: {}
+  size: 35399
+  timestamp: 1784214547142
+- conda: https://conda.anaconda.org/conda-forge/linux-64/binutils_impl_linux-64-2.46.1-default_hfdba357_102.conda
+  sha256: fb7bf36984a37ce7e4714d1d1da0bd0e3bfc679520f5cdc184afc676fd4b5da2
+  md5: a0c5e0b7f58c8ceeb08e5bc41251d5a2
+  depends:
+  - ld_impl_linux-64 2.46.1 default_hbd61a6d_102
+  - sysroot_linux-64
+  - zstd >=1.5.7,<1.6.0a0
+  license: GPL-3.0-only
+  license_family: GPL
+  purls: []
+  run_exports: {}
+  size: 3713752
+  timestamp: 1784214522814
+- conda: https://conda.anaconda.org/conda-forge/linux-64/binutils_linux-64-2.46.1-default_h4852527_102.conda
+  sha256: 08d7238663fc408ba2ab60b02fa3d06a7ca9d872962e03e90c7e0fdecb7ed1d0
+  md5: 32fd07abe84eb14f17c7f5cc6fa8df82
+  depends:
+  - binutils_impl_linux-64 2.46.1 default_hfdba357_102
+  license: GPL-3.0-only
+  license_family: GPL
+  purls: []
+  run_exports: {}
+  size: 36337
+  timestamp: 1784214551894
+- conda: https://conda.anaconda.org/conda-forge/linux-64/bzip2-1.0.8-hda65f42_10.conda
+  sha256: 1a0d382c515ebf55f8ee1f38c8b81bc95af5c2acc42ad53b66bc5df932032f96
+  md5: e675fabcf81499adc7edf58124fb1e01
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - libgcc >=14
+  license: bzip2-1.0.6
+  license_family: BSD
+  purls: []
+  run_exports:
+    weak:
+    - bzip2 >=1.0.8,<2.0a0
+  size: 257808
+  timestamp: 1785906269155
+- conda: https://conda.anaconda.org/conda-forge/linux-64/c-ares-1.34.8-hebe6cf0_2.conda
+  sha256: 9c37cc233238adf366ea75b0e845662a5be07ceadf62e458183516369340274b
+  md5: 3ad2b403be8fc5612b9159e2ce621f69
+  depends:
+  - libgcc >=15
+  - __glibc >=2.17,<3.0.a0
+  license: MIT
+  license_family: MIT
+  purls: []
+  run_exports:
+    weak:
+    - c-ares >=1.34.8,<2.0a0
+  size: 228700
+  timestamp: 1787169971173
+- conda: https://conda.anaconda.org/conda-forge/linux-64/c-compiler-1.7.0-hd590300_1.conda
+  sha256: 4213b6cbaed673c07f8b79c089f3487afdd56de944f21c4861ead862b7657eb4
+  md5: e9dffe1056994133616378309f932d77
+  depends:
+  - binutils
+  - gcc
+  - gcc_linux-64 12.*
+  license: BSD-3-Clause
+  license_family: BSD
+  purls: []
+  run_exports: {}
+  size: 6324
+  timestamp: 1714575511013
+- conda: https://conda.anaconda.org/conda-forge/linux-64/cccl-2.3.2-h6103f9b_1.conda
+  sha256: 66624eb863e8000cfc36c647d9d870b9e05c02ba0a2daa1e45067cfd6710d0b4
+  md5: 2093fa3195cd5eee7c067b3688d53287
+  license: Apache-2.0 AND BSD-3-Clause AND BSD-2-Clause AND BSL-1.0 AND NCSA AND MIT AND LicenseRef-NVIDIA-Software-License
+  purls: []
+  run_exports: {}
+  size: 1299167
+  timestamp: 1714741025278
+- conda: https://conda.anaconda.org/conda-forge/linux-64/cmake-4.2.3-hc85cc9f_1.conda
+  sha256: 5ece78754577b8d9030ec1f09ce1cd481125f27d8d6fcdcfe2c1017661830c61
+  md5: 51d37989c1758b5edfe98518088bf700
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - bzip2 >=1.0.8,<2.0a0
+  - libcurl >=8.18.0,<9.0a0
+  - libexpat >=2.7.4,<3.0a0
+  - libgcc >=14
+  - liblzma >=5.8.2,<6.0a0
+  - libstdcxx >=14
+  - libuv >=1.51.0,<2.0a0
+  - libzlib >=1.3.1,<2.0a0
+  - ncurses >=6.5,<7.0a0
+  - rhash >=1.4.6,<2.0a0
+  - zstd >=1.5.7,<1.6.0a0
+  license: BSD-3-Clause
+  license_family: BSD
+  purls: []
+  run_exports: {}
+  size: 22330508
+  timestamp: 1771383666798
+- conda: https://conda.anaconda.org/conda-forge/linux-64/cuda-cccl-12.4.127-ha770c72_2.conda
+  sha256: 30aba7f8d347095b1b2bab1dfcd0e352068f419f0f2d66b060f5672fe49edd18
+  md5: f32f00dc470a88944065c6c458f3d5c6
+  depends:
+  - cccl 2.3.2
+  - cuda-cccl_linux-64 12.4.127
+  - cuda-version >=12.4,<12.5.0a0
+  license: LicenseRef-NVIDIA-End-User-License-Agreement
+  purls: []
+  run_exports: {}
+  size: 21579
+  timestamp: 1714670643094
+- conda: https://conda.anaconda.org/conda-forge/linux-64/cuda-command-line-tools-12.4.1-ha770c72_1.conda
+  sha256: bfd19c70e6da5dcf97137b22ca4d8cbb73456f5fae08f1eefed013fd6134846a
+  md5: 77c04dc59c30d0373def757b8d33ce42
+  depends:
+  - cuda-cupti-dev 12.4.127.*
+  - cuda-gdb 12.4.127.*
+  - cuda-nvdisasm 12.4.127.*
+  - cuda-nvprof 12.4.127.*
+  - cuda-nvtx 12.4.127.*
+  - cuda-sanitizer-api 12.4.127.*
+  license: LicenseRef-NVIDIA-End-User-License-Agreement
+  purls: []
+  run_exports: {}
+  size: 20228
+  timestamp: 1713304207855
+- conda: https://conda.anaconda.org/conda-forge/linux-64/cuda-crt-tools-12.4.131-ha770c72_1.conda
+  sha256: a9b025907701d8255322a0f99d8b6c74d1239290b9cf041cb41691aa5403d2d0
+  md5: fabf89c3025fd356c563396fd50672f9
+  depends:
+  - cuda-version >=12.4,<12.5.0a0
+  license: LicenseRef-NVIDIA-End-User-License-Agreement
+  purls: []
+  run_exports: {}
+  size: 26486
+  timestamp: 1715119097543
+- conda: https://conda.anaconda.org/conda-forge/linux-64/cuda-cudart-12.4.127-he02047a_2.conda
+  sha256: d8ad0be647dad6378119c110572bbf9f6b1e8c820393ed159d45f02588979c07
+  md5: a748faa52331983fc3adcc3b116fe0e4
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - cuda-cudart_linux-64 12.4.127 h85509e4_2
+  - cuda-version >=12.4,<12.5.0a0
+  - libgcc-ng >=12
+  - libstdcxx-ng >=12
+  license: LicenseRef-NVIDIA-End-User-License-Agreement
+  purls: []
+  run_exports: {}
+  size: 22563
+  timestamp: 1715710703269
+- conda: https://conda.anaconda.org/conda-forge/linux-64/cuda-cudart-dev-12.4.127-he02047a_2.conda
+  sha256: bcc96ee95f9723d0cdacce9684e3dec83402b92ceb36c800e3571ff2d12704fc
+  md5: 423f77282766f0c8765f2f5cd9fd2c99
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - cuda-cudart 12.4.127 he02047a_2
+  - cuda-cudart-dev_linux-64 12.4.127 h85509e4_2
+  - cuda-cudart-static 12.4.127 he02047a_2
+  - cuda-version >=12.4,<12.5.0a0
+  - libgcc-ng >=12
+  - libstdcxx-ng >=12
+  license: LicenseRef-NVIDIA-End-User-License-Agreement
+  purls: []
+  run_exports:
+    weak:
+    - cuda-cudart >=12.4.127,<13.0a0
+  size: 23085
+  timestamp: 1715710730373
+- conda: https://conda.anaconda.org/conda-forge/linux-64/cuda-cudart-static-12.4.127-he02047a_2.conda
+  sha256: 7f1e60ef6c8e098a9c3381aa27bf30d482224b4ecb571bb07050fdf51a2e2631
+  md5: d2036c33bb2600e50cfab344c0999690
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - cuda-cudart-static_linux-64 12.4.127 h85509e4_2
+  - cuda-version >=12.4,<12.5.0a0
+  - libgcc-ng >=12
+  - libstdcxx-ng >=12
+  license: LicenseRef-NVIDIA-End-User-License-Agreement
+  purls: []
+  run_exports: {}
+  size: 22672
+  timestamp: 1715710716874
+- conda: https://conda.anaconda.org/conda-forge/linux-64/cuda-cuobjdump-12.4.127-he02047a_2.conda
+  sha256: 2ed16c1632e72ab79374e8e6fa691cd2c1312891f22e9d4c226b70e090f1e441
+  md5: ac0a661d1a565eb8d01cbb8dbdd1ddd3
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - cuda-nvdisasm
+  - cuda-version >=12.4,<12.5.0a0
+  - libgcc-ng >=12
+  - libstdcxx-ng >=12
+  license: LicenseRef-NVIDIA-End-User-License-Agreement
+  purls: []
+  run_exports: {}
+  size: 250347
+  timestamp: 1715710807327
+- conda: https://conda.anaconda.org/conda-forge/linux-64/cuda-cupti-12.4.127-he02047a_2.conda
+  sha256: db9ebc57fd583711bbdd12e54d00e4153a7b414f929f77fca2f44547c02204b8
+  md5: 46422ef1b1161fb180027e50c598ecd0
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - cuda-version >=12.4,<12.5.0a0
+  - libgcc-ng >=12
+  - libstdcxx-ng >=12
+  license: LicenseRef-NVIDIA-End-User-License-Agreement
+  purls: []
+  run_exports: {}
+  size: 1918773
+  timestamp: 1715665119069
+- conda: https://conda.anaconda.org/conda-forge/linux-64/cuda-cupti-dev-12.4.127-he02047a_2.conda
+  sha256: 52b9c4970b927d6f79e57c3da5f7f219a0d84ac3e8bf7b3fef2b04d57e806b3d
+  md5: c45a6c8fe10061d7365cae676e1a8d38
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - cuda-cupti 12.4.127 he02047a_2
+  - cuda-version >=12.4,<12.5.0a0
+  - libgcc-ng >=12
+  - libstdcxx-ng >=12
+  constrains:
+  - cuda-cupti-static >=12.4.127
+  license: LicenseRef-NVIDIA-End-User-License-Agreement
+  purls: []
+  run_exports:
+    weak:
+    - cuda-cupti >=12.4.127,<13.0a0
+  size: 7828534
+  timestamp: 1715665196337
+- conda: https://conda.anaconda.org/conda-forge/linux-64/cuda-cuxxfilt-12.4.127-he02047a_2.conda
+  sha256: b6cff2c717635695e9519421c63795502a481c54602fe912d0a2dbe05bc7c65c
+  md5: f4c82fcaf912c94cba8a521aed679016
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - cuda-version >=12.4,<12.5.0a0
+  - libgcc-ng >=12
+  - libstdcxx-ng >=12
+  license: LicenseRef-NVIDIA-End-User-License-Agreement
+  purls: []
+  run_exports: {}
+  size: 216577
+  timestamp: 1715710816887
+- conda: https://conda.anaconda.org/conda-forge/linux-64/cuda-driver-dev-12.4.127-he02047a_2.conda
+  sha256: 817b2b911cf53430b9ebc6c5693b1a0dde7ca1eb3f962d8935d6883b1de41338
+  md5: afaaf032c284c4334f7e13ec83c10304
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - cuda-driver-dev_linux-64
+  - cuda-version >=12.4,<12.5.0a0
+  - libgcc-ng >=12
+  - libstdcxx-ng >=12
+  license: LicenseRef-NVIDIA-End-User-License-Agreement
+  purls: []
+  run_exports: {}
+  size: 22456
+  timestamp: 1715710722856
+- conda: https://conda.anaconda.org/conda-forge/linux-64/cuda-gdb-12.4.127-hda18ab6_2.conda
+  sha256: 2ded108f58e2798f743b14a31299bc4f5949ab80cd8064c00bac6dd4d0145e83
+  md5: 51ededbb3e63b0fe8a8a45dbb7b0c2ca
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - cuda-version >=12.4,<12.5.0a0
+  - gmp >=6.3.0,<7.0a0
+  - libgcc-ng >=12
+  - libstdcxx-ng >=12
+  license: LicenseRef-NVIDIA-End-User-License-Agreement
+  purls: []
+  run_exports: {}
+  size: 5343883
+  timestamp: 1715710909445
+- conda: https://conda.anaconda.org/conda-forge/linux-64/cuda-libraries-12.4.1-ha770c72_1.conda
+  sha256: cb30e83f33c7480caa68a1e35e6ff4102d17ff0a94239ca18555afff1df2f70e
+  md5: 6bb3f998485d4344a7539e0b218b3fc1
+  depends:
+  - cuda-cudart 12.4.127.*
+  - cuda-nvrtc 12.4.127.*
+  - cuda-opencl 12.4.127.*
+  - libcublas 12.4.5.8.*
+  - libcufft 11.2.1.3.*
+  - libcufile 1.9.1.3.*
+  - libcurand 10.3.5.147.*
+  - libcusolver 11.6.1.9.*
+  - libcusparse 12.3.1.170.*
+  - libnpp 12.2.5.30.*
+  - libnvfatbin 12.4.127.*
+  - libnvjitlink 12.4.127.*
+  - libnvjpeg 12.3.1.117.*
+  license: LicenseRef-NVIDIA-End-User-License-Agreement
+  purls: []
+  run_exports: {}
+  size: 20180
+  timestamp: 1713304266920
+- conda: https://conda.anaconda.org/conda-forge/linux-64/cuda-libraries-dev-12.4.1-ha770c72_1.conda
+  sha256: 90907d2ba45ab4ec00fa97e83bfdd3c4934fdaf5ff28dcdb443ef3c4b28bae12
+  md5: bb4e0f4df24ef8b70b79db25e1a86c7f
+  depends:
+  - cuda-cccl 12.4.127.*
+  - cuda-cudart-dev 12.4.127.*
+  - cuda-driver-dev 12.4.127.*
+  - cuda-nvrtc-dev 12.4.127.*
+  - cuda-opencl-dev 12.4.127.*
+  - cuda-profiler-api 12.4.127.*
+  - libcublas-dev 12.4.5.8.*
+  - libcufft-dev 11.2.1.3.*
+  - libcufile-dev 1.9.1.3.*
+  - libcurand-dev 10.3.5.147.*
+  - libcusolver-dev 11.6.1.9.*
+  - libcusparse-dev 12.3.1.170.*
+  - libnpp-dev 12.2.5.30.*
+  - libnvfatbin-dev 12.4.127.*
+  - libnvjitlink-dev 12.4.127.*
+  - libnvjpeg-dev 12.3.1.117.*
+  license: LicenseRef-NVIDIA-End-User-License-Agreement
+  purls: []
+  run_exports: {}
+  size: 20267
+  timestamp: 1713304265456
+- conda: https://conda.anaconda.org/conda-forge/linux-64/cuda-nsight-12.4.127-ha770c72_2.conda
+  sha256: 8c3cd1be42b63a0e9467a037ec6e92bcb3029dcc13c9e869f473106dacec8fb8
+  md5: 040a6f30518432021904449ecaaf7588
+  depends:
+  - cuda-version >=12.4,<12.5.0a0
+  license: LicenseRef-NVIDIA-End-User-License-Agreement
+  purls: []
+  run_exports: {}
+  size: 118682576
+  timestamp: 1715710988451
+- conda: https://conda.anaconda.org/conda-forge/linux-64/cuda-nvcc-12.4.131-hcdd1206_1.conda
+  sha256: 7dd76570ea0046694bc5daea814dcef5afe6bdffb73fcb097dfda52059db9df3
+  md5: 99f1c84d6eafa52da5474771bd6b93f1
+  depends:
+  - cuda-nvcc_linux-64 12.4.131.*
+  - gcc_linux-64
+  - gxx_linux-64
+  license: LicenseRef-NVIDIA-End-User-License-Agreement
+  purls: []
+  run_exports: {}
+  size: 23730
+  timestamp: 1715131404397
+- conda: https://conda.anaconda.org/conda-forge/linux-64/cuda-nvcc-impl-12.4.131-hd3aeb46_1.conda
+  sha256: ad256a39454767c9380c3998529c6c9d0886d532b57cd0b91e9bc77b6f2d32b9
+  md5: 02e2b2dfd5ff531cecb04b7dcf7d78dc
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - cuda-cudart >=12.4.127,<13.0a0
+  - cuda-cudart-dev
+  - cuda-nvcc-dev_linux-64 12.4.131 ha770c72_1
+  - cuda-nvcc-tools 12.4.131 hd3aeb46_1
+  - cuda-nvvm-impl 12.4.131 h59595ed_1
+  - cuda-version >=12.4,<12.5.0a0
+  constrains:
+  - gcc_impl_linux-64 >=6,<13
+  license: LicenseRef-NVIDIA-End-User-License-Agreement
+  purls: []
+  run_exports: {}
+  size: 24813
+  timestamp: 1715119261245
+- conda: https://conda.anaconda.org/conda-forge/linux-64/cuda-nvcc-tools-12.4.131-hd3aeb46_1.conda
+  sha256: cf9c9d2267bb13abc8fb2aa66f9e8a1f4ac2ac8ec32ac7c3f600364b97bb5713
+  md5: 9b41727a13470f3a268d7dbc258edf47
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - cuda-crt-tools 12.4.131 ha770c72_1
+  - cuda-nvvm-tools 12.4.131 h59595ed_1
+  - cuda-version >=12.4,<12.5.0a0
+  - libgcc-ng >=12
+  - libstdcxx-ng >=12
+  constrains:
+  - gcc_impl_linux-64 >=6,<13
+  license: LicenseRef-NVIDIA-End-User-License-Agreement
+  purls: []
+  run_exports: {}
+  size: 23618278
+  timestamp: 1715119174492
+- conda: https://conda.anaconda.org/conda-forge/linux-64/cuda-nvcc_linux-64-12.4.131-h8a487aa_1.conda
+  sha256: 07132164fcb98ec6444d37a6bca1265e2847005de4db1eda054441bde6a7d670
+  md5: 7ef3aa0a36d5690dbb04c741635a47e2
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - cuda-cudart-dev_linux-64 12.4.*
+  - cuda-driver-dev_linux-64 12.4.*
+  - cuda-nvcc-dev_linux-64 12.4.131.*
+  - cuda-nvcc-impl 12.4.131.*
+  - cuda-nvcc-tools 12.4.131.*
+  - sysroot_linux-64 >=2.17,<3.0a0
+  license: LicenseRef-NVIDIA-End-User-License-Agreement
+  purls: []
+  run_exports:
+    strong:
+    - cuda-version >=12.4,<13
+  size: 25443
+  timestamp: 1715131397462
+- conda: https://conda.anaconda.org/conda-forge/linux-64/cuda-nvdisasm-12.4.127-he02047a_2.conda
+  sha256: f81f94f010ca68d455bc0b7fd2978f28003b2a96d9e2f160ed7ac414ac9eaa87
+  md5: bc655e0243d7934b73dde2a02ebc0019
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - cuda-version >=12.4,<12.5.0a0
+  - libgcc-ng >=12
+  - libstdcxx-ng >=12
+  license: LicenseRef-NVIDIA-End-User-License-Agreement
+  purls: []
+  run_exports: {}
+  size: 49918043
+  timestamp: 1715670161852
+- conda: https://conda.anaconda.org/conda-forge/linux-64/cuda-nvml-dev-12.4.127-he02047a_2.conda
+  sha256: e95d11d7b2c02991ea207f05f6df87a7aa85ee8bd3d6c299976fd24d6551eaeb
+  md5: 35fdc87fbbf45a6048420c03afda1537
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - cuda-version >=12.4,<12.5.0a0
+  - libgcc-ng >=12
+  - libstdcxx-ng >=12
+  license: LicenseRef-NVIDIA-End-User-License-Agreement
+  purls: []
+  run_exports: {}
+  size: 159143
+  timestamp: 1715711009793
+- conda: https://conda.anaconda.org/conda-forge/linux-64/cuda-nvprof-12.4.127-he02047a_2.conda
+  sha256: c2fb859c3804da65f75724381b8982807c47cc040023c5ecead5e6d69860a143
+  md5: 9bcb7e497be1de93e172a2c864213867
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - cuda-cupti
+  - cuda-version >=12.4,<12.5.0a0
+  - libgcc-ng >=12
+  - libstdcxx-ng >=12
+  license: LicenseRef-NVIDIA-End-User-License-Agreement
+  purls: []
+  run_exports: {}
+  size: 2680193
+  timestamp: 1715711013510
+- conda: https://conda.anaconda.org/conda-forge/linux-64/cuda-nvprune-12.4.127-he02047a_2.conda
+  sha256: 2824eefb4962c235b5b6f7cdc1d6257baf98d9cb71654c2678beabfcc9377883
+  md5: f2ba5b51e3a51836dba6fb5be2f8a24f
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - cuda-version >=12.4,<12.5.0a0
+  - libgcc-ng >=12
+  - libstdcxx-ng >=12
+  license: LicenseRef-NVIDIA-End-User-License-Agreement
+  purls: []
+  run_exports: {}
+  size: 66782
+  timestamp: 1715711045085
+- conda: https://conda.anaconda.org/conda-forge/linux-64/cuda-nvrtc-12.4.127-he02047a_2.conda
+  sha256: c4aba5e152526db7cad7c8a5191497b0c6365c912ed845dc9c427d29893486a1
+  md5: 80baf6262f4a1a0dde42d85aaa393402
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - cuda-version >=12.4,<12.5.0a0
+  - libgcc-ng >=12
+  - libstdcxx-ng >=12
+  license: LicenseRef-NVIDIA-End-User-License-Agreement
+  purls: []
+  run_exports: {}
+  size: 18825627
+  timestamp: 1715711095870
+- conda: https://conda.anaconda.org/conda-forge/linux-64/cuda-nvrtc-dev-12.4.127-he02047a_2.conda
+  sha256: a0ed2a63270e833857902207251d0f2cc7d825bb34ba2ae7196f7d3e9bf99553
+  md5: 8f36381ebd90bcdc38bc9575dcb5b6dc
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - cuda-nvrtc 12.4.127 he02047a_2
+  - cuda-version >=12.4,<12.5.0a0
+  - libgcc-ng >=12
+  - libstdcxx-ng >=12
+  constrains:
+  - cuda-nvrtc-static >=12.4.127
+  license: LicenseRef-NVIDIA-End-User-License-Agreement
+  purls: []
+  run_exports:
+    weak:
+    - cuda-nvrtc >=12.4.127,<13.0a0
+  size: 32158
+  timestamp: 1715711201771
+- conda: https://conda.anaconda.org/conda-forge/linux-64/cuda-nvtx-12.4.127-he02047a_2.conda
+  sha256: 8f499785edaec6198a934e8a9dd1f8b6f79aabcc135962d6050dd7328c76d3dc
+  md5: 656a004b6e44f50ce71c65cab0d429b4
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - cuda-version >=12.4,<12.5.0a0
+  - libgcc-ng >=12
+  - libstdcxx-ng >=12
+  license: LicenseRef-NVIDIA-End-User-License-Agreement
+  purls: []
+  run_exports: {}
+  size: 31691
+  timestamp: 1715731339952
+- conda: https://conda.anaconda.org/conda-forge/linux-64/cuda-nvvm-impl-12.4.131-h59595ed_1.conda
+  sha256: ef340007cb8380e667d34399ebb0d8505c4ff721743643383dafd57192bcb2c6
+  md5: 9e088b155fd7bacdabebffb5ae089e3f
+  depends:
+  - cuda-version >=12.4,<12.5.0a0
+  - libgcc-ng >=12
+  - libstdcxx-ng >=12
+  license: LicenseRef-NVIDIA-End-User-License-Agreement
+  purls: []
+  run_exports: {}
+  size: 9018499
+  timestamp: 1715119119818
+- conda: https://conda.anaconda.org/conda-forge/linux-64/cuda-nvvm-tools-12.4.131-h59595ed_1.conda
+  sha256: e02ef8d275b4a4498a9038c155cdf75f52bc4958d595f77cfc2596cfa81f5e5e
+  md5: e08da6770712ca8a8d0ba79de7cdb87f
+  depends:
+  - cuda-version >=12.4,<12.5.0a0
+  - libgcc-ng >=12
+  - libstdcxx-ng >=12
+  license: LicenseRef-NVIDIA-End-User-License-Agreement
+  purls: []
+  run_exports: {}
+  size: 11726850
+  timestamp: 1715119143469
+- conda: https://conda.anaconda.org/conda-forge/linux-64/cuda-nvvp-12.4.127-he02047a_2.conda
+  sha256: 5986a7f253d8c7c50bf39511a084e926075822f6fcd0c77110a5a7566f52edfa
+  md5: 8851ce3273aae2c9f4eb8ef31e2dd863
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - cuda-nvdisasm
+  - cuda-nvprof
+  - cuda-version >=12.4,<12.5.0a0
+  - libgcc-ng >=12
+  - libstdcxx-ng >=12
+  license: LicenseRef-NVIDIA-End-User-License-Agreement
+  purls: []
+  run_exports: {}
+  size: 117820821
+  timestamp: 1715711251042
+- conda: https://conda.anaconda.org/conda-forge/linux-64/cuda-opencl-12.4.127-he02047a_1.conda
+  sha256: 75d912a70719a9d0bca9f234a79a857815d8feec3c54c145e6e41589de4ff5be
+  md5: 1e98deda07c14d26c80d124cf0eb011a
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - cuda-version >=12.4,<12.5.0a0
+  - libgcc-ng >=12
+  - libstdcxx-ng >=12
+  - ocl-icd >=2.3.2,<3.0a0
+  license: LicenseRef-NVIDIA-End-User-License-Agreement
+  purls: []
+  run_exports: {}
+  size: 30406
+  timestamp: 1715711329543
+- conda: https://conda.anaconda.org/conda-forge/linux-64/cuda-opencl-dev-12.4.127-he02047a_1.conda
+  sha256: 13f8e906e34a70b09f55d2c62f995c7c5861dc5d88cb1e89029f6b764a17070b
+  md5: ab5b960548510a6de5eca4e4d36a2760
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - cuda-opencl 12.4.127 he02047a_1
+  - cuda-version >=12.4,<12.5.0a0
+  - libgcc-ng >=12
+  - libstdcxx-ng >=12
+  license: LicenseRef-NVIDIA-End-User-License-Agreement
+  purls: []
+  run_exports:
+    weak:
+    - cuda-opencl >=12.4.127,<13.0a0
+  size: 94510
+  timestamp: 1715711351519
+- conda: https://conda.anaconda.org/conda-forge/linux-64/cuda-profiler-api-12.4.127-ha770c72_2.conda
+  sha256: 8b99dc4953041121b6ca41534cb580b89faf4d680ba8c7e30048d10cc11e6fec
+  md5: 2556461a09ab044d217fcc91bacb982b
+  depends:
+  - cuda-cudart-dev
+  - cuda-version >=12.4,<12.5.0a0
+  license: LicenseRef-NVIDIA-End-User-License-Agreement
+  purls: []
+  run_exports: {}
+  size: 23002
+  timestamp: 1715711388856
+- conda: https://conda.anaconda.org/conda-forge/linux-64/cuda-sanitizer-api-12.4.127-he02047a_2.conda
+  sha256: b4719817f6833f610d24c2573c3b3b0d0d82ae70aede4b030e9c31dc126c9543
+  md5: 400058e84b1245ebf41c59d4bf3d18f6
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - cuda-version >=12.4,<12.5.0a0
+  - libgcc-ng >=12
+  - libstdcxx-ng >=12
+  license: LicenseRef-NVIDIA-End-User-License-Agreement
+  purls: []
+  run_exports: {}
+  size: 9443563
+  timestamp: 1715665188946
+- conda: https://conda.anaconda.org/conda-forge/linux-64/cuda-tools-12.4.1-ha770c72_1.conda
+  sha256: 05a6e2b7d701127e9177b10e7a4369337e30d394fb83e1b7c0d7d647167f6c3d
+  md5: 8809ce623bc2bda5a181e8b9b22fd8ab
+  depends:
+  - cuda-command-line-tools 12.4.1.*
+  - cuda-visual-tools 12.4.1.*
+  - gds-tools 1.9.1.3.*
+  license: LicenseRef-NVIDIA-End-User-License-Agreement
+  purls: []
+  run_exports: {}
+  size: 19992
+  timestamp: 1713304423679
+- conda: https://conda.anaconda.org/conda-forge/linux-64/cuda-visual-tools-12.4.1-ha770c72_1.conda
+  sha256: 5cdfc4fc784c2c98e17ed75a3871e0d2461968699c0360c8e45968f0fb061af2
+  md5: 77ae36c308f6cdee7d46c0bd74e2cc30
+  depends:
+  - cuda-libraries-dev 12.4.1.*
+  - cuda-nsight 12.4.127.*
+  - cuda-nvml-dev 12.4.127.*
+  - cuda-nvvp 12.4.127.*
+  - nsight-compute 2024.1.1.4.*
+  license: LicenseRef-NVIDIA-End-User-License-Agreement
+  purls: []
+  run_exports: {}
+  size: 20078
+  timestamp: 1713304388050
+- conda: https://conda.anaconda.org/conda-forge/linux-64/cxx-compiler-1.7.0-h00ab1b0_1.conda
+  sha256: cf895938292cfd4cfa2a06c6d57aa25c33cc974d4ffe52e704ffb67f5577b93f
+  md5: 28de2e073db9ca9b72858bee9fb6f571
+  depends:
+  - c-compiler 1.7.0 hd590300_1
+  - gxx
+  - gxx_linux-64 12.*
+  license: BSD-3-Clause
+  license_family: BSD
+  purls: []
+  run_exports: {}
+  size: 6283
+  timestamp: 1714575513327
+- conda: https://conda.anaconda.org/conda-forge/linux-64/dbus-1.16.2-h24cb091_1.conda
+  sha256: 8bb557af1b2b7983cf56292336a1a1853f26555d9c6cecf1e5b2b96838c9da87
+  md5: ce96f2f470d39bd96ce03945af92e280
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - libgcc >=14
+  - libstdcxx >=14
+  - libzlib >=1.3.1,<2.0a0
+  - libglib >=2.86.2,<3.0a0
+  - libexpat >=2.7.3,<3.0a0
+  license: AFL-2.1 OR GPL-2.0-or-later
+  purls: []
+  run_exports:
+    weak:
+    - dbus >=1.16.2,<2.0a0
+  size: 447649
+  timestamp: 1764536047944
+- conda: https://conda.anaconda.org/conda-forge/linux-64/eigen-5.0.1-hc65338a_0.conda
+  sha256: f122c5bb618532eb40124f34dc3d467b9142c4a573c206e3e6a51df671345d6a
+  md5: fcc98d38ae074ee72ee9152e357bcbf2
+  license: MPL-2.0
+  license_family: MOZILLA
+  purls: []
+  run_exports: {}
+  size: 1311364
+  timestamp: 1773744756289
+- conda: https://conda.anaconda.org/conda-forge/linux-64/fontconfig-2.18.3-h4db4eae_1.conda
+  sha256: 5a3eb10b18a97223ab06b3a7f0d7f56658db2f2800e2f2af95836fe3bf55ba63
+  md5: 922776b528a470ab5afa81fd42abfa1d
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - libexpat >=2.8.1,<3.0a0
+  - libfreetype >=2.14.3
+  - libfreetype6 >=2.14.3
+  - libgcc >=15
+  - libuuid >=2.42.2,<3.0a0
+  - libzlib >=1.3.2,<2.0a0
+  license: MIT
+  license_family: MIT
+  purls: []
+  run_exports:
+    weak:
+    - fontconfig >=2.18.3,<3.0a0
+    - fonts-conda-ecosystem
+  size: 296288
+  timestamp: 1786667377340
+- conda: https://conda.anaconda.org/conda-forge/linux-64/freetype-2.14.3-ha770c72_2.conda
+  sha256: 612a8e0c1a6ecae23da54d81ef395f6ebb5c8e4468ec2611593ebce75876a4e0
+  md5: 2d0ea23b23603e07ca47f23f949f67b6
+  depends:
+  - libfreetype 2.14.3 ha770c72_2
+  - libfreetype6 2.14.3 h5e6c136_2
+  license: GPL-2.0-only OR FTL
+  purls: []
+  run_exports:
+    weak:
+    - libfreetype >=2.14.3
+    - libfreetype6 >=2.14.3
+  size: 175239
+  timestamp: 1786641011029
+- conda: https://conda.anaconda.org/conda-forge/linux-64/gcc-12.4.0-h236703b_2.conda
+  sha256: ebe2dabb0a6f0ef05039d3a26b9c6b0aa050d7e791c6ab77ee91653b2098cdc3
+  md5: ec54d965fd9d276c256ae3cf1d3aface
+  depends:
+  - gcc_impl_linux-64 12.4.0.*
+  license: BSD-3-Clause
+  license_family: BSD
+  purls: []
+  run_exports: {}
+  size: 55424
+  timestamp: 1740240489245
+- conda: https://conda.anaconda.org/conda-forge/linux-64/gcc_impl_linux-64-12.4.0-h26ba24d_2.conda
+  sha256: 635cd3d70ca6f4c3ad3f4b5837b5badb058f2416392592bd5914aa805f0bc28e
+  md5: f091c5ea6c862ab1796c82465a7c2364
+  depends:
+  - binutils_impl_linux-64 >=2.40
+  - libgcc >=12.4.0
+  - libgcc-devel_linux-64 12.4.0 h1762d19_102
+  - libgomp >=12.4.0
+  - libsanitizer 12.4.0 ha732cd4_2
+  - libstdcxx >=12.4.0
+  - sysroot_linux-64
+  license: GPL-3.0-only WITH GCC-exception-3.1
+  license_family: GPL
+  purls: []
+  run_exports: {}
+  size: 60389645
+  timestamp: 1740240375167
+- conda: https://conda.anaconda.org/conda-forge/linux-64/gcc_linux-64-12.4.0-h6b7512a_10.conda
+  sha256: 004d2ed6a3fc79452dec4c6cac556d0b26cf2457d33c4ace95beed4e6e832b55
+  md5: 18432a261dca2bb05b45e60adee37d77
+  depends:
+  - binutils_linux-64
+  - gcc_impl_linux-64 12.4.0.*
+  - sysroot_linux-64
+  license: BSD-3-Clause
+  license_family: BSD
+  purls: []
+  run_exports:
+    strong:
+    - libgcc >=12
+  size: 32617
+  timestamp: 1745040673228
+- conda: https://conda.anaconda.org/conda-forge/linux-64/gds-tools-1.9.1.3-he02047a_2.conda
+  sha256: e17c1eccd95cbc6459596802865148d1a740df760c7a556432619f8b1f38bcaf
+  md5: 45de8d16e0ad1c8ecc9e8169b7b04935
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - cuda-version >=12.4,<12.5.0a0
+  - libcufile >=1.9.1.3,<2.0a0
+  - libgcc-ng >=12
+  - libstdcxx-ng >=12
+  license: LicenseRef-NVIDIA-End-User-License-Agreement
+  purls: []
+  run_exports: {}
+  size: 39569110
+  timestamp: 1715720893046
+- conda: https://conda.anaconda.org/conda-forge/linux-64/gmp-6.3.0-hfd2156b_3.conda
+  sha256: f36c336efc874f346a53a9011f67e997f9faac505562cc18c13b6d399cfe61c7
+  md5: 576e32739f323438bf69ab006c21be7b
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - libgcc >=14
+  - libstdcxx >=14
+  license: GPL-2.0-or-later OR LGPL-3.0-or-later
+  purls: []
+  run_exports:
+    weak:
+    - gmp >=6.3.0,<7.0a0
+  size: 493498
+  timestamp: 1786629164954
+- conda: https://conda.anaconda.org/conda-forge/linux-64/gxx-12.4.0-h236703b_2.conda
+  sha256: 6c3ea9877dc6babf064bafacd9e67280072b676864c26e90cbfec52eaa32a60e
+  md5: 5735863174438abb776bd1fefccec00a
+  depends:
+  - gcc 12.4.0.*
+  - gxx_impl_linux-64 12.4.0.*
+  license: BSD-3-Clause
+  license_family: BSD
+  purls: []
+  run_exports: {}
+  size: 54818
+  timestamp: 1740240626426
+- conda: https://conda.anaconda.org/conda-forge/linux-64/gxx_impl_linux-64-12.4.0-h3ff227c_2.conda
+  sha256: 548987d77c5d6d648c1166e9a1eb810032f25fb1d61692a0a5a072db126e5f3f
+  md5: 5f8ae076e514514aeeb0eb52dac2d55d
+  depends:
+  - gcc_impl_linux-64 12.4.0 h26ba24d_2
+  - libstdcxx-devel_linux-64 12.4.0 h1762d19_102
+  - sysroot_linux-64
+  - tzdata
+  license: GPL-3.0-only WITH GCC-exception-3.1
+  license_family: GPL
+  purls: []
+  run_exports: {}
+  size: 12720023
+  timestamp: 1740240582818
+- conda: https://conda.anaconda.org/conda-forge/linux-64/gxx_linux-64-12.4.0-h8489865_10.conda
+  sha256: 6ea7b3957ace8960347069f032851a66755b785a5e34cd845c1b6b1e649b686e
+  md5: f01962bad75d6d68802a1eb56bb70478
+  depends:
+  - binutils_linux-64
+  - gcc_linux-64 12.4.0 h6b7512a_10
+  - gxx_impl_linux-64 12.4.0.*
+  - sysroot_linux-64
+  license: BSD-3-Clause
+  license_family: BSD
+  purls: []
+  run_exports:
+    strong:
+    - libstdcxx >=12
+    - libgcc >=12
+  size: 30953
+  timestamp: 1745040691868
+- conda: https://conda.anaconda.org/conda-forge/linux-64/icu-75.1-he02047a_0.conda
+  sha256: 71e750d509f5fa3421087ba88ef9a7b9be11c53174af3aa4d06aff4c18b38e8e
+  md5: 8b189310083baabfb622af68fd9d3ae3
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - libgcc-ng >=12
+  - libstdcxx-ng >=12
+  license: MIT
+  license_family: MIT
+  purls: []
+  run_exports:
+    weak:
+    - icu >=75.1,<76.0a0
+  size: 12129203
+  timestamp: 1720853576813
+- conda: https://conda.anaconda.org/conda-forge/linux-64/keyutils-1.6.3-h7cc23a3_1.conda
+  sha256: dd053c96dcb0dcfd59422aefea9d2fe937a190167f34fba7893ec1e10a7e8963
+  md5: ba55d1b89fd7775e67de8291029b4059
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - libgcc >=15
+  license: LGPL-2.1-or-later
+  purls: []
+  run_exports:
+    weak:
+    - keyutils >=1.6.3,<2.0a0
+  size: 135295
+  timestamp: 1786739238128
+- conda: https://conda.anaconda.org/conda-forge/linux-64/krb5-1.21.3-h659f571_0.conda
+  sha256: 99df692f7a8a5c27cd14b5fb1374ee55e756631b9c3d659ed3ee60830249b238
+  md5: 3f43953b7d3fb3aaa1d0d0723d91e368
+  depends:
+  - keyutils >=1.6.1,<2.0a0
+  - libedit >=3.1.20191231,<3.2.0a0
+  - libedit >=3.1.20191231,<4.0a0
+  - libgcc-ng >=12
+  - libstdcxx-ng >=12
+  - openssl >=3.3.1,<4.0a0
+  license: MIT
+  license_family: MIT
+  purls: []
+  run_exports:
+    weak:
+    - krb5 >=1.21.3,<1.22.0a0
+  size: 1370023
+  timestamp: 1719463201255
+- conda: https://conda.anaconda.org/conda-forge/linux-64/ld_impl_linux-64-2.46.1-default_hbd61a6d_102.conda
+  sha256: 27d83f1188cd19bcb7754a078b3fa7f4cfb8527f8eb2fde54dd01fc529d1adec
+  md5: 449500f2c089da11c40f5c21312e3e07
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - zstd >=1.5.7,<1.6.0a0
+  constrains:
+  - binutils_impl_linux-64 2.46.1
+  license: GPL-3.0-only
+  license_family: GPL
+  purls: []
+  run_exports: {}
+  size: 745303
+  timestamp: 1784214507189
+- conda: https://conda.anaconda.org/conda-forge/linux-64/libcublas-12.4.5.8-he02047a_2.conda
+  sha256: 168e664423e875f7107697dfa7935399675872ea8abffa92621db98007258d66
+  md5: d446adae085aa1ff37c44b69988a6f06
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - cuda-nvrtc
+  - cuda-version >=12.4,<12.5.0a0
+  - libgcc-ng >=12
+  - libstdcxx-ng >=12
+  license: LicenseRef-NVIDIA-End-User-License-Agreement
+  purls: []
+  run_exports: {}
+  size: 240665617
+  timestamp: 1715711552741
+- conda: https://conda.anaconda.org/conda-forge/linux-64/libcublas-dev-12.4.5.8-he02047a_2.conda
+  sha256: b9ba287dd793cd253b863a3da66e474f9d98457a58de2fcb1167c7db7493bcc7
+  md5: d29465460da4ac07f3acde2069f62b68
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - cuda-version >=12.4,<12.5.0a0
+  - libcublas 12.4.5.8 he02047a_2
+  - libgcc-ng >=12
+  - libstdcxx-ng >=12
+  constrains:
+  - libcublas-static >=12.4.5.8
+  license: LicenseRef-NVIDIA-End-User-License-Agreement
+  purls: []
+  run_exports:
+    weak:
+    - libcublas >=12.4.5.8,<13.0a0
+  size: 89948
+  timestamp: 1715712198583
+- conda: https://conda.anaconda.org/conda-forge/linux-64/libcufft-11.2.1.3-he02047a_2.conda
+  sha256: 242e1ed210a85fc0dc2a4e86bf0b75120f1768ab66497502c5e6d69e801bf9dc
+  md5: d2641a67c207946ef96f1328c4a8e8ed
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - cuda-version >=12.4,<12.5.0a0
+  - libgcc-ng >=12
+  - libstdcxx-ng >=12
+  license: LicenseRef-NVIDIA-End-User-License-Agreement
+  purls: []
+  run_exports: {}
+  size: 174980358
+  timestamp: 1715711515585
+- conda: https://conda.anaconda.org/conda-forge/linux-64/libcufft-dev-11.2.1.3-he02047a_2.conda
+  sha256: fd77c25f106601b6d8a7d50f2125c74a75dc85d2ecc298b76af4d1953a012a23
+  md5: 89118ac97923275916b9b4cae3fca411
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - cuda-version >=12.4,<12.5.0a0
+  - libcufft 11.2.1.3 he02047a_2
+  - libgcc-ng >=12
+  - libstdcxx-ng >=12
+  constrains:
+  - libcufft-static >=11.2.1.3
+  license: LicenseRef-NVIDIA-End-User-License-Agreement
+  purls: []
+  run_exports:
+    weak:
+    - libcufft >=11.2.1.3,<12.0a0
+  size: 33225
+  timestamp: 1715711929051
+- conda: https://conda.anaconda.org/conda-forge/linux-64/libcufile-1.9.1.3-he02047a_2.conda
+  sha256: 7fa7a608d52064b724241e4026f0e0cc244c6f725623e2c26c810be99822fa28
+  md5: a051267bcb1912467c81d802a7d3465e
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - cuda-version >=12.4,<12.5.0a0
+  - libgcc-ng >=12
+  - libstdcxx-ng >=12
+  license: LicenseRef-NVIDIA-End-User-License-Agreement
+  purls: []
+  run_exports: {}
+  size: 924329
+  timestamp: 1715720836466
+- conda: https://conda.anaconda.org/conda-forge/linux-64/libcufile-dev-1.9.1.3-he02047a_2.conda
+  sha256: d00e77834381a50d52f8144e4fe4fbee3a754c1db85a654cf22f9a4149aeb00f
+  md5: be8b03010762aeaf542972d585a24026
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - cuda-version >=12.4,<12.5.0a0
+  - libcufile 1.9.1.3 he02047a_2
+  - libgcc-ng >=12
+  - libstdcxx-ng >=12
+  constrains:
+  - libcufile-static >=1.9.1.3
+  license: LicenseRef-NVIDIA-End-User-License-Agreement
+  purls: []
+  run_exports:
+    weak:
+    - libcufile >=1.9.1.3,<2.0a0
+  size: 34284
+  timestamp: 1715720884072
+- conda: https://conda.anaconda.org/conda-forge/linux-64/libcurand-10.3.5.147-he02047a_2.conda
+  sha256: 7db821fc8f566dbb8d4e40dae62edb07d638db8c028d677a0063ece66872d19c
+  md5: 9c4886d513fd477df88d411cd274c202
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - cuda-version >=12.4,<12.5.0a0
+  - libgcc-ng >=12
+  - libstdcxx-ng >=12
+  license: LicenseRef-NVIDIA-End-User-License-Agreement
+  purls: []
+  run_exports: {}
+  size: 41590169
+  timestamp: 1715711553620
+- conda: https://conda.anaconda.org/conda-forge/linux-64/libcurand-dev-10.3.5.147-he02047a_2.conda
+  sha256: cf537db09364d70a50a37229e583e945f894a33a76314d8562810089644b5202
+  md5: a98311dca256e6eed9bddbb134093a2d
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - cuda-version >=12.4,<12.5.0a0
+  - libcurand 10.3.5.147 he02047a_2
+  - libgcc-ng >=12
+  - libstdcxx-ng >=12
+  constrains:
+  - libcurand-static >=10.3.5.147
+  license: LicenseRef-NVIDIA-End-User-License-Agreement
+  purls: []
+  run_exports:
+    weak:
+    - libcurand >=10.3.5.147,<11.0a0
+  size: 263511
+  timestamp: 1715711643628
+- conda: https://conda.anaconda.org/conda-forge/linux-64/libcurl-8.18.0-h4e3cde8_0.conda
+  sha256: 5454709d9fb6e9c3dd6423bc284fa7835a7823bfa8323f6e8786cdd555101fab
+  md5: 0a5563efed19ca4461cf927419b6eb73
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - krb5 >=1.21.3,<1.22.0a0
+  - libgcc >=14
+  - libnghttp2 >=1.67.0,<2.0a0
+  - libssh2 >=1.11.1,<2.0a0
+  - libzlib >=1.3.1,<2.0a0
+  - openssl >=3.5.4,<4.0a0
+  - zstd >=1.5.7,<1.6.0a0
+  license: curl
+  license_family: MIT
+  purls: []
+  run_exports:
+    weak:
+    - libcurl >=8.18.0,<9.0a0
+  size: 462942
+  timestamp: 1767821743793
+- conda: https://conda.anaconda.org/conda-forge/linux-64/libcusolver-11.6.1.9-he02047a_2.conda
+  sha256: df4f8a94bffb59dc3da28fb5a892c1ef2553f8afd49f141d3e2da8c92f276a56
+  md5: 9f6877f8936be962f598db5e9b8efc51
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - cuda-version >=12.4,<12.5.0a0
+  - libcublas >=12.4.5.8,<12.5.0a0
+  - libcusparse >=12.3.1.170,<12.4.0a0
+  - libgcc-ng >=12
+  - libnvjitlink >=12.4.127,<13.0.0a0
+  - libstdcxx-ng >=12
+  license: LicenseRef-NVIDIA-End-User-License-Agreement
+  purls: []
+  run_exports: {}
+  size: 81594879
+  timestamp: 1715711788074
+- conda: https://conda.anaconda.org/conda-forge/linux-64/libcusolver-dev-11.6.1.9-he02047a_2.conda
+  sha256: 0987d895770cf68340469313740bbecb77a0e18a6307ae3877ad9849fa32760a
+  md5: ec94ad1bb7a27aeabb9a759cb538ae37
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - cuda-version >=12.4,<12.5.0a0
+  - libcusolver 11.6.1.9 he02047a_2
+  - libgcc-ng >=12
+  - libstdcxx-ng >=12
+  constrains:
+  - libcusolver-static >=11.6.1.9
+  license: LicenseRef-NVIDIA-End-User-License-Agreement
+  purls: []
+  run_exports:
+    weak:
+    - libcusolver >=11.6.1.9,<12.0a0
+  size: 61230
+  timestamp: 1715711963052
+- conda: https://conda.anaconda.org/conda-forge/linux-64/libcusparse-12.3.1.170-he02047a_2.conda
+  sha256: f2254e41c93a8c3529690c19350556708182ef699ca658c6554eeb7eb4b8c3de
+  md5: 1c4c7ff54dc5b947f2ab8f5ff8a28dae
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - cuda-version >=12.4,<12.5.0a0
+  - libgcc-ng >=12
+  - libnvjitlink >=12.4.127,<13.0.0a0
+  - libstdcxx-ng >=12
+  license: LicenseRef-NVIDIA-End-User-License-Agreement
+  purls: []
+  run_exports: {}
+  size: 117818451
+  timestamp: 1715711610677
+- conda: https://conda.anaconda.org/conda-forge/linux-64/libcusparse-dev-12.3.1.170-he02047a_2.conda
+  sha256: 3981c30e198fc7e0b80dfd28894de856aa6395f500d1eba0aca5cd726037a771
+  md5: 0bdc53d258c3d5906209b86c2406550e
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - cuda-version >=12.4,<12.5.0a0
+  - libcusparse 12.3.1.170 he02047a_2
+  - libgcc-ng >=12
+  - libnvjitlink >=12.4.127,<13.0.0a0
+  - libstdcxx-ng >=12
+  constrains:
+  - libcusparse-static >=12.3.1.170
+  license: LicenseRef-NVIDIA-End-User-License-Agreement
+  purls: []
+  run_exports:
+    weak:
+    - libcusparse >=12.3.1.170,<13.0a0
+  size: 52083
+  timestamp: 1715711818754
+- conda: https://conda.anaconda.org/conda-forge/linux-64/libedit-3.1.20250104-pl5321h373387f_1.conda
+  sha256: 6473eb8caf2aae830f37caa93db9b26dddf7ac84b63229e8bf7fc0e5c3ab95b0
+  md5: 50708d3b951d0f8e2d7f2df5b5edc040
+  depends:
+  - ncurses
+  - libgcc >=14
+  - __glibc >=2.17,<3.0.a0
+  - ncurses >=6.6,<7.0a0
+  license: BSD-2-Clause
+  license_family: BSD
+  purls: []
+  run_exports:
+    weak:
+    - libedit >=3.1.20250104,<3.2.0a0
+  size: 135098
+  timestamp: 1786616658086
+- conda: https://conda.anaconda.org/conda-forge/linux-64/libev-4.33-h280c20c_3.conda
+  sha256: e4418f68d01a6307c4431b585c71b584f40189877364e542ee87deb777f5e85b
+  md5: 7bc31538d6e3fb349e897353969237ec
+  depends:
+  - libgcc >=14
+  - __glibc >=2.17,<3.0.a0
+  license: BSD-2-Clause OR GPL-2.0-or-later
+  license_family: GPL
+  purls: []
+  run_exports:
+    weak:
+    - libev >=4.33,<4.34.0a0
+  size: 43220
+  timestamp: 1785917328200
+- conda: https://conda.anaconda.org/conda-forge/linux-64/libexpat-2.8.1-hecca717_1.conda
+  sha256: 16feffd9ddbbe5b718515d38ee376c685ba95491cd901244e24671d20b952a77
+  md5: b24d3c612f71e7aa74158d92106318b2
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - libgcc >=14
+  constrains:
+  - expat 2.8.1.*
+  license: MIT
+  license_family: MIT
+  purls: []
+  run_exports: {}
+  size: 77856
+  timestamp: 1781203599810
+- conda: https://conda.anaconda.org/conda-forge/linux-64/libffi-3.7.0-h3435931_0.conda
+  sha256: ac38603008bf1e99b8ed379b1a656a67a70e2841f2b6a069c630cdf6316012d2
+  md5: 0abe40a9880086ca4d2e5daf09dceff9
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - libgcc >=14
+  license: MIT
+  license_family: MIT
+  purls: []
+  run_exports:
+    weak:
+    - libffi >=3.7.0,<3.8.0a0
+  size: 67576
+  timestamp: 1783520858222
+- conda: https://conda.anaconda.org/conda-forge/linux-64/libfreetype-2.14.3-ha770c72_2.conda
+  sha256: fb12ecb46c30d18d928c0e8fc346ab13b5f6fc8a9cacae4f2f4bb188782586f5
+  md5: f8054e759d0ddddaf34a5c8fedc900a1
+  depends:
+  - libfreetype6 >=2.14.3
+  license: GPL-2.0-only OR FTL
+  purls: []
+  run_exports: {}
+  size: 8407
+  timestamp: 1786641007099
+- conda: https://conda.anaconda.org/conda-forge/linux-64/libfreetype6-2.14.3-h5e6c136_2.conda
+  sha256: ec607dd5445dd17ff6bf8b7fe6832e5504c226dd91d3aaea7ba83569808b0ce4
+  md5: b72a266a9317036fd0464cb98b027cd0
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - libgcc >=15
+  - libpng >=1.6.58,<1.7.0a0
+  - libzlib >=1.3.2,<2.0a0
+  constrains:
+  - freetype >=2.14.3
+  license: GPL-2.0-only OR FTL
+  purls: []
+  run_exports: {}
+  size: 387671
+  timestamp: 1786641006460
+- conda: https://conda.anaconda.org/conda-forge/linux-64/libgcc-16.1.0-ha9f2e26_3.conda
+  sha256: af35751596409fc1a1a81a32b7f1e195bca7f648dfe7c64f8ec4848b3a5003f8
+  md5: c471b242d299f8bc1e2b3e0f6e9f4b77
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - _openmp_mutex >=4.5
+  constrains:
+  - libgcc-ng ==16.1.0=*_3
+  - libgomp 16.1.0 he0feb66_3
+  license: GPL-3.0-only WITH GCC-exception-3.1
+  license_family: GPL
+  purls: []
+  run_exports: {}
+  size: 1058775
+  timestamp: 1787329503824
+- conda: https://conda.anaconda.org/conda-forge/linux-64/libgcc-ng-16.1.0-h69a702a_3.conda
+  sha256: d3368af8b654073a0937fc7d3add75dbd09aae0b6e225596685756885b171309
+  md5: 824e26366da140518fdc55816eaef929
+  depends:
+  - libgcc 16.1.0 ha9f2e26_3
+  license: GPL-3.0-only WITH GCC-exception-3.1
+  license_family: GPL
+  purls: []
+  run_exports:
+    strong:
+    - libgcc
+  size: 28291
+  timestamp: 1787329509642
+- conda: https://conda.anaconda.org/conda-forge/linux-64/libglib-2.88.3-h45c3219_1.conda
+  sha256: 4499458124bcf0bd45e8bd17576f9f007cb1373cb3b01659105443f522bab45c
+  md5: 533cb021c1bfeba9f720e669cd863fdf
+  depends:
+  - libgcc >=14
+  - __glibc >=2.17,<3.0.a0
+  - pcre2 >=10.47,<10.48.0a0
+  - libzlib >=1.3.2,<2.0a0
+  - libiconv >=1.18,<2.0a0
+  - libffi >=3.7.0,<3.8.0a0
+  constrains:
+  - glib >2.66
+  license: LGPL-2.1-or-later
+  purls: []
+  run_exports:
+    weak:
+    - libglib >=2.88.3,<3.0a0
+  size: 4755172
+  timestamp: 1786457663614
+- conda: https://conda.anaconda.org/conda-forge/linux-64/libgomp-16.1.0-he0feb66_3.conda
+  sha256: 5998d3e2ef3ffcae6cd794c87f12acdd7220e69f7685a8ccef3cd2c5f6252831
+  md5: 593dc8ed1ed687d4ffff6b8d2fce9d9f
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  license: GPL-3.0-only WITH GCC-exception-3.1
+  license_family: GPL
+  purls: []
+  run_exports:
+    strong:
+    - _openmp_mutex >=4.5
+  size: 641537
+  timestamp: 1787329444295
+- conda: https://conda.anaconda.org/conda-forge/linux-64/libiconv-1.18-h0cb94f2_3.conda
+  sha256: f943117edb9cd4d9c61cc972eee5a34291dc55ea7a6e9e38da104995841cbcb6
+  md5: f92233bf33e24a25668bb2119e2c51f9
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - libgcc >=15
+  license: LGPL-2.1-only
+  purls: []
+  run_exports:
+    weak:
+    - libiconv >=1.18,<2.0a0
+  size: 789471
+  timestamp: 1787033836207
+- conda: https://conda.anaconda.org/conda-forge/linux-64/liblzma-5.8.3-hb03c661_1.conda
+  sha256: 9787df8c22a59c9a70d3e5a10db9ad663485e75e9ccc3f09bd092cb7b95e0dab
+  md5: 1390b7c5ac0b1d8e447bc5efa6d3c8c2
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - libgcc >=14
+  constrains:
+  - xz 5.8.3.*
+  license: 0BSD
+  purls: []
+  run_exports:
+    weak:
+    - liblzma >=5.8.3,<6.0a0
+  size: 112995
+  timestamp: 1786348617826
+- conda: https://conda.anaconda.org/conda-forge/linux-64/libnghttp2-1.68.1-h74cf4be_1.conda
+  sha256: 11a2f54a6f391e25738bce0023e6ef499600147bbcf21c1fa69d2e251b03cc6a
+  md5: 75d211f04ac87506f1f43420712a69fe
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - c-ares >=1.34.8,<2.0a0
+  - libev >=4.33,<4.34.0a0
+  - libev >=4.33,<5.0a0
+  - libgcc >=15
+  - libstdcxx >=15
+  - libzlib >=1.3.2,<2.0a0
+  - openssl >=3.5.7,<4.0a0
+  license: MIT
+  license_family: MIT
+  purls: []
+  run_exports:
+    weak:
+    - libnghttp2 >=1.68.1,<2.0a0
+  size: 649974
+  timestamp: 1787177490105
+- conda: https://conda.anaconda.org/conda-forge/linux-64/libnpp-12.2.5.30-he02047a_2.conda
+  sha256: d8c97716825955c48681f4a3cde2f0cbbacc77c91b4cd944d4906f63385487df
+  md5: a96a1edd18bee676cf2dcca251d3d6a4
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - cuda-version >=12.4,<12.5.0a0
+  - libgcc-ng >=12
+  - libstdcxx-ng >=12
+  license: LicenseRef-NVIDIA-End-User-License-Agreement
+  purls: []
+  run_exports: {}
+  size: 99461229
+  timestamp: 1715711634268
+- conda: https://conda.anaconda.org/conda-forge/linux-64/libnpp-dev-12.2.5.30-he02047a_2.conda
+  sha256: d51d013cb417ec85ba4f5bbf45f4cd3eebfe8ec839a77795ee39e8a8a47fbd54
+  md5: a609f5f499b596a625636048f4ec8f6a
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - cuda-version >=12.4,<12.5.0a0
+  - libgcc-ng >=12
+  - libnpp 12.2.5.30 he02047a_2
+  - libstdcxx-ng >=12
+  constrains:
+  - libnpp-static >=12.2.5.30
+  license: LicenseRef-NVIDIA-End-User-License-Agreement
+  purls: []
+  run_exports:
+    weak:
+    - libnpp >=12.2.5.30,<13.0a0
+  size: 453925
+  timestamp: 1715711831003
+- conda: https://conda.anaconda.org/conda-forge/linux-64/libnsl-2.0.1-hb9d3cd8_1.conda
+  sha256: 927fe72b054277cde6cb82597d0fcf6baf127dcbce2e0a9d8925a68f1265eef5
+  md5: d864d34357c3b65a4b731f78c0801dc4
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - libgcc >=13
+  license: LGPL-2.1-only
+  license_family: GPL
+  purls: []
+  run_exports:
+    weak:
+    - libnsl >=2.0.1,<2.1.0a0
+  size: 33731
+  timestamp: 1750274110928
+- conda: https://conda.anaconda.org/conda-forge/linux-64/libnvfatbin-12.4.127-he02047a_2.conda
+  sha256: d40f37532f86cbbe63439489be0e88561819190392cc519c69365b3fc47a2c5b
+  md5: d746b76642b4ac6e40f1219405672beb
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - cuda-version >=12.4,<12.5.0a0
+  - libgcc-ng >=12
+  - libstdcxx-ng >=12
+  license: LicenseRef-NVIDIA-End-User-License-Agreement
+  purls: []
+  run_exports: {}
+  size: 792025
+  timestamp: 1715711761341
+- conda: https://conda.anaconda.org/conda-forge/linux-64/libnvfatbin-dev-12.4.127-he02047a_2.conda
+  sha256: 329c39c91cc8bb103be17d40faa29e6450916cc0360200c2d26e9d25ccae68e3
+  md5: 4626cbd2ad1509be65b301523cf5c9ac
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - cuda-version >=12.4,<12.5.0a0
+  - libgcc-ng >=12
+  - libnvfatbin 12.4.127 he02047a_2
+  - libstdcxx-ng >=12
+  constrains:
+  - libnvfatbin-static >=12.4.127
+  license: LicenseRef-NVIDIA-End-User-License-Agreement
+  purls: []
+  run_exports:
+    weak:
+    - libnvfatbin >=12.4.127,<13.0a0
+  size: 26020
+  timestamp: 1715711799143
+- conda: https://conda.anaconda.org/conda-forge/linux-64/libnvjitlink-12.4.127-he02047a_2.conda
+  sha256: 31382c8ef388a51bd2c283a239e037b8b30f9c7ecf6ec9744824445b59db39b6
+  md5: 303845d6c48bf4185dc4138634650468
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - cuda-version>=12.0.0,<12.5.0a0
+  - libgcc-ng >=12
+  - libstdcxx-ng >=12
+  license: LicenseRef-NVIDIA-End-User-License-Agreement
+  purls: []
+  run_exports: {}
+  size: 16571958
+  timestamp: 1715711715842
+- conda: https://conda.anaconda.org/conda-forge/linux-64/libnvjitlink-dev-12.4.127-he02047a_2.conda
+  sha256: 26d08c064230d1f15241a0333c270019fe3aff6bab611079c16c267ece7370f9
+  md5: b28c9c4c7b21b83aa0fc02e69bccb815
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - cuda-version >=12.4,<12.5.0a0
+  - libgcc-ng >=12
+  - libnvjitlink 12.4.127 he02047a_2
+  - libstdcxx-ng >=12
+  constrains:
+  - libnvjitlink-static >=12.4.127
+  license: LicenseRef-NVIDIA-End-User-License-Agreement
+  purls: []
+  run_exports:
+    weak:
+    - libnvjitlink >=12.4.127,<13.0a0
+  size: 25631
+  timestamp: 1715711837100
+- conda: https://conda.anaconda.org/conda-forge/linux-64/libnvjpeg-12.3.1.117-he02047a_2.conda
+  sha256: 49a182f8da4ba30fbfee9692976d9da349371175c9c9576768d4754a51fef326
+  md5: 8f3ed0e41a4b505de40b4f96f4bfb0fa
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - cuda-version >=12.4,<12.5.0a0
+  - libgcc-ng >=12
+  - libstdcxx-ng >=12
+  license: LicenseRef-NVIDIA-End-User-License-Agreement
+  purls: []
+  run_exports: {}
+  size: 2491500
+  timestamp: 1715711780068
+- conda: https://conda.anaconda.org/conda-forge/linux-64/libnvjpeg-dev-12.3.1.117-ha770c72_2.conda
+  sha256: 1751e6c21550e416153d2ae8d81e0d2bf393d64faa27a38319b316d833f113d1
+  md5: 4f1dbe96d78f7e9fe676e0a8132b4733
+  depends:
+  - cuda-cudart-dev
+  - cuda-version >=12.4,<12.5.0a0
+  - libnvjpeg 12.3.1.117 he02047a_2
+  constrains:
+  - libnvjpeg-static >=12.3.1.117
+  license: LicenseRef-NVIDIA-End-User-License-Agreement
+  purls: []
+  run_exports:
+    weak:
+    - libnvjpeg >=12.3.1.117,<13.0a0
+  size: 32261
+  timestamp: 1715711813841
+- conda: https://conda.anaconda.org/conda-forge/linux-64/libpng-1.6.58-h922cc85_1.conda
+  sha256: c19eefb87d70d9b4b0629fa48414a155a47a1be4f04583ae71ed8c5a9a32fdcb
+  md5: fcf71c8d979148873f6f8ad4cfc73d86
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - libgcc >=15
+  - libzlib >=1.3.2,<2.0a0
+  license: zlib-acknowledgement
+  purls: []
+  run_exports:
+    weak:
+    - libpng >=1.6.58,<1.7.0a0
+  size: 316643
+  timestamp: 1786616563127
+- conda: https://conda.anaconda.org/conda-forge/linux-64/libsanitizer-12.4.0-ha732cd4_2.conda
+  sha256: d9a23eee55fc2a901e67565c328c37e7c2336ca805d985ad4a67b7837fb4e40a
+  md5: e729f335fee31fd68429187c9e0f97c2
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - libgcc >=12.4.0
+  - libstdcxx >=12.4.0
+  license: GPL-3.0-only WITH GCC-exception-3.1
+  license_family: GPL
+  purls: []
+  run_exports:
+    weak:
+    - libsanitizer 12.4.0
+  size: 3955974
+  timestamp: 1740240321338
+- conda: https://conda.anaconda.org/conda-forge/linux-64/libsqlite-3.53.4-h0737f62_1.conda
+  sha256: 35c05bd0adfaf6fcac01fc3a42214e4e2a44e32f7ce2c77ddae419522c3c328d
+  md5: 17b328272d5caa0994678529be5b86ab
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - libgcc >=15
+  - libzlib >=1.3.2,<2.0a0
+  license: blessing
+  purls: []
+  run_exports:
+    weak:
+    - libsqlite >=3.53.4,<4.0a0
+  size: 968893
+  timestamp: 1787051134858
+- conda: https://conda.anaconda.org/conda-forge/linux-64/libssh2-1.11.1-h6154650_1.conda
+  sha256: 7e463000fa1cba3f3a6597b776f6ab301d425a96e3bc20d0d9d76a3b9f237aa3
+  md5: 5c526561e1d2a2e071941174eae84557
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - libgcc >=14
+  - libzlib >=1.3.2,<2.0a0
+  - openssl >=3.5.7,<4.0a0
+  license: BSD-3-Clause
+  license_family: BSD
+  purls: []
+  run_exports:
+    weak:
+    - libssh2 >=1.11.1,<2.0a0
+  size: 306045
+  timestamp: 1786713107897
+- conda: https://conda.anaconda.org/conda-forge/linux-64/libstdcxx-16.1.0-h934c35e_3.conda
+  sha256: 6e98c0283244b5f8bbc0e86f7cba4d4921136bfbabf8da42b898a7a1f10be949
+  md5: 470d16b28d90ad4368df1aa5bc7ec18d
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - libgcc 16.1.0 ha9f2e26_3
+  constrains:
+  - libstdcxx-ng ==16.1.0=*_3
+  license: GPL-3.0-only WITH GCC-exception-3.1
+  license_family: GPL
+  purls: []
+  run_exports: {}
+  size: 6626421
+  timestamp: 1787329526353
+- conda: https://conda.anaconda.org/conda-forge/linux-64/libstdcxx-ng-16.1.0-hdf11a46_3.conda
+  sha256: 11df057f95c6d9c52ba16fd291b1608eb3ccf7eedf0c8647a8048c9416449e26
+  md5: 3e4550b8d69e0477b618825525189cfc
+  depends:
+  - libstdcxx 16.1.0 h934c35e_3
+  license: GPL-3.0-only WITH GCC-exception-3.1
+  license_family: GPL
+  purls: []
+  run_exports:
+    strong:
+    - libstdcxx
+  size: 28325
+  timestamp: 1787329557748
+- conda: https://conda.anaconda.org/conda-forge/linux-64/libuuid-2.42.2-h5347b49_0.conda
+  sha256: 9b1bdce27a7e31f7d241aeecff67a1f3101d52a2b1e33ccc2cdf2613072bf81f
+  md5: 01bb81d12c957de066ea7362007df642
+  depends:
+  - libgcc >=14
+  - __glibc >=2.17,<3.0.a0
+  license: BSD-3-Clause
+  license_family: BSD
+  purls: []
+  run_exports:
+    weak:
+    - libuuid >=2.42.2,<3.0a0
+  size: 40017
+  timestamp: 1781625522462
+- conda: https://conda.anaconda.org/conda-forge/linux-64/libuv-1.52.1-h280c20c_1.conda
+  sha256: 67761d0206f84140047a367eaf9befe03a7e157a29ee25aee0047b40801cc6b6
+  md5: 01c4ed87826af55996768af6dbc936b4
+  depends:
+  - libgcc >=14
+  - __glibc >=2.17,<3.0.a0
+  license: MIT
+  license_family: MIT
+  purls: []
+  run_exports:
+    weak:
+    - libuv >=1.52.1,<2.0a0
+  size: 420040
+  timestamp: 1785914567661
+- conda: https://conda.anaconda.org/conda-forge/linux-64/libxcb-1.15-h0b41bf4_0.conda
+  sha256: a670902f0a3173a466c058d2ac22ca1dd0df0453d3a80e0212815c20a16b0485
+  md5: 33277193f5b92bad9fdd230eb700929c
+  depends:
+  - libgcc-ng >=12
+  - pthread-stubs
+  - xorg-libxau
+  - xorg-libxdmcp
+  license: MIT
+  license_family: MIT
+  purls: []
+  run_exports:
+    weak:
+    - libxcb >=1.15,<1.16.0a0
+  size: 384238
+  timestamp: 1682082368177
+- conda: https://conda.anaconda.org/conda-forge/linux-64/libxcrypt-4.4.38-h280c20c_0.conda
+  sha256: f7e9292dd219a6435bbb1223da9586c3e70d66d169c5a92f08db3f2127df04e9
+  md5: f7a7ff5a6ab331e037abd34f379a631d
+  depends:
+  - libgcc >=14
+  - __glibc >=2.17,<3.0.a0
+  license: LGPL-2.1-or-later
+  purls: []
+  run_exports:
+    weak:
+    - libxcrypt >=4.4.38
+  size: 101957
+  timestamp: 1785887123445
+- conda: https://conda.anaconda.org/conda-forge/linux-64/libxkbcommon-1.7.0-h662e7e4_0.conda
+  sha256: 3d97d7f964237f42452295d461afdbc51e93f72e2c80be516f56de80e3bb6621
+  md5: b32c0da42b1f24a98577bb3d7fc0b995
+  depends:
+  - libgcc-ng >=12
+  - libstdcxx-ng >=12
+  - libxcb >=1.15,<1.16.0a0
+  - libxml2 >=2.12.6,<2.14.0a0
+  - xkeyboard-config
+  - xorg-libxau >=1.0.11,<2.0a0
+  license: MIT/X11 Derivative
+  license_family: MIT
+  purls: []
+  run_exports:
+    weak:
+    - libxkbcommon >=1.7.0,<2.0a0
+  size: 593534
+  timestamp: 1711303445595
+- conda: https://conda.anaconda.org/conda-forge/linux-64/libxkbfile-1.1.0-h166bdaf_1.conda
+  sha256: f7c9f4d42c9e87dcf7055c33e9957db4e319735de9bdd5d9ba5633c27b853ae1
+  md5: c6274d38be57ac8b059b8e33d406aaf6
+  depends:
+  - libgcc-ng >=12
+  license: MIT
+  license_family: MIT
+  purls: []
+  run_exports: {}
+  size: 114087
+  timestamp: 1676547070237
+- conda: https://conda.anaconda.org/conda-forge/linux-64/libxml2-2.13.9-h04c0eec_0.conda
+  sha256: 5d12e993894cb8e9f209e2e6bef9c90fa2b7a339a1f2ab133014b71db81f5d88
+  md5: 35eeb0a2add53b1e50218ed230fa6a02
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - icu >=75.1,<76.0a0
+  - libgcc >=14
+  - libiconv >=1.18,<2.0a0
+  - liblzma >=5.8.1,<6.0a0
+  - libzlib >=1.3.1,<2.0a0
+  license: MIT
+  license_family: MIT
+  purls: []
+  run_exports:
+    weak:
+    - libxml2 >=2.13.9,<2.14.0a0
+  size: 697033
+  timestamp: 1761766011241
+- conda: https://conda.anaconda.org/conda-forge/linux-64/libzlib-1.3.2-h25fd6f3_3.conda
+  sha256: eb8a0db0aa570124f7d2a93d7c7f596e3390df5e047818d873baad32985fc736
+  md5: 0de0122d9570a8ab637c6b73db268389
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  constrains:
+  - zlib 1.3.2 *_3
+  license: Zlib
+  license_family: Other
+  purls: []
+  run_exports:
+    weak:
+    - libzlib >=1.3.2,<2.0a0
+  size: 63713
+  timestamp: 1785362952714
+- conda: https://conda.anaconda.org/conda-forge/linux-64/ncurses-6.6-hdb14827_1.conda
+  sha256: 5d46557214ed184381dafe835b7c94a474a1c3b307a08a250b1ea4779b44ffb3
+  md5: ee6c0cd80a60961a1f48aa3e0b91f986
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - libgcc >=14
+  license: X11 AND BSD-3-Clause
+  purls: []
+  run_exports:
+    weak:
+    - ncurses >=6.6,<7.0a0
+  size: 911196
+  timestamp: 1786355078102
+- conda: https://conda.anaconda.org/conda-forge/linux-64/ninja-1.13.2-h171cf75_1.conda
+  sha256: 2b5f2e865122f9fc0637f520a7cb22e16b9727b2db6761ee16cb5e6404412c81
+  md5: 2db7a395d7dc2b6ed5effaf68fb99443
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - libstdcxx >=14
+  - libgcc >=14
+  license: Apache-2.0
+  license_family: APACHE
+  purls: []
+  run_exports: {}
+  size: 186767
+  timestamp: 1786713048064
+- conda: https://conda.anaconda.org/conda-forge/linux-64/nsight-compute-2024.1.1.4-h54680a5_3.conda
+  sha256: 8de28dbf6dcebaa482ff8982c170414426f033c3592b4aa61d77423615ca1bba
+  md5: ea3f5d8115d6ca9a671eaf9e2d54042a
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - alsa-lib >=1.2.11,<1.3.0a0
+  - cuda-version >=12.4,<12.5.0a0
+  - dbus >=1.13.6,<2.0a0
+  - fontconfig >=2.14.2,<3.0a0
+  - fonts-conda-ecosystem
+  - freetype >=2.12.1,<3.0a0
+  - krb5 >=1.21.2,<1.22.0a0
+  - libexpat >=2.6.2,<3.0a0
+  - libgcc-ng >=12
+  - libglib >=2.80.2,<3.0a0
+  - libstdcxx-ng >=12
+  - libxcb >=1.15,<1.16.0a0
+  - libxkbcommon >=1.7.0,<2.0a0
+  - libxkbfile >=1.1.0,<1.2.0a0
+  - libzlib >=1.2.13,<2.0.0a0
+  - nspr >=4.35,<5.0a0
+  - nss >=3.100,<4.0a0
+  - wayland >=1.22.0,<2.0a0
+  - xcb-util-cursor >=0.1.4,<0.2.0a0
+  - xcb-util-image >=0.4.0,<0.5.0a0
+  - xcb-util-keysyms >=0.4.0,<0.5.0a0
+  - xcb-util-renderutil >=0.3.9,<0.4.0a0
+  - xcb-util-wm >=0.4.1,<0.5.0a0
+  - xorg-libice >=1.1.1,<2.0a0
+  - xorg-libsm >=1.2.4,<2.0a0
+  - xorg-libx11 >=1.8.9,<2.0a0
+  - xorg-libxcomposite >=0.4.6,<0.5.0a0
+  - xorg-libxdamage >=1.1.5,<1.2.0a0
+  - xorg-libxext >=1.3.4,<2.0a0
+  - xorg-libxfixes >=5.0.3,<5.1.0a0
+  - xorg-libxrandr >=1.5.2,<1.6.0a0
+  - xorg-libxrender >=0.9.11,<0.10.0a0
+  - xorg-libxtst >=1.2.3,<1.3.0a0
+  license: LicenseRef-NVIDIA-End-User-License-Agreement
+  purls: []
+  run_exports: {}
+  size: 634171237
+  timestamp: 1715671527212
+- conda: https://conda.anaconda.org/conda-forge/linux-64/nspr-4.40-h29cc59b_0.conda
+  sha256: 7cf473259ef9945ce19ecc898a2dd146cd32dc86099d87b86f79c5e5b0ef55f0
+  md5: 4ebda462e16da6e6164cb82b9d58fcea
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - libgcc >=14
+  - libstdcxx >=14
+  license: MPL-2.0
+  license_family: MOZILLA
+  purls: []
+  run_exports:
+    weak:
+    - nspr >=4.40,<5.0a0
+  size: 231356
+  timestamp: 1786154777346
+- conda: https://conda.anaconda.org/conda-forge/linux-64/nss-3.118-h445c969_0.conda
+  sha256: 44dd98ffeac859d84a6dcba79a2096193a42fc10b29b28a5115687a680dd6aea
+  md5: 567fbeed956c200c1db5782a424e58ee
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - libgcc >=14
+  - libsqlite >=3.51.0,<4.0a0
+  - libstdcxx >=14
+  - libzlib >=1.3.1,<2.0a0
+  - nspr >=4.38,<5.0a0
+  license: MPL-2.0
+  license_family: MOZILLA
+  purls: []
+  run_exports:
+    weak:
+    - nss >=3.118,<4.0a0
+  size: 2057773
+  timestamp: 1763485556350
+- conda: https://conda.anaconda.org/conda-forge/linux-64/ocl-icd-2.3.4-hb03c661_1.conda
+  sha256: 75f3bf733523a338f73d6c276c4a26634877cd970edb558f2769d9fa52b100a9
+  md5: c2871ba95727fd1382c05db66048b64c
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - libgcc >=14
+  - opencl-headers >=2025.6.13
+  license: BSD-2-Clause
+  license_family: BSD
+  purls: []
+  run_exports:
+    weak:
+    - ocl-icd >=2.3.4,<3.0a0
+  size: 109598
+  timestamp: 1780362789611
+- conda: https://conda.anaconda.org/conda-forge/linux-64/opencl-headers-2025.06.13-hecca717_0.conda
+  sha256: 8de2f0cd8a659b01abf86e7fbb8cea4f28ada62fd288429a2bbc040db1b98dd0
+  md5: c930c8052d780caa41216af7de472226
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - libgcc >=14
+  - libstdcxx >=14
+  license: Apache-2.0
+  license_family: APACHE
+  purls: []
+  run_exports: {}
+  size: 55754
+  timestamp: 1773844383536
+- conda: https://conda.anaconda.org/conda-forge/linux-64/openssl-3.6.3-h35e630c_1.conda
+  sha256: 012096056b97abf1f68c46b7146bd2cbd68c1be762340b4f5dad4fbbe99177bc
+  md5: c5955c27917ff2234def47f075e71e02
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - ca-certificates
+  - libgcc >=14
+  license: Apache-2.0
+  license_family: Apache
+  purls: []
+  run_exports:
+    weak:
+    - openssl >=3.6.3,<4.0a0
+  size: 3182423
+  timestamp: 1785913583650
+- conda: https://conda.anaconda.org/conda-forge/linux-64/pcre2-10.47-h8b3dc9c_1.conda
+  sha256: 9ebb10a4eb3be51ae67d85c679f5a7a50cb040ed25c783e6331a225ea09991d4
+  md5: 06f6113cf1ff4a54b65f87ead132a5f1
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - bzip2 >=1.0.8,<2.0a0
+  - libgcc >=15
+  - libzlib >=1.3.2,<2.0a0
+  license: BSD-3-Clause
+  license_family: BSD
+  purls: []
+  run_exports:
+    weak:
+    - pcre2 >=10.47,<10.48.0a0
+  size: 1218833
+  timestamp: 1787294571916
+- conda: https://conda.anaconda.org/conda-forge/linux-64/pthread-stubs-0.4-hb03c661_1003.conda
+  sha256: afc3b27b2cbb0487c1d0e963f96e71181ecfb623a24fb393bb19ff974a6382a1
+  md5: df2c27f36bdb0dde779f55b5df76a352
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - libgcc >=14
+  license: MIT
+  license_family: MIT
+  purls: []
+  run_exports: {}
+  size: 9115
+  timestamp: 1786067714761
+- conda: https://conda.anaconda.org/conda-forge/linux-64/python-3.11.16-h8ab3286_0_cpython.conda
+  sha256: 16bf00ae05ca86a6dd4ecb19afc238a8c07e09efba9147e2c8b5b9ebd1e12e39
+  md5: 69c543702fe40032d1af308597174f9c
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - bzip2 >=1.0.8,<2.0a0
+  - ld_impl_linux-64 >=2.36.1
+  - libexpat >=2.8.1,<3.0a0
+  - libffi >=3.7.0,<3.8.0a0
+  - libgcc >=14
+  - liblzma >=5.8.3,<6.0a0
+  - libnsl >=2.0.1,<2.1.0a0
+  - libsqlite >=3.53.4,<4.0a0
+  - libuuid >=2.42.2,<3.0a0
+  - libxcrypt >=4.4.38
+  - libzlib >=1.3.2,<2.0a0
+  - ncurses >=6.6,<7.0a0
+  - openssl >=3.5.7,<4.0a0
+  - readline >=8.3,<9.0a0
+  - tk >=8.6.13,<8.7.0a0
+  - tzdata
+  constrains:
+  - python_abi 3.11.* *_cp311
+  license: Python-2.0
+  purls: []
+  run_exports:
+    weak:
+    - python_abi 3.11.* *_cp311
+    noarch:
+    - python
+  size: 30923685
+  timestamp: 1787353217431
+- conda: https://conda.anaconda.org/conda-forge/linux-64/readline-8.3-hd6e31c0_1.conda
+  sha256: 01b3fe073a66e321970d09e04b388708f8cbdca5cdfbfcb7c9eeb470ad10383d
+  md5: 69c01c781e7c8190bbdaf79e3848c5ca
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - libgcc >=15
+  - ncurses >=6.6,<7.0a0
+  license: GPL-3.0-only
+  license_family: GPL
+  purls: []
+  run_exports:
+    weak:
+    - readline >=8.3,<9.0a0
+  size: 348899
+  timestamp: 1787033801506
+- conda: https://conda.anaconda.org/conda-forge/linux-64/rhash-1.4.6-hb03c661_2.conda
+  sha256: 186a5b225077ad5f4656966da947d43307101950751ef4a239b455588756b4e1
+  md5: 007602d697e07c11ff9864964eba5ee3
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - libgcc >=14
+  license: MIT
+  license_family: MIT
+  purls: []
+  run_exports:
+    weak:
+    - rhash >=1.4.6,<2.0a0
+  size: 194994
+  timestamp: 1786731436520
+- conda: https://conda.anaconda.org/conda-forge/linux-64/tk-8.6.13-noxft_hd72426e_102.conda
+  sha256: a84ff687119e6d8752346d1d408d5cf360dee0badd487a472aa8ddedfdc219e1
+  md5: a0116df4f4ed05c303811a837d5b39d8
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - libgcc >=13
+  - libzlib >=1.3.1,<2.0a0
+  license: TCL
+  license_family: BSD
+  purls: []
+  run_exports:
+    weak:
+    - tk >=8.6.13,<8.7.0a0
+  size: 3285204
+  timestamp: 1748387766691
+- conda: https://conda.anaconda.org/conda-forge/linux-64/wayland-1.26.0-h1964d1d_1.conda
+  sha256: a8f1333274382d23721d6f72483ece364631231f8ac3f74389951b1ff2820148
+  md5: 47e3c5d0b1e968ee49efc7c3fa8ebc0c
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - libexpat >=2.8.1,<3.0a0
+  - libffi >=3.7.0,<3.8.0a0
+  - libgcc >=14
+  - libstdcxx >=14
+  license: MIT
+  license_family: MIT
+  purls: []
+  run_exports:
+    weak:
+    - wayland >=1.26.0,<2.0a0
+  size: 339462
+  timestamp: 1786151675802
+- conda: https://conda.anaconda.org/conda-forge/linux-64/xcb-util-0.4.0-hd590300_1.conda
+  sha256: 0c91d87f0efdaadd4e56a5f024f8aab20ec30f90aa2ce9e4ebea05fbc20f71ad
+  md5: 9bfac7ccd94d54fd21a0501296d60424
+  depends:
+  - libgcc-ng >=12
+  - libxcb >=1.13
+  - libxcb >=1.15,<1.16.0a0
+  license: MIT
+  license_family: MIT
+  purls: []
+  run_exports:
+    weak:
+    - xcb-util >=0.4.0,<0.5.0a0
+  size: 19728
+  timestamp: 1684639166048
+- conda: https://conda.anaconda.org/conda-forge/linux-64/xcb-util-cursor-0.1.4-hd590300_1.conda
+  sha256: df147500874761501030227d6bb8889443480cd6fe00361bb046d9840f04d17b
+  md5: 1ecae8461689e44fe0f0e3d18e58e799
+  depends:
+  - libgcc-ng >=12
+  - libxcb >=1.13
+  - libxcb >=1.15,<1.16.0a0
+  - xcb-util-image >=0.4.0,<0.5.0a0
+  - xcb-util-renderutil >=0.3.9,<0.4.0a0
+  license: MIT
+  license_family: MIT
+  purls: []
+  run_exports:
+    weak:
+    - xcb-util-cursor >=0.1.4,<0.2.0a0
+  size: 20170
+  timestamp: 1684687482843
+- conda: https://conda.anaconda.org/conda-forge/linux-64/xcb-util-image-0.4.0-h8ee46fc_1.conda
+  sha256: 92ffd68d2801dbc27afe223e04ae7e78ef605fc8575f107113c93c7bafbd15b0
+  md5: 9d7bcddf49cbf727730af10e71022c73
+  depends:
+  - libgcc-ng >=12
+  - libxcb >=1.15,<1.16.0a0
+  - xcb-util >=0.4.0,<0.5.0a0
+  license: MIT
+  license_family: MIT
+  purls: []
+  run_exports:
+    weak:
+    - xcb-util-image >=0.4.0,<0.5.0a0
+  size: 24474
+  timestamp: 1684679894554
+- conda: https://conda.anaconda.org/conda-forge/linux-64/xcb-util-keysyms-0.4.0-h8ee46fc_1.conda
+  sha256: 8451d92f25d6054a941b962179180728c48c62aab5bf20ac10fef713d5da6a9a
+  md5: 632413adcd8bc16b515cab87a2932913
+  depends:
+  - libgcc-ng >=12
+  - libxcb >=1.15,<1.16.0a0
+  license: MIT
+  license_family: MIT
+  purls: []
+  run_exports:
+    weak:
+    - xcb-util-keysyms >=0.4.0,<0.5.0a0
+  size: 14186
+  timestamp: 1684680497805
+- conda: https://conda.anaconda.org/conda-forge/linux-64/xcb-util-renderutil-0.3.9-hd590300_1.conda
+  sha256: 6987588e6fff5892056021c2ea52f7a0deefb2c7348e70d24750e2d60dabf009
+  md5: e995b155d938b6779da6ace6c6b13816
+  depends:
+  - libgcc-ng >=12
+  - libxcb >=1.13
+  - libxcb >=1.15,<1.16.0a0
+  license: MIT
+  license_family: MIT
+  purls: []
+  run_exports:
+    weak:
+    - xcb-util-renderutil >=0.3.9,<0.4.0a0
+  size: 16955
+  timestamp: 1684639112393
+- conda: https://conda.anaconda.org/conda-forge/linux-64/xcb-util-wm-0.4.1-h8ee46fc_1.conda
+  sha256: 08ba7147c7579249b6efd33397dc1a8c2404278053165aaecd39280fee705724
+  md5: 90108a432fb5c6150ccfee3f03388656
+  depends:
+  - libgcc-ng >=12
+  - libxcb >=1.15,<1.16.0a0
+  license: MIT
+  license_family: MIT
+  purls: []
+  run_exports:
+    weak:
+    - xcb-util-wm >=0.4.1,<0.5.0a0
+  size: 52114
+  timestamp: 1684679248466
+- conda: https://conda.anaconda.org/conda-forge/linux-64/xkeyboard-config-2.42-h4ab18f5_0.conda
+  sha256: 240caab7d9d85154ef373ecbac3ff9fb424add2029dbb124e949c6cbab2996dd
+  md5: b193af204da1bfb8c13882d131a14bd2
+  depends:
+  - libgcc-ng >=12
+  - xorg-libx11 >=1.8.9,<2.0a0
+  license: MIT
+  license_family: MIT
+  purls: []
+  run_exports: {}
+  size: 388998
+  timestamp: 1717817668629
+- conda: https://conda.anaconda.org/conda-forge/linux-64/xorg-compositeproto-0.4.2-hb9d3cd8_1002.conda
+  sha256: b800b09a090e4acef0b8653bcb1a4811e8f44559d4eff050886770fdfa77857b
+  md5: 317d35860cab6c16d91a81f67303023d
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - libgcc >=13
+  license: MIT
+  license_family: MIT
+  purls: []
+  run_exports: {}
+  size: 14808
+  timestamp: 1726801836848
+- conda: https://conda.anaconda.org/conda-forge/linux-64/xorg-damageproto-1.2.1-hb9d3cd8_1003.conda
+  sha256: 424a9202255359a75770eaca534e4e8b07464242f0146871915e1bb76fb3ffae
+  md5: 5135d24c55235da88c2fe48a8662927a
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - libgcc >=13
+  license: MIT
+  license_family: MIT
+  purls: []
+  run_exports: {}
+  size: 27720
+  timestamp: 1726801874619
+- conda: https://conda.anaconda.org/conda-forge/linux-64/xorg-fixesproto-5.0-hb9d3cd8_1003.conda
+  sha256: 07268980b659a84a4bac64b475329348e9cf5fa4aee255fa94aa0407ae5b804c
+  md5: 19fe37721037acc0a1ed76b8cf937359
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - libgcc >=13
+  - xorg-xextproto >=7.3.0,<8.0a0
+  license: MIT
+  license_family: MIT
+  purls: []
+  run_exports: {}
+  size: 11311
+  timestamp: 1727033761080
+- conda: https://conda.anaconda.org/conda-forge/linux-64/xorg-inputproto-2.3.2-hb9d3cd8_1003.conda
+  sha256: 77eea289f9d3fa753a290f988533c842694b826fe1900abd6d7b142c528512ba
+  md5: 32623b33f2047dbc9ae2f2e8fd3880e9
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - libgcc >=13
+  license: MIT
+  license_family: MIT
+  purls: []
+  run_exports: {}
+  size: 22320
+  timestamp: 1726802558171
+- conda: https://conda.anaconda.org/conda-forge/linux-64/xorg-kbproto-1.0.7-hb9d3cd8_1003.conda
+  sha256: 849555ddf7fee334a5a6be9f159d2931c9d076ffb310a9e75b9124f789049d3e
+  md5: e87bfacb110d85e1eb6099c9ed8e7236
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - libgcc >=13
+  license: MIT
+  license_family: MIT
+  purls: []
+  run_exports: {}
+  size: 30242
+  timestamp: 1726846706299
+- conda: https://conda.anaconda.org/conda-forge/linux-64/xorg-libice-1.1.2-h280c20c_0.conda
+  sha256: 49b532d1df875c6749d9078b56a76f3f5db49a5abe0ca620b593ed474ef0ebf1
+  md5: 85c9442aec283b4e464fa9ecc484a2f3
+  depends:
+  - libgcc >=14
+  - __glibc >=2.17,<3.0.a0
+  license: MIT
+  license_family: MIT
+  purls: []
+  run_exports:
+    weak:
+    - xorg-libice >=1.1.2,<2.0a0
+  size: 62517
+  timestamp: 1786474410404
+- conda: https://conda.anaconda.org/conda-forge/linux-64/xorg-libsm-1.2.6-h0d788c3_1.conda
+  sha256: ef907caee0665cf3b0f775602cc50e388e3bade8ce22ecade0873ff26604b2fd
+  md5: aa7459ed9ad086ba11dda843d764b33d
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - libgcc >=14
+  - xorg-libice >=1.1.2,<2.0a0
+  - libuuid >=2.42.2,<3.0a0
+  license: MIT
+  license_family: MIT
+  purls: []
+  run_exports:
+    weak:
+    - xorg-libsm >=1.2.6,<2.0a0
+  size: 30739
+  timestamp: 1786545374265
+- conda: https://conda.anaconda.org/conda-forge/linux-64/xorg-libx11-1.8.9-h8ee46fc_0.conda
+  sha256: 3e53ba247f1ad68353f18aceba5bf8ce87e3dea930de85d36946844a7658c9fb
+  md5: 077b6e8ad6a3ddb741fce2496dd01bec
+  depends:
+  - libgcc-ng >=12
+  - libxcb >=1.15,<1.16.0a0
+  - xorg-kbproto
+  - xorg-xextproto >=7.3.0,<8.0a0
+  - xorg-xproto
+  license: MIT
+  license_family: MIT
+  purls: []
+  run_exports:
+    weak:
+    - xorg-libx11 >=1.8.9,<2.0a0
+  size: 828060
+  timestamp: 1712415742569
+- conda: https://conda.anaconda.org/conda-forge/linux-64/xorg-libxau-1.0.12-hb03c661_2.conda
+  sha256: cbf891f6cc1a859347680af1c8562bc6b033bf182a2a3bb536016932be3206de
+  md5: f06ef439c280a5f90b8bf62355008dbc
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - libgcc >=14
+  license: MIT
+  license_family: MIT
+  purls: []
+  run_exports:
+    weak:
+    - xorg-libxau >=1.0.12,<2.0a0
+  size: 16419
+  timestamp: 1786381001122
+- conda: https://conda.anaconda.org/conda-forge/linux-64/xorg-libxcomposite-0.4.6-h0b41bf4_1.conda
+  sha256: 7c5806a8de1ce0d4e0c7aae8d29565f11fba6c6da4a787c3e09f1fcc428725a4
+  md5: ada6777364a0ea2407a1894e54779cc4
+  depends:
+  - libgcc-ng >=12
+  - xorg-compositeproto
+  - xorg-libx11 >=1.7.2,<2.0a0
+  - xorg-libxfixes
+  - xorg-xproto
+  license: MIT
+  license_family: MIT
+  purls: []
+  run_exports: {}
+  size: 13436
+  timestamp: 1676978990631
+- conda: https://conda.anaconda.org/conda-forge/linux-64/xorg-libxdamage-1.1.5-h7f98852_1.tar.bz2
+  sha256: 4cab878855e48669b64dd7522a518433ac83bb56fa79743d12db316326e2e39e
+  md5: bebd3814ec2355fab6a474b07ed73093
+  depends:
+  - libgcc-ng >=9.4.0
+  - xorg-damageproto
+  - xorg-libx11 >=1.7.2,<2.0a0
+  - xorg-libxext 1.3.*
+  - xorg-libxfixes
+  - xorg-util-macros
+  - xorg-xproto
+  license: MIT
+  license_family: MIT
+  purls: []
+  run_exports: {}
+  size: 11964
+  timestamp: 1641830754492
+- conda: https://conda.anaconda.org/conda-forge/linux-64/xorg-libxdmcp-1.1.5-hb03c661_2.conda
+  sha256: c50a16c05ccd7fe7dd6d6cfb539f4e9a491d50f9ed7a5c902fec638f7d0d27be
+  md5: 2e66c929f3d879708335b6ea4557c838
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - libgcc >=14
+  license: MIT
+  license_family: MIT
+  purls: []
+  run_exports:
+    weak:
+    - xorg-libxdmcp >=1.1.5,<2.0a0
+  size: 21120
+  timestamp: 1786381006369
+- conda: https://conda.anaconda.org/conda-forge/linux-64/xorg-libxext-1.3.4-h0b41bf4_2.conda
+  sha256: 73e5cfbdff41ef8a844441f884412aa5a585a0f0632ec901da035a03e1fe1249
+  md5: 82b6df12252e6f32402b96dacc656fec
+  depends:
+  - libgcc-ng >=12
+  - xorg-libx11 >=1.7.2,<2.0a0
+  - xorg-xextproto
+  license: MIT
+  license_family: MIT
+  purls: []
+  run_exports:
+    weak:
+    - xorg-libxext >=1.3.4,<2.0a0
+  size: 50143
+  timestamp: 1677036907815
+- conda: https://conda.anaconda.org/conda-forge/linux-64/xorg-libxfixes-5.0.3-h7f98852_1004.tar.bz2
+  sha256: 1e426a1abb774ef1dcf741945ed5c42ad12ea2dc7aeed7682d293879c3e1e4c3
+  md5: e9a21aa4d5e3e5f1aed71e8cefd46b6a
+  depends:
+  - libgcc-ng >=9.3.0
+  - xorg-fixesproto
+  - xorg-libx11 >=1.7.0,<2.0a0
+  license: MIT
+  license_family: MIT
+  purls: []
+  run_exports: {}
+  size: 18145
+  timestamp: 1617717802636
+- conda: https://conda.anaconda.org/conda-forge/linux-64/xorg-libxi-1.7.10-h4bc722e_1.conda
+  sha256: e1416eb435e3d903bc658e3c637f0e87efd2dca290fe70daf29738b3a3d1f8ff
+  md5: 749baebe7e2ff3360630e069175e528b
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - libgcc-ng >=12
+  - xorg-inputproto
+  - xorg-libx11 >=1.8.9,<2.0a0
+  - xorg-libxext 1.3.*
+  - xorg-libxext >=1.3.4,<2.0a0
+  - xorg-libxfixes 5.0.*
+  - xorg-xextproto >=7.3.0,<8.0a0
+  license: MIT
+  license_family: MIT
+  purls: []
+  run_exports:
+    weak:
+    - xorg-libxi >=1.7.10,<2.0a0
+  size: 46794
+  timestamp: 1722108216651
+- conda: https://conda.anaconda.org/conda-forge/linux-64/xorg-libxrandr-1.5.2-h7f98852_1.tar.bz2
+  sha256: ffd075a463896ed86d9519e26dc36f754b695b9c1e1b6115d34fe138b36d8200
+  md5: 5b0f7da25a4556c9619c3e4b4a98ab07
+  depends:
+  - libgcc-ng >=9.3.0
+  - xorg-libx11 >=1.7.1,<2.0a0
+  - xorg-libxext
+  - xorg-libxrender
+  - xorg-randrproto
+  - xorg-renderproto
+  - xorg-xextproto
+  license: MIT
+  license_family: MIT
+  purls: []
+  run_exports: {}
+  size: 29688
+  timestamp: 1621515728586
+- conda: https://conda.anaconda.org/conda-forge/linux-64/xorg-libxrender-0.9.11-hd590300_0.conda
+  sha256: 26da4d1911473c965c32ce2b4ff7572349719eaacb88a066db8d968a4132c3f7
+  md5: ed67c36f215b310412b2af935bf3e530
+  depends:
+  - libgcc-ng >=12
+  - xorg-libx11 >=1.8.6,<2.0a0
+  - xorg-renderproto
+  license: MIT
+  license_family: MIT
+  purls: []
+  run_exports:
+    weak:
+    - xorg-libxrender >=0.9.11,<0.10.0a0
+  size: 37770
+  timestamp: 1688300707994
+- conda: https://conda.anaconda.org/conda-forge/linux-64/xorg-libxtst-1.2.5-h4bc722e_0.conda
+  sha256: 0139b52c3cbce57bfd1d120c41637bc239430faff4aa0445f58de0adf4c4b976
+  md5: 185159d666308204eca00295599b0a5c
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - libgcc-ng >=12
+  - xorg-inputproto
+  - xorg-libx11 >=1.8.9,<2.0a0
+  - xorg-libxext 1.3.*
+  - xorg-libxext >=1.3.4,<2.0a0
+  - xorg-libxi 1.7.*
+  - xorg-libxi >=1.7.10,<2.0a0
+  - xorg-recordproto
+  license: MIT
+  license_family: MIT
+  purls: []
+  run_exports:
+    weak:
+    - xorg-libxtst >=1.2.5,<2.0a0
+  size: 32931
+  timestamp: 1722575571554
+- conda: https://conda.anaconda.org/conda-forge/linux-64/xorg-randrproto-1.5.0-hb9d3cd8_1002.conda
+  sha256: d742ac2970c05abb597dacccd411af0d5b7a280b0b3390c4f681022edf4541a2
+  md5: b9485267c7eb6b8601b378e06a9e44d3
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - libgcc >=13
+  license: MIT
+  license_family: MIT
+  purls: []
+  run_exports: {}
+  size: 35658
+  timestamp: 1726801844143
+- conda: https://conda.anaconda.org/conda-forge/linux-64/xorg-recordproto-1.14.2-hb9d3cd8_1003.conda
+  sha256: fa721a0a041453612f9dc03059905cf7426669ab8795e1b46d1b0f61c332b1ea
+  md5: 1d600d113f3e22a7eddd7e7d574be3fa
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - libgcc >=13
+  license: MIT
+  license_family: MIT
+  purls: []
+  run_exports: {}
+  size: 10290
+  timestamp: 1726846345776
+- conda: https://conda.anaconda.org/conda-forge/linux-64/xorg-renderproto-0.11.1-hb9d3cd8_1003.conda
+  sha256: 54dd934b0e1c942e54759eb13672fd59b7e523fabea6e69a32d5bf483e45b329
+  md5: bf90782559bce8447609933a7d45995a
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - libgcc >=13
+  license: MIT
+  license_family: MIT
+  purls: []
+  run_exports: {}
+  size: 11867
+  timestamp: 1726802820431
+- conda: https://conda.anaconda.org/conda-forge/linux-64/xorg-util-macros-1.20.2-hb03c661_1.conda
+  sha256: 07d6ed8ac2125ab5541954730af2c4152ca1ac499ca86bc1d3b8e49f0a39f041
+  md5: 8531835e6ec64878e783dcdd1fb81ec0
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - libgcc >=14
+  license: MIT
+  license_family: MIT
+  purls: []
+  run_exports: {}
+  size: 46185
+  timestamp: 1785944544477
+- conda: https://conda.anaconda.org/conda-forge/linux-64/xorg-xextproto-7.3.0-hb9d3cd8_1004.conda
+  sha256: f302a3f6284ee9ad3b39e45251d7ed15167896564dc33e006077a896fd3458a6
+  md5: bc4cd53a083b6720d61a1519a1900878
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - libgcc >=13
+  license: MIT
+  license_family: MIT
+  purls: []
+  run_exports:
+    weak:
+    - xorg-xextproto >=7.3.0,<8.0a0
+  size: 30549
+  timestamp: 1726846235301
+- conda: https://conda.anaconda.org/conda-forge/linux-64/xorg-xproto-7.0.31-hb9d3cd8_1008.conda
+  sha256: ea02425c898d6694167952794e9a865e02e14e9c844efb067374f90b9ce8ce33
+  md5: a63f5b66876bb1ec734ab4bdc4d11e86
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - libgcc >=13
+  license: MIT
+  license_family: MIT
+  purls: []
+  run_exports: {}
+  size: 73315
+  timestamp: 1726845753874
+- conda: https://conda.anaconda.org/conda-forge/linux-64/zstd-1.5.7-hb78ec9c_7.conda
+  sha256: 47d682b9f6d6ec9eb1a6e6c3e75ea6273e899e78fb7fc59f81d39745009fbc60
+  md5: aa459086047c0e5e27023ab19f8cb86a
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - libzlib >=1.3.2,<2.0a0
+  license: BSD-3-Clause
+  license_family: BSD
+  purls: []
+  run_exports:
+    weak:
+    - zstd >=1.5.7,<1.6.0a0
+  size: 601301
+  timestamp: 1786599621503
+- conda: https://conda.anaconda.org/conda-forge/noarch/ca-certificates-2026.7.22-hbd8a1cb_0.conda
+  sha256: 0a0544cf95f64394fe4959286f5c71f5444ad58feb0602e53becb27448d24da6
+  md5: 0f51e2391ade309db462a55611263e9c
+  depends:
+  - __unix
+  license: ISC
+  purls: []
+  run_exports: {}
+  size: 131780
+  timestamp: 1784754889428
+- conda: https://conda.anaconda.org/conda-forge/noarch/cuda-cccl_linux-64-12.4.127-ha770c72_2.conda
+  sha256: b97bb30412c13bf0fd6211d75a35d69c882c482347962b1b55dcdbb959d13f1e
+  md5: 357fbcd43f1296b02d6738a2295abc24
+  depends:
+  - cuda-version >=12.4,<12.5.0a0
+  license: LicenseRef-NVIDIA-End-User-License-Agreement
+  purls: []
+  run_exports: {}
+  size: 1310030
+  timestamp: 1714670631719
+- conda: https://conda.anaconda.org/conda-forge/noarch/cuda-compiler-12.4.1-hbad6d8a_0.conda
+  sha256: 22337ccdef8b17fbe55167c7eea837989d5c464eccff2c6c815511ea14aa2bc0
+  md5: d3f00dc0ee88d90b85e35ce7b579f3fc
+  depends:
+  - __linux
+  - c-compiler
+  - cuda-cuobjdump 12.4.127.*
+  - cuda-cuxxfilt 12.4.127.*
+  - cuda-nvcc 12.4.131.*
+  - cuda-nvprune 12.4.127.*
+  - cxx-compiler
+  license: LicenseRef-NVIDIA-End-User-License-Agreement
+  purls: []
+  run_exports: {}
+  size: 20262
+  timestamp: 1712669275490
+- conda: https://conda.anaconda.org/conda-forge/noarch/cuda-crt-dev_linux-64-12.4.131-ha770c72_1.conda
+  sha256: bf7444effc218208dafafc8b4360636fc3bdf5a16c9745e328728ed0d1cb6b1d
+  md5: 3254ce82dbdf6705a5fad380b18b557b
+  depends:
+  - cuda-version >=12.4,<12.5.0a0
+  license: LicenseRef-NVIDIA-End-User-License-Agreement
+  purls: []
+  run_exports: {}
+  size: 88428
+  timestamp: 1715119075726
+- conda: https://conda.anaconda.org/conda-forge/noarch/cuda-cudart-dev_linux-64-12.4.127-h85509e4_2.conda
+  sha256: 49075eec8fed540bee60a63c0152e62ec1d2e85be00856bd85dc2de7f50a5675
+  md5: 12039deb2a3f103f5756831702bf29fc
+  depends:
+  - cuda-cccl_linux-64
+  - cuda-cudart-static_linux-64
+  - cuda-cudart_linux-64
+  - cuda-version >=12.4,<12.5.0a0
+  license: LicenseRef-NVIDIA-End-User-License-Agreement
+  purls: []
+  run_exports:
+    weak:
+    - cuda-cudart >=12.4.127,<13.0a0
+  size: 358315
+  timestamp: 1715710709279
+- conda: https://conda.anaconda.org/conda-forge/noarch/cuda-cudart-static_linux-64-12.4.127-h85509e4_2.conda
+  sha256: 87ad697c56aa4cbc6aa955f337caf440e20f0abd0056d516e17d85dd2afbeed9
+  md5: 0b0522d8685968f25370d5c36bb9fba3
+  depends:
+  - cuda-version >=12.4,<12.5.0a0
+  license: LicenseRef-NVIDIA-End-User-License-Agreement
+  purls: []
+  run_exports: {}
+  size: 741558
+  timestamp: 1715710669407
+- conda: https://conda.anaconda.org/conda-forge/noarch/cuda-cudart_linux-64-12.4.127-h85509e4_2.conda
+  sha256: 1f1b3e0bf6b5e665860ecbdf509c1e02760c14d25e3f3893a712f90f7f8a5abc
+  md5: 329163110a96514802e9e64d971edf43
+  depends:
+  - cuda-version >=12.4,<12.5.0a0
+  license: LicenseRef-NVIDIA-End-User-License-Agreement
+  purls: []
+  run_exports: {}
+  size: 186886
+  timestamp: 1715710690964
+- conda: https://conda.anaconda.org/conda-forge/noarch/cuda-driver-dev_linux-64-12.4.127-h85509e4_2.conda
+  sha256: 78f2e2c767ff3e71c6cb38eb5055fd72b7fc1cf58ab16113272b45306992c9ae
+  md5: c548df3089c8ad5d3ef8b93cdb8589a2
+  depends:
+  - cuda-version >=12.4,<12.5.0a0
+  license: LicenseRef-NVIDIA-End-User-License-Agreement
+  purls: []
+  run_exports: {}
+  size: 35811
+  timestamp: 1715710697237
+- conda: https://conda.anaconda.org/conda-forge/noarch/cuda-nvcc-dev_linux-64-12.4.131-ha770c72_1.conda
+  sha256: c645daf86bf62b0197379b40630f3d6e32d41dda826dc743dc932bd33fca6ec4
+  md5: 611d2da1f676c45b797e3f7051253815
+  depends:
+  - cuda-crt-dev_linux-64 12.4.131 ha770c72_1
+  - cuda-nvvm-dev_linux-64 12.4.131 ha770c72_1
+  - cuda-version >=12.4,<12.5.0a0
+  - libgcc-ng >=6
+  constrains:
+  - gcc_impl_linux-64 >=6,<13
+  license: LicenseRef-NVIDIA-End-User-License-Agreement
+  purls: []
+  run_exports: {}
+  size: 11236598
+  timestamp: 1715119224341
+- conda: https://conda.anaconda.org/conda-forge/noarch/cuda-nvvm-dev_linux-64-12.4.131-ha770c72_1.conda
+  sha256: 97dbb12ad6f000022a9d87417c2738bc05658c1c9cd195ba422d97bda839c6a8
+  md5: c43755e0eda247d4a56b31432c63305e
+  depends:
+  - cuda-version >=12.4,<12.5.0a0
+  license: LicenseRef-NVIDIA-End-User-License-Agreement
+  purls: []
+  run_exports: {}
+  size: 24479
+  timestamp: 1715119103749
+- conda: https://conda.anaconda.org/conda-forge/noarch/cuda-toolkit-12.4.1-ha804496_0.conda
+  sha256: c3faecbb52cbdb82d1723e82ed572ae23bc187863b7f499f8afe7247cf1178c1
+  md5: e1e8cfdbb172f4b6558ce2db688e851f
+  depends:
+  - __linux
+  - cuda-compiler 12.4.1.*
+  - cuda-libraries 12.4.1.*
+  - cuda-libraries-dev 12.4.1.*
+  - cuda-nvml-dev 12.4.127.*
+  - cuda-tools 12.4.1.*
+  license: LicenseRef-NVIDIA-End-User-License-Agreement
+  purls: []
+  run_exports: {}
+  size: 20097
+  timestamp: 1712717191443
+- conda: https://conda.anaconda.org/conda-forge/noarch/cuda-version-12.4-h3060b56_3.conda
+  sha256: 571d32fbd0dc8df6e85c14d1757549927e272af9c70b935d7e3a553ab0b0b4da
+  md5: c9a3fe8b957176e1a8452c6f3431b0d8
+  constrains:
+  - cudatoolkit 12.4|12.4.*
+  - __cuda >=12
+  license: LicenseRef-NVIDIA-End-User-License-Agreement
+  purls: []
+  run_exports: {}
+  size: 21022
+  timestamp: 1709765922936
+- conda: https://conda.anaconda.org/conda-forge/noarch/font-ttf-dejavu-sans-mono-2.37-hab24e00_0.tar.bz2
+  sha256: 58d7f40d2940dd0a8aa28651239adbf5613254df0f75789919c4e6762054403b
+  md5: 0c96522c6bdaed4b1566d11387caaf45
+  license: BSD-3-Clause
+  license_family: BSD
+  purls: []
+  run_exports: {}
+  size: 397370
+  timestamp: 1566932522327
+- conda: https://conda.anaconda.org/conda-forge/noarch/font-ttf-inconsolata-3.000-h77eed37_0.tar.bz2
+  sha256: c52a29fdac682c20d252facc50f01e7c2e7ceac52aa9817aaf0bb83f7559ec5c
+  md5: 34893075a5c9e55cdafac56607368fc6
+  license: OFL-1.1
+  license_family: Other
+  purls: []
+  run_exports: {}
+  size: 96530
+  timestamp: 1620479909603
+- conda: https://conda.anaconda.org/conda-forge/noarch/font-ttf-source-code-pro-2.038-h77eed37_0.tar.bz2
+  sha256: 00925c8c055a2275614b4d983e1df637245e19058d79fc7dd1a93b8d9fb4b139
+  md5: 4d59c254e01d9cde7957100457e2d5fb
+  license: OFL-1.1
+  license_family: Other
+  purls: []
+  run_exports: {}
+  size: 700814
+  timestamp: 1620479612257
+- conda: https://conda.anaconda.org/conda-forge/noarch/font-ttf-ubuntu-0.83-h77eed37_3.conda
+  sha256: 2821ec1dc454bd8b9a31d0ed22a7ce22422c0aef163c59f49dfdf915d0f0ca14
+  md5: 49023d73832ef61042f6a237cb2687e7
+  license: LicenseRef-Ubuntu-Font-Licence-Version-1.0
+  license_family: Other
+  purls: []
+  run_exports: {}
+  size: 1620504
+  timestamp: 1727511233259
+- conda: https://conda.anaconda.org/conda-forge/noarch/fonts-conda-ecosystem-1-0.tar.bz2
+  sha256: a997f2f1921bb9c9d76e6fa2f6b408b7fa549edd349a77639c9fe7a23ea93e61
+  md5: fee5683a3f04bd15cbd8318b096a27ab
+  depends:
+  - fonts-conda-forge
+  license: BSD-3-Clause
+  license_family: BSD
+  purls: []
+  run_exports: {}
+  size: 3667
+  timestamp: 1566974674465
+- conda: https://conda.anaconda.org/conda-forge/noarch/fonts-conda-forge-1-hc364b38_1.conda
+  sha256: 54eea8469786bc2291cc40bca5f46438d3e062a399e8f53f013b6a9f50e98333
+  md5: a7970cd949a077b7cb9696379d338681
+  depends:
+  - font-ttf-ubuntu
+  - font-ttf-inconsolata
+  - font-ttf-dejavu-sans-mono
+  - font-ttf-source-code-pro
+  license: BSD-3-Clause
+  license_family: BSD
+  purls: []
+  run_exports: {}
+  size: 4059
+  timestamp: 1762351264405
+- conda: https://conda.anaconda.org/conda-forge/noarch/kernel-headers_linux-64-4.18.0-he073ed8_9.conda
+  sha256: 41557eeadf641de6aeae49486cef30d02a6912d8da98585d687894afd65b356a
+  md5: 86d9cba083cd041bfbf242a01a7a1999
+  constrains:
+  - sysroot_linux-64 ==2.28
+  license: LGPL-2.0-or-later AND LGPL-2.0-or-later WITH exceptions AND GPL-2.0-or-later
+  license_family: GPL
+  purls: []
+  run_exports: {}
+  size: 1278712
+  timestamp: 1765578681495
+- conda: https://conda.anaconda.org/conda-forge/noarch/libgcc-devel_linux-64-12.4.0-h1762d19_102.conda
+  sha256: 4f8486faaa5696a4115a621100acda0f64b49631f2c4bc6046e0f72496348d76
+  md5: 5c9ee54252cddf9f83dc48f6ceef0ba4
+  depends:
+  - __unix
+  license: GPL-3.0-only WITH GCC-exception-3.1
+  license_family: GPL
+  purls: []
+  run_exports: {}
+  size: 2558737
+  timestamp: 1740240187748
+- conda: https://conda.anaconda.org/conda-forge/noarch/libstdcxx-devel_linux-64-12.4.0-h1762d19_102.conda
+  sha256: 5e86d884d6877ce428d90a484cdc66d5968bf81dc189393239c43fe9b831da7d
+  md5: aa2ae7befd3d165f3cfc4d3b39cebeb5
+  depends:
+  - __unix
+  license: GPL-3.0-only WITH GCC-exception-3.1
+  license_family: GPL
+  purls: []
+  run_exports: {}
+  size: 11883113
+  timestamp: 1740240215984
+- conda: https://conda.anaconda.org/conda-forge/noarch/sysroot_linux-64-2.28-h4ee821c_9.conda
+  sha256: c47299fe37aebb0fcf674b3be588e67e4afb86225be4b0d452c7eb75c086b851
+  md5: 13dc3adbc692664cd3beabd216434749
+  depends:
+  - __glibc >=2.28
+  - kernel-headers_linux-64 4.18.0 he073ed8_9
+  - tzdata
+  license: LGPL-2.0-or-later AND LGPL-2.0-or-later WITH exceptions AND GPL-2.0-or-later
+  license_family: GPL
+  purls: []
+  run_exports:
+    strong:
+    - __glibc >=2.28,<3.0.a0
+  size: 24008591
+  timestamp: 1765578833462
+- conda: https://conda.anaconda.org/conda-forge/noarch/tzdata-2026c-h151e31d_0.conda
+  sha256: b928c30ddcb0e3f544c6eade8352737e6e610e263276b90232db6a578ef899d8
+  md5: fcb489df604d100968b737f2cb6076c6
+  license: LicenseRef-Public-Domain
+  purls: []
+  run_exports: {}
+  size: 118849
+  timestamp: 1784250406640
+- pypi: direct+https://github.com/LDYang694/Storages/releases/download/20260430/utils3d-0.0.2-py3-none-any.whl
+  name: utils3d
+  version: 0.0.2
+  requires_dist:
+  - moderngl
+  - numpy
+  - plyfile
+  - scipy
+  requires_python: '>=3.7'
+- pypi: git+https://github.com/JeffreyXiang/CuMesh.git#12289e1062f0603f2f0d0771b02e1395d247f26f
+  name: cumesh
+  version: 0.0.1
+  requires_dist:
+  - torch>=2.4.0
+  - tqdm
+  requires_python: '>=3.8'
+- pypi: git+https://github.com/JeffreyXiang/FlexGEMM.git#6dd94a859c26ee8246888502eada3dd8ad85532e
+  name: flex-gemm
+  version: 1.0.0
+  requires_dist:
+  - torch>=2.4.0
+  - triton>=3.2.0 ; sys_platform != 'win32'
+  - triton-windows>=3.2.0 ; sys_platform == 'win32'
+  - filelock
+  requires_python: '>=3.8'
+- pypi: git+https://github.com/NVlabs/nvdiffrast.git?rev=v0.4.0#253ac4fcea7de5f396371124af597e6cc957bfae
+  name: nvdiffrast
+  version: 0.4.0
+  requires_dist:
+  - numpy
+  requires_python: '>=3.6'
+- pypi: git+https://github.com/microsoft/TRELLIS.2.git?subdirectory=o-voxel#75fbf0183001ed9876c8dbb35de6b68552ee08bd
+  name: o-voxel
+  version: 0.0.1
+  requires_dist:
+  - torch
+  - numpy
+  - plyfile
+  - trimesh
+  - tqdm
+  - zstandard
+  - easydict
+  - cumesh @ git+https://github.com/JeffreyXiang/CuMesh.git
+  - flex-gemm @ git+https://github.com/JeffreyXiang/FlexGEMM.git
+  requires_python: '>=3.8'
+- pypi: https://download-r2.pytorch.org/whl/cu124/torch-2.6.0%2Bcu124-cp311-cp311-linux_x86_64.whl
+  name: torch
+  version: 2.6.0+cu124
+  sha256: d4c3e9a8d31a7c0fcbb9da17c31a1917e1fac26c566a4cfbd8c9568ad7cade79
+  index: https://download.pytorch.org/whl/cu124
+  requires_dist:
+  - filelock
+  - typing-extensions>=4.10.0
+  - networkx
+  - jinja2
+  - fsspec
+  - nvidia-cuda-nvrtc-cu12==12.4.127 ; platform_machine == 'x86_64' and sys_platform == 'linux'
+  - nvidia-cuda-runtime-cu12==12.4.127 ; platform_machine == 'x86_64' and sys_platform == 'linux'
+  - nvidia-cuda-cupti-cu12==12.4.127 ; platform_machine == 'x86_64' and sys_platform == 'linux'
+  - nvidia-cudnn-cu12==9.1.0.70 ; platform_machine == 'x86_64' and sys_platform == 'linux'
+  - nvidia-cublas-cu12==12.4.5.8 ; platform_machine == 'x86_64' and sys_platform == 'linux'
+  - nvidia-cufft-cu12==11.2.1.3 ; platform_machine == 'x86_64' and sys_platform == 'linux'
+  - nvidia-curand-cu12==10.3.5.147 ; platform_machine == 'x86_64' and sys_platform == 'linux'
+  - nvidia-cusolver-cu12==11.6.1.9 ; platform_machine == 'x86_64' and sys_platform == 'linux'
+  - nvidia-cusparse-cu12==12.3.1.170 ; platform_machine == 'x86_64' and sys_platform == 'linux'
+  - nvidia-cusparselt-cu12==0.6.2 ; platform_machine == 'x86_64' and sys_platform == 'linux'
+  - nvidia-nccl-cu12==2.21.5 ; platform_machine == 'x86_64' and sys_platform == 'linux'
+  - nvidia-nvtx-cu12==12.4.127 ; platform_machine == 'x86_64' and sys_platform == 'linux'
+  - nvidia-nvjitlink-cu12==12.4.127 ; platform_machine == 'x86_64' and sys_platform == 'linux'
+  - triton==3.2.0 ; platform_machine == 'x86_64' and sys_platform == 'linux'
+  - setuptools ; python_full_version >= '3.12'
+  - sympy==1.13.1 ; python_full_version >= '3.9'
+  - opt-einsum>=3.3 ; extra == 'opt-einsum'
+  - optree>=0.13.0 ; extra == 'optree'
+  requires_python: '>=3.9.0'
+- pypi: https://download-r2.pytorch.org/whl/cu124/torchvision-0.21.0%2Bcu124-cp311-cp311-linux_x86_64.whl
+  name: torchvision
+  version: 0.21.0+cu124
+  sha256: 137376805aca5ba57bd2c7a3ecb8569df961dbe82b128aac9b3b0a7125ef9385
+  index: https://download.pytorch.org/whl/cu124
+  requires_dist:
+  - numpy
+  - torch==2.6.0
+  - pillow>=5.3.0,!=8.3.*
+  - gdown>=4.7.3 ; extra == 'gdown'
+  - scipy ; extra == 'scipy'
+  requires_python: '>=3.9'
+- pypi: https://files.pythonhosted.org/packages/04/4b/29cac41a4d98d144bf5f6d33995617b185d14b22401f75ca86f384e87ff1/h11-0.16.0-py3-none-any.whl
+  name: h11
+  version: 0.16.0
+  sha256: 63cf8bbe7522de3bf65932fda1d9c2772064ffb3dae62d55932da54b31cb6c86
+  requires_python: '>=3.8'
+- pypi: https://files.pythonhosted.org/packages/05/ec/fa6963f1198172c2b75c9ab6ecefb3045991f92f75f5eb41b6621b198123/easydict-1.13-py3-none-any.whl
+  name: easydict
+  version: '1.13'
+  sha256: 6b787daf4dcaf6377b4ad9403a5cee5a86adbc0ca9a5bcf5410e9902002aeac2
+- pypi: https://files.pythonhosted.org/packages/09/7d/af933f0f6e0767995b4e2d705a0665e454d1c19402aa7e895de3951ebb04/scipy-1.17.1-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl
+  name: scipy
+  version: 1.17.1
+  sha256: 43af8d1f3bea642559019edfe64e9b11192a8978efbd1539d7bc2aaa23d92de4
+  requires_dist:
+  - numpy>=1.26.4,<2.7
+  - pytest>=8.0.0 ; extra == 'test'
+  - pytest-cov ; extra == 'test'
+  - pytest-timeout ; extra == 'test'
+  - pytest-xdist ; extra == 'test'
+  - asv ; extra == 'test'
+  - mpmath ; extra == 'test'
+  - gmpy2 ; extra == 'test'
+  - threadpoolctl ; extra == 'test'
+  - scikit-umfpack ; extra == 'test'
+  - pooch ; extra == 'test'
+  - hypothesis>=6.30 ; extra == 'test'
+  - array-api-strict>=2.3.1 ; extra == 'test'
+  - cython ; extra == 'test'
+  - meson ; extra == 'test'
+  - ninja ; sys_platform != 'emscripten' and extra == 'test'
+  - sphinx>=5.0.0,<8.2.0 ; extra == 'doc'
+  - intersphinx-registry ; extra == 'doc'
+  - pydata-sphinx-theme>=0.15.2 ; extra == 'doc'
+  - sphinx-copybutton ; extra == 'doc'
+  - sphinx-design>=0.4.0 ; extra == 'doc'
+  - matplotlib>=3.5 ; extra == 'doc'
+  - numpydoc ; extra == 'doc'
+  - jupytext ; extra == 'doc'
+  - myst-nb>=1.2.0 ; extra == 'doc'
+  - pooch ; extra == 'doc'
+  - jupyterlite-sphinx>=0.19.1 ; extra == 'doc'
+  - jupyterlite-pyodide-kernel ; extra == 'doc'
+  - linkify-it-py ; extra == 'doc'
+  - tabulate ; extra == 'doc'
+  - click<8.3.0 ; extra == 'dev'
+  - spin ; extra == 'dev'
+  - mypy==1.10.0 ; extra == 'dev'
+  - typing-extensions ; extra == 'dev'
+  - types-psutil ; extra == 'dev'
+  - pycodestyle ; extra == 'dev'
+  - ruff>=0.12.0 ; extra == 'dev'
+  - cython-lint>=0.12.2 ; extra == 'dev'
+  requires_python: '>=3.11'
+- pypi: https://files.pythonhosted.org/packages/0b/a7/71ac2cff56fec219ed242bb11b8efb69fcc4bec75db06fb7bfe35de520e6/certifi-2026.7.22-py3-none-any.whl
+  name: certifi
+  version: 2026.7.22
+  sha256: 62f22742b58a1a33014a2b6b706588a8d7e2a88ae7bd1a6ebe8c992928483775
+  requires_python: '>=3.7'
+- pypi: https://files.pythonhosted.org/packages/0c/da/18bbc67c2e54714540c011b13d6c96fd014dfb7d1588a04c0fabf3bdc228/kornia_rs-0.1.14-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+  name: kornia-rs
+  version: 0.1.14
+  sha256: 371ba151de638150554af9fad53a351d5c41ed80f50a73ae376b58622e0a3430
+  requires_dist:
+  - pytest ; extra == 'dev'
+  - pytest-run-parallel ; extra == 'dev'
+  - numpy ; extra == 'dev'
+  - torch ; extra == 'dev'
+  requires_python: '>=3.8'
+- pypi: https://files.pythonhosted.org/packages/0d/35/731ac04aa0a097fc1c97f0994c375bdb230c6c96619db794208fe664e9ce/charset_normalizer-3.5.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl
+  name: charset-normalizer
+  version: 3.5.1
+  sha256: c7b742bf31c88566b4bb6335a7f393bb322e580b6bb98df7bd0c25e6e3519ce8
+  requires_python: '>=3.7'
+- pypi: https://files.pythonhosted.org/packages/22/22/1755bb4c7db15bb1ed63b4eb7a7fc133bf42a3f9cc806c0d5941e107ba90/plyfile-1.1.3-py3-none-any.whl
+  name: plyfile
+  version: 1.1.3
+  sha256: 581302f07b1c298431dcaa9038bba2ae80f3f7868b29ccb826a07bc4488ff38a
+  requires_dist:
+  - numpy>=1.21
+  requires_python: '>=3.9'
+- pypi: https://files.pythonhosted.org/packages/27/94/3266821f65b92b3138631e9c8e7fe1fb513804ac934485a8d05776e1dd43/nvidia_cufft_cu12-11.2.1.3-py3-none-manylinux2014_x86_64.whl
+  name: nvidia-cufft-cu12
+  version: 11.2.1.3
+  sha256: f083fc24912aa410be21fa16d157fed2055dab1cc4b6934a0e03cba69eb242b9
+  requires_python: '>=3'
+- pypi: https://files.pythonhosted.org/packages/28/50/f203ff3a3ddfe19308efc83c5a3a29ed02bf786732ec35e68bf9162f3365/safetensors-0.8.0-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+  name: safetensors
+  version: 0.8.0
+  sha256: fd6f3f93c9a0a7cc2788ee63fb763353d4bd2e89b0751bc78fcf7dda00bea774
+  requires_dist:
+  - safetensors[torch] ; extra == 'all'
+  - safetensors[numpy] ; extra == 'all'
+  - safetensors[jax] ; extra == 'all'
+  - safetensors[paddlepaddle] ; extra == 'all'
+  - safetensors[convert] ; extra == 'all'
+  - safetensors[quality] ; extra == 'all'
+  - safetensors[testing] ; extra == 'all'
+  - safetensors[torch] ; extra == 'convert'
+  - huggingface-hub>=1.4 ; extra == 'convert'
+  - safetensors[all] ; extra == 'dev'
+  - safetensors[pinned-tf] ; extra == 'dev'
+  - safetensors[numpy] ; extra == 'jax'
+  - flax>=0.6.3 ; extra == 'jax'
+  - jax>=0.3.25 ; extra == 'jax'
+  - jaxlib>=0.3.25 ; extra == 'jax'
+  - mlx>=0.0.9 ; extra == 'mlx'
+  - numpy>=1.24.6 ; extra == 'numpy'
+  - safetensors[numpy] ; extra == 'paddlepaddle'
+  - paddlepaddle>=2.4.1 ; extra == 'paddlepaddle'
+  - safetensors[numpy] ; extra == 'pinned-tf'
+  - tensorflow==2.18.0 ; extra == 'pinned-tf'
+  - ruff ; extra == 'quality'
+  - safetensors[numpy] ; extra == 'tensorflow'
+  - tensorflow>=2.11.0 ; extra == 'tensorflow'
+  - safetensors[numpy] ; extra == 'testing'
+  - h5py>=3.7.0 ; extra == 'testing'
+  - setuptools-rust>=1.12.0 ; extra == 'testing'
+  - pytest>=9.0 ; extra == 'testing'
+  - pytest-benchmark>=5.2 ; extra == 'testing'
+  - hypothesis>=6.70.2 ; extra == 'testing'
+  - fsspec>=2024.6.0 ; extra == 'testing'
+  - s3fs>=2024.6.0 ; extra == 'testing'
+  - safetensors[numpy] ; extra == 'tf-nightly'
+  - tf-nightly ; extra == 'tf-nightly'
+  - safetensors[numpy] ; extra == 'torch'
+  - torch>=2.4 ; extra == 'torch'
+  requires_python: '>=3.10'
+- pypi: https://files.pythonhosted.org/packages/2a/39/e50c7c3a983047577ee07d2a9e53faf5a69493943ec3f6a384bdc792deb2/httpx-0.28.1-py3-none-any.whl
+  name: httpx
+  version: 0.28.1
+  sha256: d909fcccc110f8c7faf814ca82a9a4d816bc5a6dbfea25d6591d6985b8ba59ad
+  requires_dist:
+  - anyio
+  - certifi
+  - httpcore==1.*
+  - idna
+  - brotli ; platform_python_implementation == 'CPython' and extra == 'brotli'
+  - brotlicffi ; platform_python_implementation != 'CPython' and extra == 'brotli'
+  - click==8.* ; extra == 'cli'
+  - pygments==2.* ; extra == 'cli'
+  - rich>=10,<14 ; extra == 'cli'
+  - h2>=3,<5 ; extra == 'http2'
+  - socksio==1.* ; extra == 'socks'
+  - zstandard>=0.18.0 ; extra == 'zstd'
+  requires_python: '>=3.8'
+- pypi: https://files.pythonhosted.org/packages/2c/14/91ae57cd4db3f9ef7aa99f4019cfa8d54cb4caa7e00975df6467e9725a9f/nvidia_cuda_nvrtc_cu12-12.4.127-py3-none-manylinux2014_x86_64.whl
+  name: nvidia-cuda-nvrtc-cu12
+  version: 12.4.127
+  sha256: a178759ebb095827bd30ef56598ec182b85547f1508941a3d560eb7ea1fbf338
+  requires_python: '>=3'
+- pypi: https://files.pythonhosted.org/packages/2e/76/932be4b50ef6ccedf9d3c6639b056a967a86258c6d9200643f01269211ca/tokenizers-0.22.2-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+  name: tokenizers
+  version: 0.22.2
+  sha256: 369cc9fc8cc10cb24143873a0d95438bb8ee257bb80c71989e3ee290e8d72c67
+  requires_dist:
+  - huggingface-hub>=0.16.4,<2.0
+  - pytest ; extra == 'testing'
+  - pytest-asyncio ; extra == 'testing'
+  - requests ; extra == 'testing'
+  - numpy ; extra == 'testing'
+  - datasets ; extra == 'testing'
+  - ruff ; extra == 'testing'
+  - ty ; extra == 'testing'
+  - sphinx ; extra == 'docs'
+  - sphinx-rtd-theme ; extra == 'docs'
+  - setuptools-rust ; extra == 'docs'
+  - tokenizers[testing] ; extra == 'dev'
+  requires_python: '>=3.9'
+- pypi: https://files.pythonhosted.org/packages/30/ac/0273f6fcb5f42e314c6d8cd99effae6a5354604d461b8d392b5ec9530a54/markupsafe-3.0.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl
+  name: markupsafe
+  version: 3.0.3
+  sha256: 0bf2a864d67e76e5c9a34dc26ec616a66b9888e25e7b9460e1c76d3293bd9dbf
+  requires_python: '>=3.9'
+- pypi: https://files.pythonhosted.org/packages/38/3d/2d244233ac4f76e38533cfcb2991c9eb4c7bf688ae0a036d30725b8faafe/importlib_metadata-9.0.0-py3-none-any.whl
+  name: importlib-metadata
+  version: 9.0.0
+  sha256: 2d21d1cc5a017bd0559e36150c21c830ab1dc304dedd1b7ea85d20f45ef3edd7
+  requires_dist:
+  - zipp>=3.20
+  - pytest>=6,!=8.1.* ; extra == 'test'
+  - packaging ; extra == 'test'
+  - pyfakefs ; extra == 'test'
+  - pytest-perf>=0.9.2 ; extra == 'test'
+  - sphinx>=3.5 ; extra == 'doc'
+  - jaraco-packaging>=9.3 ; extra == 'doc'
+  - rst-linker>=1.9 ; extra == 'doc'
+  - furo ; extra == 'doc'
+  - sphinx-lint ; extra == 'doc'
+  - jaraco-tidelift>=1.4 ; extra == 'doc'
+  - ipython ; extra == 'perf'
+  - pytest-checkdocs>=2.14 ; extra == 'check'
+  - pytest-ruff>=0.2.1 ; sys_platform != 'cygwin' and extra == 'check'
+  - pytest-cov ; extra == 'cover'
+  - pytest-enabler>=3.4 ; extra == 'enabler'
+  - pytest-mypy>=1.0.1 ; platform_python_implementation != 'PyPy' and extra == 'type'
+  requires_python: '>=3.10'
+- pypi: https://files.pythonhosted.org/packages/3a/13/547360d81e6d88d58492968ffda9f9542854f11310ee556fef14260cc886/zipp-4.1.0-py3-none-any.whl
+  name: zipp
+  version: 4.1.0
+  sha256: 25ad4e16390cd314347dd8f1de67a2ac538ae658ed4ab9db16029c07c188e97f
+  requires_dist:
+  - pytest>=6,!=8.1.* ; extra == 'test'
+  - jaraco-itertools ; extra == 'test'
+  - jaraco-functools ; extra == 'test'
+  - more-itertools ; extra == 'test'
+  - big-o ; extra == 'test'
+  - pytest-ignore-flaky ; extra == 'test'
+  - jaraco-test ; extra == 'test'
+  - sphinx>=3.5 ; extra == 'doc'
+  - jaraco-packaging>=9.3 ; extra == 'doc'
+  - rst-linker>=1.9 ; extra == 'doc'
+  - furo ; extra == 'doc'
+  - sphinx-lint ; extra == 'doc'
+  - jaraco-tidelift>=1.4 ; extra == 'doc'
+  - pytest-checkdocs>=2.14 ; extra == 'check'
+  - pytest-ruff>=0.2.1 ; sys_platform != 'cygwin' and extra == 'check'
+  - pytest-cov ; extra == 'cover'
+  - pytest-enabler>=3.4 ; extra == 'enabler'
+  - pytest-mypy>=1.0.1 ; platform_python_implementation != 'PyPy' and extra == 'type'
+  requires_python: '>=3.10'
+- pypi: https://files.pythonhosted.org/packages/3a/e1/5b9089a4b2a4790dfdea8b3a006052cfecff58139d5a4e34cb1a51df8d6f/nvidia_cusolver_cu12-11.6.1.9-py3-none-manylinux2014_x86_64.whl
+  name: nvidia-cusolver-cu12
+  version: 11.6.1.9
+  sha256: 19e33fa442bcfd085b3086c4ebf7e8debc07cfe01e11513cc6d332fd918ac260
+  requires_dist:
+  - nvidia-cublas-cu12
+  - nvidia-nvjitlink-cu12
+  - nvidia-cusparse-cu12
+  requires_python: '>=3'
+- pypi: https://files.pythonhosted.org/packages/41/1e/db9470f2d030b4995083044cd8738cdd1bf773106819f6d8ba12597d5352/pillow-12.0.0-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl
+  name: pillow
+  version: 12.0.0
+  sha256: bee2a6db3a7242ea309aa7ee8e2780726fed67ff4e5b40169f2c940e7eb09227
+  requires_dist:
+  - furo ; extra == 'docs'
+  - olefile ; extra == 'docs'
+  - sphinx>=8.2 ; extra == 'docs'
+  - sphinx-autobuild ; extra == 'docs'
+  - sphinx-copybutton ; extra == 'docs'
+  - sphinx-inline-tabs ; extra == 'docs'
+  - sphinxext-opengraph ; extra == 'docs'
+  - olefile ; extra == 'fpx'
+  - olefile ; extra == 'mic'
+  - arro3-compute ; extra == 'test-arrow'
+  - arro3-core ; extra == 'test-arrow'
+  - nanoarrow ; extra == 'test-arrow'
+  - pyarrow ; extra == 'test-arrow'
+  - check-manifest ; extra == 'tests'
+  - coverage>=7.4.2 ; extra == 'tests'
+  - defusedxml ; extra == 'tests'
+  - markdown2 ; extra == 'tests'
+  - olefile ; extra == 'tests'
+  - packaging ; extra == 'tests'
+  - pyroma>=5 ; extra == 'tests'
+  - pytest ; extra == 'tests'
+  - pytest-cov ; extra == 'tests'
+  - pytest-timeout ; extra == 'tests'
+  - pytest-xdist ; extra == 'tests'
+  - trove-classifiers>=2024.10.12 ; extra == 'tests'
+  - defusedxml ; extra == 'xmp'
+  requires_python: '>=3.10'
+- pypi: https://files.pythonhosted.org/packages/43/e3/7d92a15f894aa0c9c4b49b8ee9ac9850d6e63b03c9c32c0367a13ae62209/mpmath-1.3.0-py3-none-any.whl
+  name: mpmath
+  version: 1.3.0
+  sha256: a0b2b9fe80bbcd81a6647ff13108738cfb482d481d826cc0e02f5b35e5c88d2c
+  requires_dist:
+  - pytest>=4.6 ; extra == 'develop'
+  - pycodestyle ; extra == 'develop'
+  - pytest-cov ; extra == 'develop'
+  - codecov ; extra == 'develop'
+  - wheel ; extra == 'develop'
+  - sphinx ; extra == 'docs'
+  - gmpy2>=2.1.0a4 ; platform_python_implementation != 'PyPy' and extra == 'gmpy'
+  - pytest>=4.6 ; extra == 'tests'
+- pypi: https://files.pythonhosted.org/packages/43/fb/646c2773cb097b914afe1f06c95e65deb8a544d770389bf29c76a8f3a8fd/glcontext-3.0.0-cp311-cp311-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+  name: glcontext
+  version: 3.0.0
+  sha256: 7fa413f4420abff2bbb5aa5770a3e1deffcdc13e0ef2f459b145fa79c36909e7
+- pypi: https://files.pythonhosted.org/packages/45/6c/e7098d8b846ccdbf431d8c081b61e496526a27a28094ed09e0dce21b3f54/regex-2026.7.19-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl
+  name: regex
+  version: 2026.7.19
+  sha256: 09f3e5287f94f17b709dc9a9e70865855feee835c861613be144218ce4ca82cc
+  requires_python: '>=3.10'
+- pypi: https://files.pythonhosted.org/packages/49/d3/b8441a820a491ddfc024b0b0cf0393375b75ea13866d9c66727e54c2fc80/typing_extensions-4.16.0-py3-none-any.whl
+  name: typing-extensions
+  version: 4.16.0
+  sha256: 481caa481374e813c1b176ada14e97f1f67a4539ce9cfeb3f350d78d6370c2e8
+  requires_python: '>=3.9'
+- pypi: https://files.pythonhosted.org/packages/57/b0/0e52c878c53f245edd3a11020f20979b3f490f245af532c7cae3027754b5/idna-3.19-py3-none-any.whl
+  name: idna
+  version: '3.19'
+  sha256: 815e7be7a7806d54abb586dc943addc79e8b2ee16915059658cbeff4b1b43bf4
+  requires_dist:
+  - ruff>=0.16.0 ; extra == 'all'
+  - mypy>=1.11.2 ; extra == 'all'
+  - ty>=0.0.37 ; extra == 'all'
+  - pytest>=8.3.2 ; extra == 'all'
+  - hypothesis>=6.141.1 ; extra == 'all'
+  - coverage>=7.10.0 ; extra == 'all'
+  requires_python: '>=3.9'
+- pypi: https://files.pythonhosted.org/packages/62/a1/3d680cbfd5f4b8f15abc1d571870c5fc3e594bb582bc3b64ea099db13e56/jinja2-3.1.6-py3-none-any.whl
+  name: jinja2
+  version: 3.1.6
+  sha256: 85ece4451f492d0c13c5dd7c13a64681a86afae63a5f347908daf103ce6d2f67
+  requires_dist:
+  - markupsafe>=2.0
+  - babel>=2.7 ; extra == 'i18n'
+  requires_python: '>=3.7'
+- pypi: https://files.pythonhosted.org/packages/63/34/ba1c580383c9eada3711951fef0795c80b829a078d72188184bcab9dd527/packaging-26.3-py3-none-any.whl
+  name: packaging
+  version: '26.3'
+  sha256: d7193f7c8e4e93f444fde0262bf90af30e16fa0ad0ad44cb553c87339b23cd1c
+  requires_python: '>=3.9'
+- pypi: https://files.pythonhosted.org/packages/67/42/f4f60238e8194a3106d06a058d494b18e006c10bb2b915655bd9f6ea4cb1/nvidia_cuda_cupti_cu12-12.4.127-py3-none-manylinux2014_x86_64.whl
+  name: nvidia-cuda-cupti-cu12
+  version: 12.4.127
+  sha256: 9dec60f5ac126f7bb551c055072b69d85392b13311fcc1bcda2202d172df30fb
+  requires_python: '>=3'
+- pypi: https://files.pythonhosted.org/packages/67/4e/a28359bf1c1ecf11eba22123168c138698f7cb576ac678f5a2e16cd5da08/hf_xet-1.6.0-cp38-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl
+  name: hf-xet
+  version: 1.6.0
+  sha256: d62671bb130879cef0ee4c9ebe47a14af6c66ec53e6d84dc15936e5ffdfac82f
+  requires_dist:
+  - pytest ; extra == 'tests'
+  requires_python: '>=3.8'
+- pypi: https://files.pythonhosted.org/packages/6a/6b/2f416568b3c4c91c96e5a365d164f8a4a4a88030aa8ab4644181fdadce97/transformers-4.57.3-py3-none-any.whl
+  name: transformers
+  version: 4.57.3
+  sha256: c77d353a4851b1880191603d36acb313411d3577f6e2897814f333841f7003f4
+  requires_dist:
+  - filelock
+  - huggingface-hub>=0.34.0,<1.0
+  - numpy>=1.17
+  - packaging>=20.0
+  - pyyaml>=5.1
+  - regex!=2019.12.17
+  - requests
+  - tokenizers>=0.22.0,<=0.23.0
+  - safetensors>=0.4.3
+  - tqdm>=4.27
+  - fugashi>=1.0 ; extra == 'ja'
+  - ipadic>=1.0.0,<2.0 ; extra == 'ja'
+  - unidic-lite>=1.0.7 ; extra == 'ja'
+  - unidic>=1.0.2 ; extra == 'ja'
+  - sudachipy>=0.6.6 ; extra == 'ja'
+  - sudachidict-core>=20220729 ; extra == 'ja'
+  - rhoknp>=1.1.0,<1.3.1 ; extra == 'ja'
+  - scikit-learn ; extra == 'sklearn'
+  - tensorflow>2.9,<2.16 ; extra == 'tf'
+  - onnxconverter-common ; extra == 'tf'
+  - tf2onnx ; extra == 'tf'
+  - tensorflow-text<2.16 ; extra == 'tf'
+  - keras-nlp>=0.3.1,<0.14.0 ; extra == 'tf'
+  - keras>2.9,<2.16 ; extra == 'tf-cpu'
+  - tensorflow-cpu>2.9,<2.16 ; extra == 'tf-cpu'
+  - onnxconverter-common ; extra == 'tf-cpu'
+  - tf2onnx ; extra == 'tf-cpu'
+  - tensorflow-text<2.16 ; extra == 'tf-cpu'
+  - keras-nlp>=0.3.1,<0.14.0 ; extra == 'tf-cpu'
+  - tensorflow-probability<0.24 ; extra == 'tf-cpu'
+  - torch>=2.2 ; extra == 'torch'
+  - accelerate>=0.26.0 ; extra == 'torch'
+  - accelerate>=0.26.0 ; extra == 'accelerate'
+  - hf-xet ; extra == 'hf-xet'
+  - faiss-cpu ; extra == 'retrieval'
+  - datasets>=2.15.0 ; extra == 'retrieval'
+  - jax>=0.4.1,<=0.4.13 ; extra == 'flax'
+  - jaxlib>=0.4.1,<=0.4.13 ; extra == 'flax'
+  - flax>=0.4.1,<=0.7.0 ; extra == 'flax'
+  - optax>=0.0.8,<=0.1.4 ; extra == 'flax'
+  - scipy<1.13.0 ; extra == 'flax'
+  - tokenizers>=0.22.0,<=0.23.0 ; extra == 'tokenizers'
+  - ftfy ; extra == 'ftfy'
+  - onnxruntime>=1.4.0 ; extra == 'onnxruntime'
+  - onnxruntime-tools>=1.4.2 ; extra == 'onnxruntime'
+  - onnxconverter-common ; extra == 'onnx'
+  - tf2onnx ; extra == 'onnx'
+  - onnxruntime>=1.4.0 ; extra == 'onnx'
+  - onnxruntime-tools>=1.4.2 ; extra == 'onnx'
+  - cookiecutter==1.7.3 ; extra == 'modelcreation'
+  - sagemaker>=2.31.0 ; extra == 'sagemaker'
+  - deepspeed>=0.9.3 ; extra == 'deepspeed'
+  - accelerate>=0.26.0 ; extra == 'deepspeed'
+  - optuna ; extra == 'optuna'
+  - ray[tune]>=2.7.0 ; extra == 'ray'
+  - sigopt ; extra == 'sigopt'
+  - kernels>=0.6.1,<=0.9 ; extra == 'hub-kernels'
+  - kernels>=0.6.1,<=0.9 ; extra == 'integrations'
+  - optuna ; extra == 'integrations'
+  - ray[tune]>=2.7.0 ; extra == 'integrations'
+  - openai>=1.98.0 ; extra == 'serving'
+  - pydantic>=2 ; extra == 'serving'
+  - uvicorn ; extra == 'serving'
+  - fastapi ; extra == 'serving'
+  - starlette ; extra == 'serving'
+  - torch>=2.2 ; extra == 'serving'
+  - accelerate>=0.26.0 ; extra == 'serving'
+  - librosa ; extra == 'audio'
+  - pyctcdecode>=0.4.0 ; extra == 'audio'
+  - phonemizer ; extra == 'audio'
+  - kenlm ; extra == 'audio'
+  - torchaudio ; extra == 'speech'
+  - librosa ; extra == 'speech'
+  - pyctcdecode>=0.4.0 ; extra == 'speech'
+  - phonemizer ; extra == 'speech'
+  - kenlm ; extra == 'speech'
+  - torchaudio ; extra == 'torch-speech'
+  - librosa ; extra == 'torch-speech'
+  - pyctcdecode>=0.4.0 ; extra == 'torch-speech'
+  - phonemizer ; extra == 'torch-speech'
+  - kenlm ; extra == 'torch-speech'
+  - librosa ; extra == 'tf-speech'
+  - pyctcdecode>=0.4.0 ; extra == 'tf-speech'
+  - phonemizer ; extra == 'tf-speech'
+  - kenlm ; extra == 'tf-speech'
+  - librosa ; extra == 'flax-speech'
+  - pyctcdecode>=0.4.0 ; extra == 'flax-speech'
+  - phonemizer ; extra == 'flax-speech'
+  - kenlm ; extra == 'flax-speech'
+  - pillow>=10.0.1,<=15.0 ; extra == 'vision'
+  - timm!=1.0.18,<=1.0.19 ; extra == 'timm'
+  - torchvision ; extra == 'torch-vision'
+  - pillow>=10.0.1,<=15.0 ; extra == 'torch-vision'
+  - natten>=0.14.6,<0.15.0 ; extra == 'natten'
+  - codecarbon>=2.8.1 ; extra == 'codecarbon'
+  - av ; extra == 'video'
+  - num2words ; extra == 'num2words'
+  - sentencepiece>=0.1.91,!=0.1.92 ; extra == 'sentencepiece'
+  - protobuf ; extra == 'sentencepiece'
+  - tiktoken ; extra == 'tiktoken'
+  - blobfile ; extra == 'tiktoken'
+  - mistral-common[opencv]>=1.6.3 ; extra == 'mistral-common'
+  - jinja2>=3.1.0 ; extra == 'chat-template'
+  - pytest>=7.2.0 ; extra == 'testing'
+  - pytest-asyncio ; extra == 'testing'
+  - pytest-rich ; extra == 'testing'
+  - pytest-xdist ; extra == 'testing'
+  - pytest-order ; extra == 'testing'
+  - pytest-rerunfailures<16.0 ; extra == 'testing'
+  - timeout-decorator ; extra == 'testing'
+  - parameterized>=0.9 ; extra == 'testing'
+  - psutil ; extra == 'testing'
+  - datasets>=2.15.0 ; extra == 'testing'
+  - dill<0.3.5 ; extra == 'testing'
+  - evaluate>=0.2.0 ; extra == 'testing'
+  - pytest-timeout ; extra == 'testing'
+  - ruff==0.13.1 ; extra == 'testing'
+  - rouge-score!=0.0.7,!=0.0.8,!=0.1,!=0.1.1 ; extra == 'testing'
+  - nltk<=3.8.1 ; extra == 'testing'
+  - gitpython<3.1.19 ; extra == 'testing'
+  - sacremoses ; extra == 'testing'
+  - rjieba ; extra == 'testing'
+  - beautifulsoup4 ; extra == 'testing'
+  - tensorboard ; extra == 'testing'
+  - pydantic>=2 ; extra == 'testing'
+  - sentencepiece>=0.1.91,!=0.1.92 ; extra == 'testing'
+  - sacrebleu>=1.4.12,<2.0.0 ; extra == 'testing'
+  - libcst ; extra == 'testing'
+  - faiss-cpu ; extra == 'testing'
+  - datasets>=2.15.0 ; extra == 'testing'
+  - cookiecutter==1.7.3 ; extra == 'testing'
+  - mistral-common[opencv]>=1.6.3 ; extra == 'testing'
+  - openai>=1.98.0 ; extra == 'testing'
+  - pydantic>=2 ; extra == 'testing'
+  - uvicorn ; extra == 'testing'
+  - fastapi ; extra == 'testing'
+  - starlette ; extra == 'testing'
+  - torch>=2.2 ; extra == 'testing'
+  - accelerate>=0.26.0 ; extra == 'testing'
+  - deepspeed>=0.9.3 ; extra == 'deepspeed-testing'
+  - accelerate>=0.26.0 ; extra == 'deepspeed-testing'
+  - pytest>=7.2.0 ; extra == 'deepspeed-testing'
+  - pytest-asyncio ; extra == 'deepspeed-testing'
+  - pytest-rich ; extra == 'deepspeed-testing'
+  - pytest-xdist ; extra == 'deepspeed-testing'
+  - pytest-order ; extra == 'deepspeed-testing'
+  - pytest-rerunfailures<16.0 ; extra == 'deepspeed-testing'
+  - timeout-decorator ; extra == 'deepspeed-testing'
+  - parameterized>=0.9 ; extra == 'deepspeed-testing'
+  - psutil ; extra == 'deepspeed-testing'
+  - datasets>=2.15.0 ; extra == 'deepspeed-testing'
+  - dill<0.3.5 ; extra == 'deepspeed-testing'
+  - evaluate>=0.2.0 ; extra == 'deepspeed-testing'
+  - pytest-timeout ; extra == 'deepspeed-testing'
+  - ruff==0.13.1 ; extra == 'deepspeed-testing'
+  - rouge-score!=0.0.7,!=0.0.8,!=0.1,!=0.1.1 ; extra == 'deepspeed-testing'
+  - nltk<=3.8.1 ; extra == 'deepspeed-testing'
+  - gitpython<3.1.19 ; extra == 'deepspeed-testing'
+  - sacremoses ; extra == 'deepspeed-testing'
+  - rjieba ; extra == 'deepspeed-testing'
+  - beautifulsoup4 ; extra == 'deepspeed-testing'
+  - tensorboard ; extra == 'deepspeed-testing'
+  - pydantic>=2 ; extra == 'deepspeed-testing'
+  - sentencepiece>=0.1.91,!=0.1.92 ; extra == 'deepspeed-testing'
+  - sacrebleu>=1.4.12,<2.0.0 ; extra == 'deepspeed-testing'
+  - libcst ; extra == 'deepspeed-testing'
+  - faiss-cpu ; extra == 'deepspeed-testing'
+  - datasets>=2.15.0 ; extra == 'deepspeed-testing'
+  - cookiecutter==1.7.3 ; extra == 'deepspeed-testing'
+  - mistral-common[opencv]>=1.6.3 ; extra == 'deepspeed-testing'
+  - openai>=1.98.0 ; extra == 'deepspeed-testing'
+  - pydantic>=2 ; extra == 'deepspeed-testing'
+  - uvicorn ; extra == 'deepspeed-testing'
+  - fastapi ; extra == 'deepspeed-testing'
+  - starlette ; extra == 'deepspeed-testing'
+  - torch>=2.2 ; extra == 'deepspeed-testing'
+  - accelerate>=0.26.0 ; extra == 'deepspeed-testing'
+  - optuna ; extra == 'deepspeed-testing'
+  - sentencepiece>=0.1.91,!=0.1.92 ; extra == 'deepspeed-testing'
+  - protobuf ; extra == 'deepspeed-testing'
+  - ruff==0.13.1 ; extra == 'ruff'
+  - datasets>=2.15.0 ; extra == 'quality'
+  - ruff==0.13.1 ; extra == 'quality'
+  - gitpython<3.1.19 ; extra == 'quality'
+  - urllib3<2.0.0 ; extra == 'quality'
+  - libcst ; extra == 'quality'
+  - rich ; extra == 'quality'
+  - pandas<2.3.0 ; extra == 'quality'
+  - tensorflow>2.9,<2.16 ; extra == 'all'
+  - onnxconverter-common ; extra == 'all'
+  - tf2onnx ; extra == 'all'
+  - tensorflow-text<2.16 ; extra == 'all'
+  - keras-nlp>=0.3.1,<0.14.0 ; extra == 'all'
+  - torch>=2.2 ; extra == 'all'
+  - accelerate>=0.26.0 ; extra == 'all'
+  - jax>=0.4.1,<=0.4.13 ; extra == 'all'
+  - jaxlib>=0.4.1,<=0.4.13 ; extra == 'all'
+  - flax>=0.4.1,<=0.7.0 ; extra == 'all'
+  - optax>=0.0.8,<=0.1.4 ; extra == 'all'
+  - scipy<1.13.0 ; extra == 'all'
+  - sentencepiece>=0.1.91,!=0.1.92 ; extra == 'all'
+  - protobuf ; extra == 'all'
+  - tokenizers>=0.22.0,<=0.23.0 ; extra == 'all'
+  - torchaudio ; extra == 'all'
+  - librosa ; extra == 'all'
+  - pyctcdecode>=0.4.0 ; extra == 'all'
+  - phonemizer ; extra == 'all'
+  - kenlm ; extra == 'all'
+  - pillow>=10.0.1,<=15.0 ; extra == 'all'
+  - kernels>=0.6.1,<=0.9 ; extra == 'all'
+  - optuna ; extra == 'all'
+  - ray[tune]>=2.7.0 ; extra == 'all'
+  - timm!=1.0.18,<=1.0.19 ; extra == 'all'
+  - torchvision ; extra == 'all'
+  - pillow>=10.0.1,<=15.0 ; extra == 'all'
+  - codecarbon>=2.8.1 ; extra == 'all'
+  - accelerate>=0.26.0 ; extra == 'all'
+  - av ; extra == 'all'
+  - num2words ; extra == 'all'
+  - mistral-common[opencv]>=1.6.3 ; extra == 'all'
+  - jinja2>=3.1.0 ; extra == 'all'
+  - pytest>=7.2.0 ; extra == 'dev-torch'
+  - pytest-asyncio ; extra == 'dev-torch'
+  - pytest-rich ; extra == 'dev-torch'
+  - pytest-xdist ; extra == 'dev-torch'
+  - pytest-order ; extra == 'dev-torch'
+  - pytest-rerunfailures<16.0 ; extra == 'dev-torch'
+  - timeout-decorator ; extra == 'dev-torch'
+  - parameterized>=0.9 ; extra == 'dev-torch'
+  - psutil ; extra == 'dev-torch'
+  - datasets>=2.15.0 ; extra == 'dev-torch'
+  - dill<0.3.5 ; extra == 'dev-torch'
+  - evaluate>=0.2.0 ; extra == 'dev-torch'
+  - pytest-timeout ; extra == 'dev-torch'
+  - ruff==0.13.1 ; extra == 'dev-torch'
+  - rouge-score!=0.0.7,!=0.0.8,!=0.1,!=0.1.1 ; extra == 'dev-torch'
+  - nltk<=3.8.1 ; extra == 'dev-torch'
+  - gitpython<3.1.19 ; extra == 'dev-torch'
+  - sacremoses ; extra == 'dev-torch'
+  - rjieba ; extra == 'dev-torch'
+  - beautifulsoup4 ; extra == 'dev-torch'
+  - tensorboard ; extra == 'dev-torch'
+  - pydantic>=2 ; extra == 'dev-torch'
+  - sentencepiece>=0.1.91,!=0.1.92 ; extra == 'dev-torch'
+  - sacrebleu>=1.4.12,<2.0.0 ; extra == 'dev-torch'
+  - libcst ; extra == 'dev-torch'
+  - faiss-cpu ; extra == 'dev-torch'
+  - datasets>=2.15.0 ; extra == 'dev-torch'
+  - cookiecutter==1.7.3 ; extra == 'dev-torch'
+  - mistral-common[opencv]>=1.6.3 ; extra == 'dev-torch'
+  - openai>=1.98.0 ; extra == 'dev-torch'
+  - pydantic>=2 ; extra == 'dev-torch'
+  - uvicorn ; extra == 'dev-torch'
+  - fastapi ; extra == 'dev-torch'
+  - starlette ; extra == 'dev-torch'
+  - torch>=2.2 ; extra == 'dev-torch'
+  - accelerate>=0.26.0 ; extra == 'dev-torch'
+  - torch>=2.2 ; extra == 'dev-torch'
+  - accelerate>=0.26.0 ; extra == 'dev-torch'
+  - sentencepiece>=0.1.91,!=0.1.92 ; extra == 'dev-torch'
+  - protobuf ; extra == 'dev-torch'
+  - tokenizers>=0.22.0,<=0.23.0 ; extra == 'dev-torch'
+  - torchaudio ; extra == 'dev-torch'
+  - librosa ; extra == 'dev-torch'
+  - pyctcdecode>=0.4.0 ; extra == 'dev-torch'
+  - phonemizer ; extra == 'dev-torch'
+  - kenlm ; extra == 'dev-torch'
+  - pillow>=10.0.1,<=15.0 ; extra == 'dev-torch'
+  - kernels>=0.6.1,<=0.9 ; extra == 'dev-torch'
+  - optuna ; extra == 'dev-torch'
+  - ray[tune]>=2.7.0 ; extra == 'dev-torch'
+  - timm!=1.0.18,<=1.0.19 ; extra == 'dev-torch'
+  - torchvision ; extra == 'dev-torch'
+  - pillow>=10.0.1,<=15.0 ; extra == 'dev-torch'
+  - codecarbon>=2.8.1 ; extra == 'dev-torch'
+  - datasets>=2.15.0 ; extra == 'dev-torch'
+  - ruff==0.13.1 ; extra == 'dev-torch'
+  - gitpython<3.1.19 ; extra == 'dev-torch'
+  - urllib3<2.0.0 ; extra == 'dev-torch'
+  - libcst ; extra == 'dev-torch'
+  - rich ; extra == 'dev-torch'
+  - pandas<2.3.0 ; extra == 'dev-torch'
+  - fugashi>=1.0 ; extra == 'dev-torch'
+  - ipadic>=1.0.0,<2.0 ; extra == 'dev-torch'
+  - unidic-lite>=1.0.7 ; extra == 'dev-torch'
+  - unidic>=1.0.2 ; extra == 'dev-torch'
+  - sudachipy>=0.6.6 ; extra == 'dev-torch'
+  - sudachidict-core>=20220729 ; extra == 'dev-torch'
+  - rhoknp>=1.1.0,<1.3.1 ; extra == 'dev-torch'
+  - scikit-learn ; extra == 'dev-torch'
+  - cookiecutter==1.7.3 ; extra == 'dev-torch'
+  - onnxruntime>=1.4.0 ; extra == 'dev-torch'
+  - onnxruntime-tools>=1.4.2 ; extra == 'dev-torch'
+  - num2words ; extra == 'dev-torch'
+  - pytest>=7.2.0 ; extra == 'dev-tensorflow'
+  - pytest-asyncio ; extra == 'dev-tensorflow'
+  - pytest-rich ; extra == 'dev-tensorflow'
+  - pytest-xdist ; extra == 'dev-tensorflow'
+  - pytest-order ; extra == 'dev-tensorflow'
+  - pytest-rerunfailures<16.0 ; extra == 'dev-tensorflow'
+  - timeout-decorator ; extra == 'dev-tensorflow'
+  - parameterized>=0.9 ; extra == 'dev-tensorflow'
+  - psutil ; extra == 'dev-tensorflow'
+  - datasets>=2.15.0 ; extra == 'dev-tensorflow'
+  - dill<0.3.5 ; extra == 'dev-tensorflow'
+  - evaluate>=0.2.0 ; extra == 'dev-tensorflow'
+  - pytest-timeout ; extra == 'dev-tensorflow'
+  - ruff==0.13.1 ; extra == 'dev-tensorflow'
+  - rouge-score!=0.0.7,!=0.0.8,!=0.1,!=0.1.1 ; extra == 'dev-tensorflow'
+  - nltk<=3.8.1 ; extra == 'dev-tensorflow'
+  - gitpython<3.1.19 ; extra == 'dev-tensorflow'
+  - sacremoses ; extra == 'dev-tensorflow'
+  - rjieba ; extra == 'dev-tensorflow'
+  - beautifulsoup4 ; extra == 'dev-tensorflow'
+  - tensorboard ; extra == 'dev-tensorflow'
+  - pydantic>=2 ; extra == 'dev-tensorflow'
+  - sentencepiece>=0.1.91,!=0.1.92 ; extra == 'dev-tensorflow'
+  - sacrebleu>=1.4.12,<2.0.0 ; extra == 'dev-tensorflow'
+  - libcst ; extra == 'dev-tensorflow'
+  - faiss-cpu ; extra == 'dev-tensorflow'
+  - datasets>=2.15.0 ; extra == 'dev-tensorflow'
+  - cookiecutter==1.7.3 ; extra == 'dev-tensorflow'
+  - mistral-common[opencv]>=1.6.3 ; extra == 'dev-tensorflow'
+  - openai>=1.98.0 ; extra == 'dev-tensorflow'
+  - pydantic>=2 ; extra == 'dev-tensorflow'
+  - uvicorn ; extra == 'dev-tensorflow'
+  - fastapi ; extra == 'dev-tensorflow'
+  - starlette ; extra == 'dev-tensorflow'
+  - torch>=2.2 ; extra == 'dev-tensorflow'
+  - accelerate>=0.26.0 ; extra == 'dev-tensorflow'
+  - tensorflow>2.9,<2.16 ; extra == 'dev-tensorflow'
+  - onnxconverter-common ; extra == 'dev-tensorflow'
+  - tf2onnx ; extra == 'dev-tensorflow'
+  - tensorflow-text<2.16 ; extra == 'dev-tensorflow'
+  - keras-nlp>=0.3.1,<0.14.0 ; extra == 'dev-tensorflow'
+  - sentencepiece>=0.1.91,!=0.1.92 ; extra == 'dev-tensorflow'
+  - protobuf ; extra == 'dev-tensorflow'
+  - tokenizers>=0.22.0,<=0.23.0 ; extra == 'dev-tensorflow'
+  - pillow>=10.0.1,<=15.0 ; extra == 'dev-tensorflow'
+  - datasets>=2.15.0 ; extra == 'dev-tensorflow'
+  - ruff==0.13.1 ; extra == 'dev-tensorflow'
+  - gitpython<3.1.19 ; extra == 'dev-tensorflow'
+  - urllib3<2.0.0 ; extra == 'dev-tensorflow'
+  - libcst ; extra == 'dev-tensorflow'
+  - rich ; extra == 'dev-tensorflow'
+  - pandas<2.3.0 ; extra == 'dev-tensorflow'
+  - scikit-learn ; extra == 'dev-tensorflow'
+  - cookiecutter==1.7.3 ; extra == 'dev-tensorflow'
+  - onnxconverter-common ; extra == 'dev-tensorflow'
+  - tf2onnx ; extra == 'dev-tensorflow'
+  - onnxruntime>=1.4.0 ; extra == 'dev-tensorflow'
+  - onnxruntime-tools>=1.4.2 ; extra == 'dev-tensorflow'
+  - librosa ; extra == 'dev-tensorflow'
+  - pyctcdecode>=0.4.0 ; extra == 'dev-tensorflow'
+  - phonemizer ; extra == 'dev-tensorflow'
+  - kenlm ; extra == 'dev-tensorflow'
+  - tensorflow>2.9,<2.16 ; extra == 'dev'
+  - onnxconverter-common ; extra == 'dev'
+  - tf2onnx ; extra == 'dev'
+  - tensorflow-text<2.16 ; extra == 'dev'
+  - keras-nlp>=0.3.1,<0.14.0 ; extra == 'dev'
+  - torch>=2.2 ; extra == 'dev'
+  - accelerate>=0.26.0 ; extra == 'dev'
+  - jax>=0.4.1,<=0.4.13 ; extra == 'dev'
+  - jaxlib>=0.4.1,<=0.4.13 ; extra == 'dev'
+  - flax>=0.4.1,<=0.7.0 ; extra == 'dev'
+  - optax>=0.0.8,<=0.1.4 ; extra == 'dev'
+  - scipy<1.13.0 ; extra == 'dev'
+  - sentencepiece>=0.1.91,!=0.1.92 ; extra == 'dev'
+  - protobuf ; extra == 'dev'
+  - tokenizers>=0.22.0,<=0.23.0 ; extra == 'dev'
+  - torchaudio ; extra == 'dev'
+  - librosa ; extra == 'dev'
+  - pyctcdecode>=0.4.0 ; extra == 'dev'
+  - phonemizer ; extra == 'dev'
+  - kenlm ; extra == 'dev'
+  - pillow>=10.0.1,<=15.0 ; extra == 'dev'
+  - kernels>=0.6.1,<=0.9 ; extra == 'dev'
+  - optuna ; extra == 'dev'
+  - ray[tune]>=2.7.0 ; extra == 'dev'
+  - timm!=1.0.18,<=1.0.19 ; extra == 'dev'
+  - torchvision ; extra == 'dev'
+  - pillow>=10.0.1,<=15.0 ; extra == 'dev'
+  - codecarbon>=2.8.1 ; extra == 'dev'
+  - accelerate>=0.26.0 ; extra == 'dev'
+  - av ; extra == 'dev'
+  - num2words ; extra == 'dev'
+  - mistral-common[opencv]>=1.6.3 ; extra == 'dev'
+  - jinja2>=3.1.0 ; extra == 'dev'
+  - pytest>=7.2.0 ; extra == 'dev'
+  - pytest-asyncio ; extra == 'dev'
+  - pytest-rich ; extra == 'dev'
+  - pytest-xdist ; extra == 'dev'
+  - pytest-order ; extra == 'dev'
+  - pytest-rerunfailures<16.0 ; extra == 'dev'
+  - timeout-decorator ; extra == 'dev'
+  - parameterized>=0.9 ; extra == 'dev'
+  - psutil ; extra == 'dev'
+  - datasets>=2.15.0 ; extra == 'dev'
+  - dill<0.3.5 ; extra == 'dev'
+  - evaluate>=0.2.0 ; extra == 'dev'
+  - pytest-timeout ; extra == 'dev'
+  - ruff==0.13.1 ; extra == 'dev'
+  - rouge-score!=0.0.7,!=0.0.8,!=0.1,!=0.1.1 ; extra == 'dev'
+  - nltk<=3.8.1 ; extra == 'dev'
+  - gitpython<3.1.19 ; extra == 'dev'
+  - sacremoses ; extra == 'dev'
+  - rjieba ; extra == 'dev'
+  - beautifulsoup4 ; extra == 'dev'
+  - tensorboard ; extra == 'dev'
+  - pydantic>=2 ; extra == 'dev'
+  - sentencepiece>=0.1.91,!=0.1.92 ; extra == 'dev'
+  - sacrebleu>=1.4.12,<2.0.0 ; extra == 'dev'
+  - libcst ; extra == 'dev'
+  - faiss-cpu ; extra == 'dev'
+  - datasets>=2.15.0 ; extra == 'dev'
+  - cookiecutter==1.7.3 ; extra == 'dev'
+  - mistral-common[opencv]>=1.6.3 ; extra == 'dev'
+  - openai>=1.98.0 ; extra == 'dev'
+  - pydantic>=2 ; extra == 'dev'
+  - uvicorn ; extra == 'dev'
+  - fastapi ; extra == 'dev'
+  - starlette ; extra == 'dev'
+  - torch>=2.2 ; extra == 'dev'
+  - accelerate>=0.26.0 ; extra == 'dev'
+  - datasets>=2.15.0 ; extra == 'dev'
+  - ruff==0.13.1 ; extra == 'dev'
+  - gitpython<3.1.19 ; extra == 'dev'
+  - urllib3<2.0.0 ; extra == 'dev'
+  - libcst ; extra == 'dev'
+  - rich ; extra == 'dev'
+  - pandas<2.3.0 ; extra == 'dev'
+  - fugashi>=1.0 ; extra == 'dev'
+  - ipadic>=1.0.0,<2.0 ; extra == 'dev'
+  - unidic-lite>=1.0.7 ; extra == 'dev'
+  - unidic>=1.0.2 ; extra == 'dev'
+  - sudachipy>=0.6.6 ; extra == 'dev'
+  - sudachidict-core>=20220729 ; extra == 'dev'
+  - rhoknp>=1.1.0,<1.3.1 ; extra == 'dev'
+  - scikit-learn ; extra == 'dev'
+  - cookiecutter==1.7.3 ; extra == 'dev'
+  - filelock ; extra == 'torchhub'
+  - huggingface-hub>=0.34.0,<1.0 ; extra == 'torchhub'
+  - importlib-metadata ; extra == 'torchhub'
+  - numpy>=1.17 ; extra == 'torchhub'
+  - packaging>=20.0 ; extra == 'torchhub'
+  - protobuf ; extra == 'torchhub'
+  - regex!=2019.12.17 ; extra == 'torchhub'
+  - requests ; extra == 'torchhub'
+  - sentencepiece>=0.1.91,!=0.1.92 ; extra == 'torchhub'
+  - torch>=2.2 ; extra == 'torchhub'
+  - tokenizers>=0.22.0,<=0.23.0 ; extra == 'torchhub'
+  - tqdm>=4.27 ; extra == 'torchhub'
+  - optimum-benchmark>=0.3.0 ; extra == 'benchmark'
+  - opentelemetry-api ; extra == 'open-telemetry'
+  - opentelemetry-exporter-otlp ; extra == 'open-telemetry'
+  - opentelemetry-sdk ; extra == 'open-telemetry'
+  requires_python: '>=3.9.0'
+- pypi: https://files.pythonhosted.org/packages/71/60/917329f640924b18ff085ab889a11c763e0b573da888e8404ff486657602/pyyaml-6.0.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl
+  name: pyyaml
+  version: 6.0.3
+  sha256: b8bb0864c5a28024fac8a632c443c87c5aa6f215c0b126c449ae1a150412f31d
+  requires_python: '>=3.8'
+- pypi: https://files.pythonhosted.org/packages/78/a8/bcbb63b53a4b1234feeafb65544ee55495e1bb37ec31b999b963cbccfd1d/nvidia_cusparselt_cu12-0.6.2-py3-none-manylinux2014_x86_64.whl
+  name: nvidia-cusparselt-cu12
+  version: 0.6.2
+  sha256: df2c24502fd76ebafe7457dbc4716b2fec071aabaed4fb7691a201cde03704d9
+- pypi: https://files.pythonhosted.org/packages/79/d4/e9bd12b7b4cbd23b4dfb47e744ee1fa54d6d9c3c9bc406ec86c1be8c8307/kornia-0.8.2-py2.py3-none-any.whl
+  name: kornia
+  version: 0.8.2
+  sha256: 32dfe77c9c74a87a2de49395aa3c2c376a1b63c27611a298b394d02d13905819
+  requires_dist:
+  - kornia-rs>=0.1.9
+  - packaging
+  - torch>=2.0.0
+  - accelerate ; extra == 'dev'
+  - coverage ; extra == 'dev'
+  - diffusers ; extra == 'dev'
+  - ivy>=1.0.0.0 ; extra == 'dev'
+  - mypy ; extra == 'dev'
+  - numpy<3 ; extra == 'dev'
+  - onnx ; extra == 'dev'
+  - onnxruntime ; extra == 'dev'
+  - pillow ; extra == 'dev'
+  - pre-commit>=2 ; extra == 'dev'
+  - pytest==8.3.5 ; extra == 'dev'
+  - pytest-cov ; extra == 'dev'
+  - pytest-timeout ; extra == 'dev'
+  - requests ; extra == 'dev'
+  - setuptools>=61.2 ; extra == 'dev'
+  - transformers<4.57 ; extra == 'dev'
+  - types-requests ; extra == 'dev'
+  - accelerate ; extra == 'x'
+  - onnxruntime-gpu>=1.16 ; sys_platform != 'darwin' and extra == 'x'
+  - furo ; extra == 'docs'
+  - ivy>=1.0.0.0 ; extra == 'docs'
+  - kornia-moons ; extra == 'docs'
+  - matplotlib ; extra == 'docs'
+  - onnx ; extra == 'docs'
+  - onnxruntime ; extra == 'docs'
+  - opencv-python ; extra == 'docs'
+  - pyyaml>=5.1 ; extra == 'docs'
+  - sphinx ; extra == 'docs'
+  - sphinx-autodoc-defaultargs ; extra == 'docs'
+  - sphinx-autodoc-typehints ; extra == 'docs'
+  - sphinx-copybutton>=0.3 ; extra == 'docs'
+  - sphinx-design ; extra == 'docs'
+  - sphinx-notfound-page ; extra == 'docs'
+  - sphinxcontrib-bibtex ; extra == 'docs'
+  - sphinxcontrib-gtagjs ; extra == 'docs'
+  - sphinxcontrib-youtube ; extra == 'docs'
+  requires_python: '>=3.9'
+- pypi: https://files.pythonhosted.org/packages/7e/46/02ac5e262d4af18054b3e922b2baedbb2a03289ee792162de60a865defc5/accelerate-1.13.0-py3-none-any.whl
+  name: accelerate
+  version: 1.13.0
+  sha256: cf1a3efb96c18f7b152eb0fa7490f3710b19c3f395699358f08decca2b8b62e0
+  requires_dist:
+  - numpy>=1.17
+  - packaging>=20.0
+  - psutil
+  - pyyaml
+  - torch>=2.0.0
+  - huggingface-hub>=0.21.0
+  - safetensors>=0.4.3
+  - ruff==0.13.1 ; extra == 'quality'
+  - pytest>=7.2.0 ; extra == 'test-prod'
+  - pytest-xdist ; extra == 'test-prod'
+  - pytest-subtests ; extra == 'test-prod'
+  - parameterized ; extra == 'test-prod'
+  - pytest-order ; extra == 'test-prod'
+  - datasets ; extra == 'test-dev'
+  - diffusers ; extra == 'test-dev'
+  - evaluate ; extra == 'test-dev'
+  - torchdata>=0.8.0 ; extra == 'test-dev'
+  - torchpippy>=0.2.0 ; extra == 'test-dev'
+  - transformers ; extra == 'test-dev'
+  - scipy ; extra == 'test-dev'
+  - scikit-learn ; extra == 'test-dev'
+  - tqdm ; extra == 'test-dev'
+  - bitsandbytes ; extra == 'test-dev'
+  - timm ; extra == 'test-dev'
+  - pytest>=7.2.0 ; extra == 'testing'
+  - pytest-xdist ; extra == 'testing'
+  - pytest-subtests ; extra == 'testing'
+  - parameterized ; extra == 'testing'
+  - pytest-order ; extra == 'testing'
+  - datasets ; extra == 'testing'
+  - diffusers ; extra == 'testing'
+  - evaluate ; extra == 'testing'
+  - torchdata>=0.8.0 ; extra == 'testing'
+  - torchpippy>=0.2.0 ; extra == 'testing'
+  - transformers ; extra == 'testing'
+  - scipy ; extra == 'testing'
+  - scikit-learn ; extra == 'testing'
+  - tqdm ; extra == 'testing'
+  - bitsandbytes ; extra == 'testing'
+  - timm ; extra == 'testing'
+  - deepspeed ; extra == 'deepspeed'
+  - rich ; extra == 'rich'
+  - torchao ; extra == 'test-fp8'
+  - wandb ; extra == 'test-trackers'
+  - comet-ml ; extra == 'test-trackers'
+  - tensorboard ; extra == 'test-trackers'
+  - dvclive ; extra == 'test-trackers'
+  - matplotlib ; extra == 'test-trackers'
+  - swanlab[dashboard] ; extra == 'test-trackers'
+  - trackio ; extra == 'test-trackers'
+  - ruff==0.13.1 ; extra == 'dev'
+  - pytest>=7.2.0 ; extra == 'dev'
+  - pytest-xdist ; extra == 'dev'
+  - pytest-subtests ; extra == 'dev'
+  - parameterized ; extra == 'dev'
+  - pytest-order ; extra == 'dev'
+  - datasets ; extra == 'dev'
+  - diffusers ; extra == 'dev'
+  - evaluate ; extra == 'dev'
+  - torchdata>=0.8.0 ; extra == 'dev'
+  - torchpippy>=0.2.0 ; extra == 'dev'
+  - transformers ; extra == 'dev'
+  - scipy ; extra == 'dev'
+  - scikit-learn ; extra == 'dev'
+  - tqdm ; extra == 'dev'
+  - bitsandbytes ; extra == 'dev'
+  - timm ; extra == 'dev'
+  - rich ; extra == 'dev'
+  - sagemaker ; extra == 'sagemaker'
+  requires_python: '>=3.10.0'
+- pypi: https://files.pythonhosted.org/packages/7e/f5/f66802a942d491edb555dd61e3a9961140fd64c90bce1eafd741609d334d/httpcore-1.0.9-py3-none-any.whl
+  name: httpcore
+  version: 1.0.9
+  sha256: 2d400746a40668fc9dec9810239072b40b4484b640a8c38fd654a024c7a1bf55
+  requires_dist:
+  - certifi
+  - h11>=0.16
+  - anyio>=4.0,<5.0 ; extra == 'asyncio'
+  - h2>=3,<5 ; extra == 'http2'
+  - socksio==1.* ; extra == 'socks'
+  - trio>=0.22.0,<1.0 ; extra == 'trio'
+  requires_python: '>=3.8'
+- pypi: https://files.pythonhosted.org/packages/7f/3e/5db95bcf282c52709639744ca2a8b149baccf648e39c8cc87553df9eae0c/urllib3-2.7.0-py3-none-any.whl
+  name: urllib3
+  version: 2.7.0
+  sha256: 9fb4c81ebbb1ce9531cce37674bbc6f1360472bc18ca9a553ede278ef7276897
+  requires_dist:
+  - brotli>=1.2.0 ; platform_python_implementation == 'CPython' and extra == 'brotli'
+  - brotlicffi>=1.2.0.0 ; platform_python_implementation != 'CPython' and extra == 'brotli'
+  - h2>=4,<5 ; extra == 'h2'
+  - pysocks>=1.5.6,!=1.5.7,<2.0 ; extra == 'socks'
+  - backports-zstd>=1.0.0 ; python_full_version < '3.14' and extra == 'zstd'
+  requires_python: '>=3.10'
+- pypi: https://files.pythonhosted.org/packages/87/20/199b8713428322a2f22b722c62b8cc278cc53dffa9705d744484b5035ee9/nvidia_nvtx_cu12-12.4.127-py3-none-manylinux2014_x86_64.whl
+  name: nvidia-nvtx-cu12
+  version: 12.4.127
+  sha256: 781e950d9b9f60d8241ccea575b32f5105a5baf4c2351cab5256a24869f12a1a
+  requires_python: '>=3'
+- pypi: https://files.pythonhosted.org/packages/89/53/e19c21e0c4eb1275c3e2c97b081103b6dfb3938172264d283a519bf728b9/opencv_python_headless-4.12.0.88-cp37-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl
+  name: opencv-python-headless
+  version: 4.12.0.88
+  sha256: 236c8df54a90f4d02076e6f9c1cc763d794542e886c576a6fee46ec8ff75a7a9
+  requires_dist:
+  - numpy<2.0 ; python_full_version < '3.9'
+  - numpy>=2,<2.3.0 ; python_full_version >= '3.9'
+  requires_python: '>=3.6'
+- pypi: https://files.pythonhosted.org/packages/8a/6d/44ad094874c6f1b9c654f8ed939590bdc408349f137f9b98a3a23ccec411/nvidia_curand_cu12-10.3.5.147-py3-none-manylinux2014_x86_64.whl
+  name: nvidia-curand-cu12
+  version: 10.3.5.147
+  sha256: a88f583d4e0bb643c49743469964103aa59f7f708d862c3ddb0fc07f851e3b8b
+  requires_python: '>=3'
+- pypi: https://files.pythonhosted.org/packages/9c/dd/51c38785ce5e1c287b5ad17ba550edaaaffce0deb0da4857019c6700fbaf/diffusers-0.37.1-py3-none-any.whl
+  name: diffusers
+  version: 0.37.1
+  sha256: 0537c0b28cb53cf39d6195489bcf8f833986df556c10f5e28ab7427b86fc8b90
+  requires_dist:
+  - importlib-metadata
+  - filelock
+  - httpx<1.0.0
+  - huggingface-hub>=0.34.0,<2.0
+  - numpy
+  - regex!=2019.12.17
+  - requests
+  - safetensors>=0.3.1
+  - pillow
+  - bitsandbytes>=0.43.3 ; extra == 'bitsandbytes'
+  - accelerate>=0.31.0 ; extra == 'bitsandbytes'
+  - urllib3<=2.0.0 ; extra == 'dev'
+  - isort>=5.5.4 ; extra == 'dev'
+  - ruff==0.9.10 ; extra == 'dev'
+  - hf-doc-builder>=0.3.0 ; extra == 'dev'
+  - compel==0.1.8 ; extra == 'dev'
+  - ftfy ; extra == 'dev'
+  - gitpython<3.1.19 ; extra == 'dev'
+  - datasets ; extra == 'dev'
+  - jinja2 ; extra == 'dev'
+  - invisible-watermark>=0.2.0 ; extra == 'dev'
+  - librosa ; extra == 'dev'
+  - parameterized ; extra == 'dev'
+  - protobuf>=3.20.3,<4 ; extra == 'dev'
+  - pytest ; extra == 'dev'
+  - pytest-timeout ; extra == 'dev'
+  - pytest-xdist ; extra == 'dev'
+  - requests-mock==1.10.0 ; extra == 'dev'
+  - safetensors>=0.3.1 ; extra == 'dev'
+  - sentencepiece>=0.1.91,!=0.1.92 ; extra == 'dev'
+  - scipy ; extra == 'dev'
+  - tiktoken>=0.7.0 ; extra == 'dev'
+  - torchsde ; extra == 'dev'
+  - torchvision ; extra == 'dev'
+  - transformers>=4.41.2 ; extra == 'dev'
+  - phonemizer ; extra == 'dev'
+  - accelerate>=0.31.0 ; extra == 'dev'
+  - tensorboard ; extra == 'dev'
+  - peft>=0.17.0 ; extra == 'dev'
+  - timm ; extra == 'dev'
+  - torch>=1.4 ; extra == 'dev'
+  - jax>=0.4.1 ; extra == 'dev'
+  - jaxlib>=0.4.1 ; extra == 'dev'
+  - flax>=0.4.1 ; extra == 'dev'
+  - hf-doc-builder>=0.3.0 ; extra == 'docs'
+  - jax>=0.4.1 ; extra == 'flax'
+  - jaxlib>=0.4.1 ; extra == 'flax'
+  - flax>=0.4.1 ; extra == 'flax'
+  - gguf>=0.10.0 ; extra == 'gguf'
+  - accelerate>=0.31.0 ; extra == 'gguf'
+  - nvidia-modelopt[hf]>=0.33.1 ; extra == 'nvidia-modelopt'
+  - optimum-quanto>=0.2.6 ; extra == 'optimum-quanto'
+  - accelerate>=0.31.0 ; extra == 'optimum-quanto'
+  - urllib3<=2.0.0 ; extra == 'quality'
+  - isort>=5.5.4 ; extra == 'quality'
+  - ruff==0.9.10 ; extra == 'quality'
+  - hf-doc-builder>=0.3.0 ; extra == 'quality'
+  - compel==0.1.8 ; extra == 'test'
+  - ftfy ; extra == 'test'
+  - gitpython<3.1.19 ; extra == 'test'
+  - datasets ; extra == 'test'
+  - jinja2 ; extra == 'test'
+  - invisible-watermark>=0.2.0 ; extra == 'test'
+  - librosa ; extra == 'test'
+  - parameterized ; extra == 'test'
+  - protobuf>=3.20.3,<4 ; extra == 'test'
+  - pytest ; extra == 'test'
+  - pytest-timeout ; extra == 'test'
+  - pytest-xdist ; extra == 'test'
+  - requests-mock==1.10.0 ; extra == 'test'
+  - safetensors>=0.3.1 ; extra == 'test'
+  - sentencepiece>=0.1.91,!=0.1.92 ; extra == 'test'
+  - scipy ; extra == 'test'
+  - tiktoken>=0.7.0 ; extra == 'test'
+  - torchsde ; extra == 'test'
+  - torchvision ; extra == 'test'
+  - transformers>=4.41.2 ; extra == 'test'
+  - phonemizer ; extra == 'test'
+  - torch>=1.4 ; extra == 'torch'
+  - accelerate>=0.31.0 ; extra == 'torch'
+  - torchao>=0.7.0 ; extra == 'torchao'
+  - accelerate>=0.31.0 ; extra == 'torchao'
+  - accelerate>=0.31.0 ; extra == 'training'
+  - datasets ; extra == 'training'
+  - protobuf>=3.20.3,<4 ; extra == 'training'
+  - tensorboard ; extra == 'training'
+  - jinja2 ; extra == 'training'
+  - peft>=0.17.0 ; extra == 'training'
+  - timm ; extra == 'training'
+  requires_python: '>=3.10.0'
+- pypi: https://files.pythonhosted.org/packages/9e/c9/b2622292ea83fbb4ec318f5b9ab867d0a28ab43c5717bb85b0a5f6b3b0a4/networkx-3.6.1-py3-none-any.whl
+  name: networkx
+  version: 3.6.1
+  sha256: d47fbf302e7d9cbbb9e2555a0d267983d2aa476bac30e90dfbe5669bd57f3762
+  requires_dist:
+  - asv ; extra == 'benchmarking'
+  - virtualenv ; extra == 'benchmarking'
+  - numpy>=1.25 ; extra == 'default'
+  - scipy>=1.11.2 ; extra == 'default'
+  - matplotlib>=3.8 ; extra == 'default'
+  - pandas>=2.0 ; extra == 'default'
+  - pre-commit>=4.1 ; extra == 'developer'
+  - mypy>=1.15 ; extra == 'developer'
+  - sphinx>=8.0 ; extra == 'doc'
+  - pydata-sphinx-theme>=0.16 ; extra == 'doc'
+  - sphinx-gallery>=0.18 ; extra == 'doc'
+  - numpydoc>=1.8.0 ; extra == 'doc'
+  - pillow>=10 ; extra == 'doc'
+  - texext>=0.6.7 ; extra == 'doc'
+  - myst-nb>=1.1 ; extra == 'doc'
+  - intersphinx-registry ; extra == 'doc'
+  - osmnx>=2.0.0 ; extra == 'example'
+  - momepy>=0.7.2 ; extra == 'example'
+  - contextily>=1.6 ; extra == 'example'
+  - seaborn>=0.13 ; extra == 'example'
+  - cairocffi>=1.7 ; extra == 'example'
+  - igraph>=0.11 ; extra == 'example'
+  - scikit-learn>=1.5 ; extra == 'example'
+  - iplotx>=0.9.0 ; extra == 'example'
+  - lxml>=4.6 ; extra == 'extra'
+  - pygraphviz>=1.14 ; extra == 'extra'
+  - pydot>=3.0.1 ; extra == 'extra'
+  - sympy>=1.10 ; extra == 'extra'
+  - build>=0.10 ; extra == 'release'
+  - twine>=4.0 ; extra == 'release'
+  - wheel>=0.40 ; extra == 'release'
+  - changelist==0.5 ; extra == 'release'
+  - pytest>=7.2 ; extra == 'test'
+  - pytest-cov>=4.0 ; extra == 'test'
+  - pytest-xdist>=3.0 ; extra == 'test'
+  - pytest-mpl ; extra == 'test-extras'
+  - pytest-randomly ; extra == 'test-extras'
+  requires_python: '>=3.11,!=3.14.1'
+- pypi: https://files.pythonhosted.org/packages/9f/fd/713452cd72343f682b1c7b9321e23829f00b842ceaedcda96e742ea0b0b3/nvidia_cudnn_cu12-9.1.0.70-py3-none-manylinux2014_x86_64.whl
+  name: nvidia-cudnn-cu12
+  version: 9.1.0.70
+  sha256: 165764f44ef8c61fcdfdfdbe769d687e06374059fbb388b6c89ecb0e28793a6f
+  requires_dist:
+  - nvidia-cublas-cu12
+  requires_python: '>=3'
+- pypi: https://files.pythonhosted.org/packages/a0/2d/43c8522a2038e9d0e7dbdf3a61195ecc31ca576fb1527a528c877e87d973/imageio_ffmpeg-0.6.0-py3-none-manylinux2014_x86_64.whl
+  name: imageio-ffmpeg
+  version: 0.6.0
+  sha256: c7e46fcec401dd990405049d2e2f475e2b397779df2519b544b8aab515195282
+  requires_python: '>=3.9'
+- pypi: https://files.pythonhosted.org/packages/a0/f4/c67b0b3f1b9245e8d266f0f112c500d50e5b4e83cb6f3b71b6528104182a/requests-2.34.2-py3-none-any.whl
+  name: requests
+  version: 2.34.2
+  sha256: 2a0d60c172f83ac6ab31e4554906c0f3b3588d37b5cb939b1c061f4907e278e0
+  requires_dist:
+  - charset-normalizer>=2,<4
+  - idna>=2.5,<4
+  - urllib3>=1.26,<3
+  - certifi>=2023.5.7
+  - pysocks>=1.5.6,!=1.5.7 ; extra == 'socks'
+  - chardet>=3.0.2,<8 ; extra == 'use-chardet-on-py3'
+  requires_python: '>=3.10'
+- pypi: https://files.pythonhosted.org/packages/a7/2e/757d2280d4fefe7d33af7615124e7e298ae7b8e3bc4446cdb8e88b0f9bab/triton-3.2.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+  name: triton
+  version: 3.2.0
+  sha256: 8009a1fb093ee8546495e96731336a33fb8856a38e45bb4ab6affd6dbc3ba220
+  requires_dist:
+  - cmake>=3.20 ; extra == 'build'
+  - lit ; extra == 'build'
+  - autopep8 ; extra == 'tests'
+  - flake8 ; extra == 'tests'
+  - isort ; extra == 'tests'
+  - numpy ; extra == 'tests'
+  - pytest ; extra == 'tests'
+  - scipy>=1.7.1 ; extra == 'tests'
+  - llnl-hatchet ; extra == 'tests'
+  - matplotlib ; extra == 'tutorials'
+  - pandas ; extra == 'tutorials'
+  - tabulate ; extra == 'tutorials'
+- pypi: https://files.pythonhosted.org/packages/a7/8e/50f46a9c0ce8d2861a394c1347caae037ea0431d2f67d7feb151cbc4649a/filelock-3.32.3-py3-none-any.whl
+  name: filelock
+  version: 3.32.3
+  sha256: 7f0ca4bcc0e181c60dbbd8aa9ab5b120ebb99e4e064e83636340056f833a1f09
+  requires_python: '>=3.10'
+- pypi: https://files.pythonhosted.org/packages/a8/af/48ac8483240de756d2438c380746e7130d1c6f75802ef22f3c6d49982787/huggingface_hub-0.36.2-py3-none-any.whl
+  name: huggingface-hub
+  version: 0.36.2
+  sha256: 48f0c8eac16145dfce371e9d2d7772854a4f591bcb56c9cf548accf531d54270
+  requires_dist:
+  - filelock
+  - fsspec>=2023.5.0
+  - hf-xet>=1.1.3,<2.0.0 ; platform_machine == 'aarch64' or platform_machine == 'amd64' or platform_machine == 'arm64' or platform_machine == 'x86_64'
+  - packaging>=20.9
+  - pyyaml>=5.1
+  - requests
+  - tqdm>=4.42.1
+  - typing-extensions>=3.7.4.3
+  - inquirerpy==0.3.4 ; extra == 'cli'
+  - aiohttp ; extra == 'inference'
+  - authlib>=1.3.2 ; extra == 'oauth'
+  - fastapi ; extra == 'oauth'
+  - httpx ; extra == 'oauth'
+  - itsdangerous ; extra == 'oauth'
+  - torch ; extra == 'torch'
+  - safetensors[torch] ; extra == 'torch'
+  - hf-transfer>=0.1.4 ; extra == 'hf-transfer'
+  - toml ; extra == 'fastai'
+  - fastai>=2.4 ; extra == 'fastai'
+  - fastcore>=1.3.27 ; extra == 'fastai'
+  - tensorflow ; extra == 'tensorflow'
+  - pydot ; extra == 'tensorflow'
+  - graphviz ; extra == 'tensorflow'
+  - tensorflow ; extra == 'tensorflow-testing'
+  - keras<3.0 ; extra == 'tensorflow-testing'
+  - hf-xet>=1.1.2,<2.0.0 ; extra == 'hf-xet'
+  - mcp>=1.8.0 ; extra == 'mcp'
+  - typer ; extra == 'mcp'
+  - aiohttp ; extra == 'mcp'
+  - inquirerpy==0.3.4 ; extra == 'testing'
+  - aiohttp ; extra == 'testing'
+  - authlib>=1.3.2 ; extra == 'testing'
+  - fastapi ; extra == 'testing'
+  - httpx ; extra == 'testing'
+  - itsdangerous ; extra == 'testing'
+  - jedi ; extra == 'testing'
+  - jinja2 ; extra == 'testing'
+  - pytest>=8.1.1,<8.2.2 ; extra == 'testing'
+  - pytest-cov ; extra == 'testing'
+  - pytest-env ; extra == 'testing'
+  - pytest-xdist ; extra == 'testing'
+  - pytest-vcr ; extra == 'testing'
+  - pytest-asyncio ; extra == 'testing'
+  - pytest-rerunfailures<16.0 ; extra == 'testing'
+  - pytest-mock ; extra == 'testing'
+  - urllib3<2.0 ; extra == 'testing'
+  - soundfile ; extra == 'testing'
+  - pillow ; extra == 'testing'
+  - gradio>=4.0.0 ; extra == 'testing'
+  - numpy ; extra == 'testing'
+  - fastapi ; extra == 'testing'
+  - typing-extensions>=4.8.0 ; extra == 'typing'
+  - types-pyyaml ; extra == 'typing'
+  - types-requests ; extra == 'typing'
+  - types-simplejson ; extra == 'typing'
+  - types-toml ; extra == 'typing'
+  - types-tqdm ; extra == 'typing'
+  - types-urllib3 ; extra == 'typing'
+  - ruff>=0.9.0 ; extra == 'quality'
+  - mypy>=1.14.1,<1.15.0 ; python_full_version == '3.8.*' and extra == 'quality'
+  - mypy==1.15.0 ; python_full_version >= '3.9' and extra == 'quality'
+  - libcst>=1.4.0 ; extra == 'quality'
+  - ty ; extra == 'quality'
+  - inquirerpy==0.3.4 ; extra == 'all'
+  - aiohttp ; extra == 'all'
+  - authlib>=1.3.2 ; extra == 'all'
+  - fastapi ; extra == 'all'
+  - httpx ; extra == 'all'
+  - itsdangerous ; extra == 'all'
+  - jedi ; extra == 'all'
+  - jinja2 ; extra == 'all'
+  - pytest>=8.1.1,<8.2.2 ; extra == 'all'
+  - pytest-cov ; extra == 'all'
+  - pytest-env ; extra == 'all'
+  - pytest-xdist ; extra == 'all'
+  - pytest-vcr ; extra == 'all'
+  - pytest-asyncio ; extra == 'all'
+  - pytest-rerunfailures<16.0 ; extra == 'all'
+  - pytest-mock ; extra == 'all'
+  - urllib3<2.0 ; extra == 'all'
+  - soundfile ; extra == 'all'
+  - pillow ; extra == 'all'
+  - gradio>=4.0.0 ; extra == 'all'
+  - numpy ; extra == 'all'
+  - fastapi ; extra == 'all'
+  - ruff>=0.9.0 ; extra == 'all'
+  - mypy>=1.14.1,<1.15.0 ; python_full_version == '3.8.*' and extra == 'all'
+  - mypy==1.15.0 ; python_full_version >= '3.9' and extra == 'all'
+  - libcst>=1.4.0 ; extra == 'all'
+  - ty ; extra == 'all'
+  - typing-extensions>=4.8.0 ; extra == 'all'
+  - types-pyyaml ; extra == 'all'
+  - types-requests ; extra == 'all'
+  - types-simplejson ; extra == 'all'
+  - types-toml ; extra == 'all'
+  - types-tqdm ; extra == 'all'
+  - types-urllib3 ; extra == 'all'
+  - inquirerpy==0.3.4 ; extra == 'dev'
+  - aiohttp ; extra == 'dev'
+  - authlib>=1.3.2 ; extra == 'dev'
+  - fastapi ; extra == 'dev'
+  - httpx ; extra == 'dev'
+  - itsdangerous ; extra == 'dev'
+  - jedi ; extra == 'dev'
+  - jinja2 ; extra == 'dev'
+  - pytest>=8.1.1,<8.2.2 ; extra == 'dev'
+  - pytest-cov ; extra == 'dev'
+  - pytest-env ; extra == 'dev'
+  - pytest-xdist ; extra == 'dev'
+  - pytest-vcr ; extra == 'dev'
+  - pytest-asyncio ; extra == 'dev'
+  - pytest-rerunfailures<16.0 ; extra == 'dev'
+  - pytest-mock ; extra == 'dev'
+  - urllib3<2.0 ; extra == 'dev'
+  - soundfile ; extra == 'dev'
+  - pillow ; extra == 'dev'
+  - gradio>=4.0.0 ; extra == 'dev'
+  - numpy ; extra == 'dev'
+  - fastapi ; extra == 'dev'
+  - ruff>=0.9.0 ; extra == 'dev'
+  - mypy>=1.14.1,<1.15.0 ; python_full_version == '3.8.*' and extra == 'dev'
+  - mypy==1.15.0 ; python_full_version >= '3.9' and extra == 'dev'
+  - libcst>=1.4.0 ; extra == 'dev'
+  - ty ; extra == 'dev'
+  - typing-extensions>=4.8.0 ; extra == 'dev'
+  - types-pyyaml ; extra == 'dev'
+  - types-requests ; extra == 'dev'
+  - types-simplejson ; extra == 'dev'
+  - types-toml ; extra == 'dev'
+  - types-tqdm ; extra == 'dev'
+  - types-urllib3 ; extra == 'dev'
+  requires_python: '>=3.8.0'
+- pypi: https://files.pythonhosted.org/packages/ae/71/1c91302526c45ab494c23f61c7a84aa568b8c1f9d196efa5993957faf906/nvidia_cublas_cu12-12.4.5.8-py3-none-manylinux2014_x86_64.whl
+  name: nvidia-cublas-cu12
+  version: 12.4.5.8
+  sha256: 2fc8da60df463fdefa81e323eef2e36489e1c94335b5358bcb38360adf75ac9b
+  requires_python: '>=3'
+- pypi: https://files.pythonhosted.org/packages/b2/fe/81695a1aa331a842b582453b605175f419fe8540355886031328089d840a/sympy-1.13.1-py3-none-any.whl
+  name: sympy
+  version: 1.13.1
+  sha256: db36cdc64bf61b9b24578b6f7bab1ecdd2452cf008f34faa33776680c26d66f8
+  requires_dist:
+  - mpmath>=1.1.0,<1.4
+  - pytest>=7.1.0 ; extra == 'dev'
+  - hypothesis>=6.70.0 ; extra == 'dev'
+  requires_python: '>=3.8'
+- pypi: https://files.pythonhosted.org/packages/b3/dd/2238b898e51bd6d389b7389ffb20d7f4c10066d80351187ec8e303a5a475/numpy-2.2.6-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+  name: numpy
+  version: 2.2.6
+  sha256: ba10f8411898fc418a521833e014a77d3ca01c15b0c6cdcce6a0d2897e6dbbdf
+  requires_python: '>=3.10'
+- pypi: https://files.pythonhosted.org/packages/b5/70/5d8df3b09e25bce090399cf48e452d25c935ab72dad19406c77f4e828045/psutil-7.2.2-cp36-abi3-manylinux2010_x86_64.manylinux_2_12_x86_64.manylinux_2_28_x86_64.whl
+  name: psutil
+  version: 7.2.2
+  sha256: 076a2d2f923fd4821644f5ba89f059523da90dc9014e85f8e45a5774ca5bc6f9
+  requires_dist:
+  - psleak ; extra == 'dev'
+  - pytest ; extra == 'dev'
+  - pytest-instafail ; extra == 'dev'
+  - pytest-xdist ; extra == 'dev'
+  - setuptools ; extra == 'dev'
+  - abi3audit ; extra == 'dev'
+  - black ; extra == 'dev'
+  - check-manifest ; extra == 'dev'
+  - coverage ; extra == 'dev'
+  - packaging ; extra == 'dev'
+  - pylint ; extra == 'dev'
+  - pyperf ; extra == 'dev'
+  - pypinfo ; extra == 'dev'
+  - pytest-cov ; extra == 'dev'
+  - requests ; extra == 'dev'
+  - rstcheck ; extra == 'dev'
+  - ruff ; extra == 'dev'
+  - sphinx ; extra == 'dev'
+  - sphinx-rtd-theme ; extra == 'dev'
+  - toml-sort ; extra == 'dev'
+  - twine ; extra == 'dev'
+  - validate-pyproject[all] ; extra == 'dev'
+  - virtualenv ; extra == 'dev'
+  - vulture ; extra == 'dev'
+  - wheel ; extra == 'dev'
+  - colorama ; os_name == 'nt' and extra == 'dev'
+  - pyreadline3 ; os_name == 'nt' and extra == 'dev'
+  - pywin32 ; implementation_name != 'pypy' and os_name == 'nt' and extra == 'dev'
+  - wheel ; implementation_name != 'pypy' and os_name == 'nt' and extra == 'dev'
+  - wmi ; implementation_name != 'pypy' and os_name == 'nt' and extra == 'dev'
+  - psleak ; extra == 'test'
+  - pytest ; extra == 'test'
+  - pytest-instafail ; extra == 'test'
+  - pytest-xdist ; extra == 'test'
+  - setuptools ; extra == 'test'
+  - pywin32 ; implementation_name != 'pypy' and os_name == 'nt' and extra == 'test'
+  - wheel ; implementation_name != 'pypy' and os_name == 'nt' and extra == 'test'
+  - wmi ; implementation_name != 'pypy' and os_name == 'nt' and extra == 'test'
+  requires_python: '>=3.6'
+- pypi: https://files.pythonhosted.org/packages/bb/1f/e9cfd801a3f9190bf3e759c422bbfd2247db9d7f3d54a56ecde70137791a/zstandard-0.25.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl
+  name: zstandard
+  version: 0.25.0
+  sha256: 9300d02ea7c6506f00e627e287e0492a5eb0371ec1670ae852fefffa6164b072
+  requires_dist:
+  - cffi~=1.17 ; python_full_version < '3.14' and platform_python_implementation != 'PyPy' and extra == 'cffi'
+  - cffi>=2.0.0b0 ; python_full_version >= '3.14' and platform_python_implementation != 'PyPy' and extra == 'cffi'
+  requires_python: '>=3.9'
+- pypi: https://files.pythonhosted.org/packages/c2/bb/ab371acacd2497bddb5f02b209e3bfae452b2be59d0cf8fa728a3b87de1f/moderngl-5.12.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+  name: moderngl
+  version: 5.12.0
+  sha256: 7fc0f8788bc84433d2124e9a4893adbe40f93c7d213abb8ad7b909540cb0161f
+  requires_dist:
+  - glcontext>=3.0.0
+  - glcontext>=3.0.0 ; extra == 'headless'
+  requires_python: '>=3.7'
+- pypi: https://files.pythonhosted.org/packages/d0/30/dc54f88dd4a2b5dc8a0279bdd7270e735851848b762aeb1c1184ed1f6b14/tqdm-4.67.1-py3-none-any.whl
+  name: tqdm
+  version: 4.67.1
+  sha256: 26445eca388f82e72884e0d580d5464cd801a3ea01e63e5601bdff9ba6a48de2
+  requires_dist:
+  - colorama ; sys_platform == 'win32'
+  - pytest>=6 ; extra == 'dev'
+  - pytest-cov ; extra == 'dev'
+  - pytest-timeout ; extra == 'dev'
+  - pytest-asyncio>=0.24 ; extra == 'dev'
+  - nbval ; extra == 'dev'
+  - requests ; extra == 'discord'
+  - slack-sdk ; extra == 'slack'
+  - requests ; extra == 'telegram'
+  - ipywidgets>=6 ; extra == 'notebook'
+  requires_python: '>=3.7'
+- pypi: https://files.pythonhosted.org/packages/d5/0c/f08f0d16b4f97ec2ea6d542b9a70472a344384382fa3543a12ec417cc063/trimesh-4.10.1-py3-none-any.whl
+  name: trimesh
+  version: 4.10.1
+  sha256: 4e81fae696683dfe912ef54ce124869487d35d267b87e10fe07fc05ab62aaadb
+  requires_dist:
+  - numpy>=1.20
+  - colorlog ; extra == 'easy'
+  - manifold3d>=2.3.0 ; python_full_version < '3.14' and extra == 'easy'
+  - charset-normalizer ; extra == 'easy'
+  - lxml ; extra == 'easy'
+  - jsonschema ; extra == 'easy'
+  - networkx ; extra == 'easy'
+  - svg-path ; extra == 'easy'
+  - pycollada<=0.9.0 ; python_full_version < '3.9' and extra == 'easy'
+  - pycollada ; python_full_version >= '3.9' and extra == 'easy'
+  - shapely ; extra == 'easy'
+  - xxhash ; extra == 'easy'
+  - rtree ; extra == 'easy'
+  - httpx ; extra == 'easy'
+  - scipy ; extra == 'easy'
+  - embreex ; platform_machine == 'x86_64' and extra == 'easy'
+  - pillow ; extra == 'easy'
+  - vhacdx ; python_full_version >= '3.9' and extra == 'easy'
+  - mapbox-earcut>=1.0.2 ; python_full_version >= '3.9' and extra == 'easy'
+  - sympy ; extra == 'recommend'
+  - pyglet<2 ; extra == 'recommend'
+  - scikit-image ; extra == 'recommend'
+  - fast-simplification ; extra == 'recommend'
+  - python-fcl ; extra == 'recommend'
+  - cascadio ; extra == 'recommend'
+  - manifold3d>=2.3.0 ; python_full_version >= '3.14' and extra == 'recommend'
+  - pytest-cov ; extra == 'test'
+  - pytest ; extra == 'test'
+  - pyinstrument ; extra == 'test'
+  - ruff ; extra == 'test'
+  - coveralls ; extra == 'test-more'
+  - ezdxf ; extra == 'test-more'
+  - meshio ; extra == 'test-more'
+  - xatlas ; extra == 'test-more'
+  - pytest-beartype ; python_full_version >= '3.10' and extra == 'test-more'
+  - matplotlib ; extra == 'test-more'
+  - pymeshlab ; python_full_version < '3.14' and extra == 'test-more'
+  - triangle ; python_full_version < '3.14' and extra == 'test-more'
+  - ipython ; extra == 'test-more'
+  - marimo ; extra == 'test-more'
+  - openctm ; extra == 'deprecated'
+  - trimesh[deprecated,easy,recommend,test,test-more] ; extra == 'all'
+  requires_python: '>=3.8'
+- pypi: https://files.pythonhosted.org/packages/d6/14/fc04d491527b774ec7479897f5861959209de1480e4c4cd32ed098ff8bea/timm-1.0.22-py3-none-any.whl
+  name: timm
+  version: 1.0.22
+  sha256: 888981753e65cbaacfc07494370138b1700a27b1f0af587f4f9b47bc024161d0
+  requires_dist:
+  - torch
+  - torchvision
+  - pyyaml
+  - huggingface-hub
+  - safetensors
+  requires_python: '>=3.8'
+- pypi: https://files.pythonhosted.org/packages/da/35/f2287558c17e29fafc8ef3daf819bb9834061cfa43bff8014f7df7f63bdc/anyio-4.14.2-py3-none-any.whl
+  name: anyio
+  version: 4.14.2
+  sha256: 9f505dda5ac9f0c8309b5e8bd445a8c2bf7246f3ce950121e45ea15bc41d1494
+  requires_dist:
+  - exceptiongroup>=1.0.2 ; python_full_version < '3.11'
+  - idna>=2.8
+  - typing-extensions>=4.5 ; python_full_version < '3.13'
+  - trio>=0.32.0 ; extra == 'trio'
+  requires_python: '>=3.10'
+- pypi: https://files.pythonhosted.org/packages/db/f7/97a9ea26ed4bbbfc2d470994b8b4f338ef663be97b8f677519ac195e113d/nvidia_cusparse_cu12-12.3.1.170-py3-none-manylinux2014_x86_64.whl
+  name: nvidia-cusparse-cu12
+  version: 12.3.1.170
+  sha256: ea4f11a2904e2a8dc4b1833cc1b5181cde564edd0d5cd33e3c168eff2d1863f1
+  requires_dist:
+  - nvidia-nvjitlink-cu12
+  requires_python: '>=3'
+- pypi: https://files.pythonhosted.org/packages/df/99/12cd266d6233f47d00daf3a72739872bdc10267d0383508b0b9c84a18bb6/nvidia_nccl_cu12-2.21.5-py3-none-manylinux2014_x86_64.whl
+  name: nvidia-nccl-cu12
+  version: 2.21.5
+  sha256: 8579076d30a8c24988834445f8d633c697d42397e92ffc3f63fa26766d25e0a0
+  requires_python: '>=3'
+- pypi: https://files.pythonhosted.org/packages/ea/27/1795d86fe88ef397885f2e580ac37628ed058a92ed2c39dc8eac3adf0619/nvidia_cuda_runtime_cu12-12.4.127-py3-none-manylinux2014_x86_64.whl
+  name: nvidia-cuda-runtime-cu12
+  version: 12.4.127
+  sha256: 64403288fa2136ee8e467cdc9c9427e0434110899d07c779f25b5c068934faa5
+  requires_python: '>=3'
+- pypi: https://files.pythonhosted.org/packages/fb/fe/301e0936b79bcab4cacc7548bf2853fc28dced0a578bab1f7ef53c9aa75b/imageio-2.37.2-py3-none-any.whl
+  name: imageio
+  version: 2.37.2
+  sha256: ad9adfb20335d718c03de457358ed69f141021a333c40a53e57273d8a5bd0b9b
+  requires_dist:
+  - numpy
+  - pillow>=8.3.2
+  - imageio-ffmpeg ; extra == 'ffmpeg'
+  - psutil ; extra == 'ffmpeg'
+  - fsspec[http] ; extra == 'freeimage'
+  - pillow-heif ; extra == 'pillow-heif'
+  - tifffile ; extra == 'tifffile'
+  - av ; extra == 'pyav'
+  - astropy ; extra == 'fits'
+  - rawpy ; extra == 'rawpy'
+  - numpy>2 ; extra == 'rawpy'
+  - gdal ; extra == 'gdal'
+  - itk ; extra == 'itk'
+  - black ; extra == 'linting'
+  - flake8 ; extra == 'linting'
+  - pytest ; extra == 'test'
+  - pytest-cov ; extra == 'test'
+  - fsspec[github] ; extra == 'test'
+  - sphinx<6 ; extra == 'docs'
+  - numpydoc ; extra == 'docs'
+  - pydata-sphinx-theme ; extra == 'docs'
+  - pytest ; extra == 'dev'
+  - pytest-cov ; extra == 'dev'
+  - fsspec[github] ; extra == 'dev'
+  - black ; extra == 'dev'
+  - flake8 ; extra == 'dev'
+  - av ; extra == 'all-plugins'
+  - astropy ; extra == 'all-plugins'
+  - fsspec[http] ; extra == 'all-plugins'
+  - imageio-ffmpeg ; extra == 'all-plugins'
+  - numpy>2 ; extra == 'all-plugins'
+  - pillow-heif ; extra == 'all-plugins'
+  - psutil ; extra == 'all-plugins'
+  - rawpy ; extra == 'all-plugins'
+  - tifffile ; extra == 'all-plugins'
+  - fsspec[http] ; extra == 'all-plugins-pypy'
+  - imageio-ffmpeg ; extra == 'all-plugins-pypy'
+  - pillow-heif ; extra == 'all-plugins-pypy'
+  - psutil ; extra == 'all-plugins-pypy'
+  - tifffile ; extra == 'all-plugins-pypy'
+  - astropy ; extra == 'full'
+  - av ; extra == 'full'
+  - black ; extra == 'full'
+  - flake8 ; extra == 'full'
+  - fsspec[github,http] ; extra == 'full'
+  - imageio-ffmpeg ; extra == 'full'
+  - numpydoc ; extra == 'full'
+  - numpy>2 ; extra == 'full'
+  - pillow-heif ; extra == 'full'
+  - psutil ; extra == 'full'
+  - pydata-sphinx-theme ; extra == 'full'
+  - pytest ; extra == 'full'
+  - pytest-cov ; extra == 'full'
+  - rawpy ; extra == 'full'
+  - sphinx<6 ; extra == 'full'
+  - tifffile ; extra == 'full'
+  requires_python: '>=3.9'
+- pypi: https://files.pythonhosted.org/packages/fd/3c/6a2bf344106328fd04963664a60b9bb6496fc25df8e962fcdc1367285fb9/fsspec-2026.7.0-py3-none-any.whl
+  name: fsspec
+  version: 2026.7.0
+  sha256: b57ddbafedfaef7018c1ecab32aa200a9d7ca26b77965f64e48b70061249d279
+  requires_dist:
+  - adlfs ; extra == 'abfs'
+  - adlfs ; extra == 'adl'
+  - pyarrow>=1 ; extra == 'arrow'
+  - dask ; extra == 'dask'
+  - distributed ; extra == 'dask'
+  - pre-commit ; extra == 'dev'
+  - ruff>=0.5 ; extra == 'dev'
+  - numpydoc ; extra == 'doc'
+  - sphinx ; extra == 'doc'
+  - sphinx-design ; extra == 'doc'
+  - sphinx-rtd-theme ; extra == 'doc'
+  - yarl ; extra == 'doc'
+  - dropbox ; extra == 'dropbox'
+  - dropboxdrivefs ; extra == 'dropbox'
+  - requests ; extra == 'dropbox'
+  - adlfs ; extra == 'full'
+  - aiohttp!=4.0.0a0,!=4.0.0a1 ; extra == 'full'
+  - dask ; extra == 'full'
+  - distributed ; extra == 'full'
+  - dropbox ; extra == 'full'
+  - dropboxdrivefs ; extra == 'full'
+  - fusepy ; extra == 'full'
+  - gcsfs>=2026.4.0 ; extra == 'full'
+  - libarchive-c ; extra == 'full'
+  - ocifs ; extra == 'full'
+  - panel ; extra == 'full'
+  - paramiko ; extra == 'full'
+  - pyarrow>=1 ; extra == 'full'
+  - pygit2 ; extra == 'full'
+  - requests ; extra == 'full'
+  - s3fs>=2026.6.0 ; extra == 'full'
+  - smbprotocol ; extra == 'full'
+  - tqdm ; extra == 'full'
+  - fusepy ; extra == 'fuse'
+  - gcsfs>=2026.4.0 ; extra == 'gcs'
+  - pygit2 ; extra == 'git'
+  - requests ; extra == 'github'
+  - gcsfs>=2026.4.0 ; extra == 'gs'
+  - panel ; extra == 'gui'
+  - pyarrow>=1 ; extra == 'hdfs'
+  - aiohttp!=4.0.0a0,!=4.0.0a1 ; extra == 'http'
+  - libarchive-c ; extra == 'libarchive'
+  - ocifs ; extra == 'oci'
+  - s3fs>=2026.6.0 ; extra == 's3'
+  - paramiko ; extra == 'sftp'
+  - smbprotocol ; extra == 'smb'
+  - paramiko ; extra == 'ssh'
+  - aiohttp!=4.0.0a0,!=4.0.0a1 ; extra == 'test'
+  - numpy ; extra == 'test'
+  - pytest ; extra == 'test'
+  - pytest-asyncio!=0.22.0 ; extra == 'test'
+  - pytest-benchmark ; extra == 'test'
+  - pytest-cov ; extra == 'test'
+  - pytest-mock ; extra == 'test'
+  - pytest-recording ; extra == 'test'
+  - pytest-rerunfailures ; extra == 'test'
+  - requests ; extra == 'test'
+  - aiobotocore>=2.5.4,<3.0.0 ; extra == 'test-downstream'
+  - dask[dataframe,test] ; extra == 'test-downstream'
+  - moto[server]>4,<5 ; extra == 'test-downstream'
+  - pytest-timeout ; extra == 'test-downstream'
+  - xarray ; extra == 'test-downstream'
+  - adlfs ; extra == 'test-full'
+  - aiohttp!=4.0.0a0,!=4.0.0a1 ; extra == 'test-full'
+  - backports-zstd ; python_full_version < '3.14' and extra == 'test-full'
+  - cloudpickle ; extra == 'test-full'
+  - dask ; extra == 'test-full'
+  - distributed ; extra == 'test-full'
+  - dropbox ; extra == 'test-full'
+  - dropboxdrivefs ; extra == 'test-full'
+  - fastparquet ; extra == 'test-full'
+  - fusepy ; extra == 'test-full'
+  - gcsfs>=2026.4.0 ; extra == 'test-full'
+  - jinja2 ; extra == 'test-full'
+  - kerchunk ; extra == 'test-full'
+  - libarchive-c ; extra == 'test-full'
+  - lz4 ; extra == 'test-full'
+  - notebook ; extra == 'test-full'
+  - numpy ; extra == 'test-full'
+  - ocifs ; extra == 'test-full'
+  - pandas<3.0.0 ; extra == 'test-full'
+  - panel ; extra == 'test-full'
+  - paramiko ; extra == 'test-full'
+  - pyarrow>=1 ; extra == 'test-full'
+  - pyftpdlib ; extra == 'test-full'
+  - pygit2 ; extra == 'test-full'
+  - pytest ; extra == 'test-full'
+  - pytest-asyncio!=0.22.0 ; extra == 'test-full'
+  - pytest-benchmark ; extra == 'test-full'
+  - pytest-cov ; extra == 'test-full'
+  - pytest-mock ; extra == 'test-full'
+  - pytest-recording ; extra == 'test-full'
+  - pytest-rerunfailures ; extra == 'test-full'
+  - python-snappy ; extra == 'test-full'
+  - requests ; extra == 'test-full'
+  - s3fs>=2026.6.0 ; extra == 'test-full'
+  - smbprotocol ; extra == 'test-full'
+  - tqdm ; extra == 'test-full'
+  - urllib3 ; extra == 'test-full'
+  - zarr<3.2.0 ; extra == 'test-full'
+  - zstandard ; python_full_version < '3.14' and extra == 'test-full'
+  - tqdm ; extra == 'tqdm'
+  requires_python: '>=3.10'
+- pypi: https://files.pythonhosted.org/packages/ff/ff/847841bacfbefc97a00036e0fce5a0f086b640756dc38caea5e1bb002655/nvidia_nvjitlink_cu12-12.4.127-py3-none-manylinux2014_x86_64.whl
+  name: nvidia-nvjitlink-cu12
+  version: 12.4.127
+  sha256: 06b3b9b25bf3f8af351d664978ca26a16d2c5127dbd53c0497e28d1fb9611d57
+  requires_python: '>=3'
